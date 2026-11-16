@@ -7,7 +7,7 @@
 <meta name="description" content="Trilume — Plataforma Inteligente de Aprendizagem. Conhecer o ponto de partida, ensinar com clareza e acompanhar a aprendizagem.">
 <title>Trilume — Plataforma Inteligente de Aprendizagem</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=0.2.0">
+<link rel="stylesheet" href="styles.css?v=0.3.0">
 </head>
 <body>
 <a class="skip-link" href="#page">Pular para o conteúdo</a>
@@ -27,7 +27,7 @@
 <button type="button" data-action="nav" data-id="guide"><span class="nav-icon">?</span><span>Como usar</span></button>
 </nav>
 <div class="sidebar-note"><span class="tiny-spark">✦</span><p>Aprender é construir<br>possibilidades.</p><small>Fundamental · Ensino Médio</small></div>
-<div class="sidebar-footer">Concepção pedagógica<br><strong>Flávio da Silva Borges</strong><span>Versão 0.2 · desenvolvimento</span></div>
+<div class="sidebar-footer">Concepção pedagógica<br><strong>Flávio da Silva Borges</strong><span>Versão 0.3 · desenvolvimento</span></div>
 </aside>
 <div class="workspace">
 <header class="topbar"><div><span class="topbar-label">SEU ESPAÇO DE APRENDIZAGEM</span><p id="page-student"></p></div><div class="topbar-controls"><label class="sr-only" for="student-switch">Estudante em acompanhamento</label><select id="student-switch"><option value="">Escolher estudante</option></select><details class="access-menu"><summary>Leitura e foco</summary><div><button type="button" data-action="toggle-large">Ampliar / reduzir texto</button><button type="button" data-action="toggle-focus">Ativar / desativar modo foco</button><button type="button" data-action="toggle-nilo">Nilo em tamanho normal / compacto</button></div></details></div></header>
@@ -40,10 +40,12 @@
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
 <input type="file" id="import-file" accept=".json,application/json" hidden>
 <noscript>Ative o JavaScript do navegador para utilizar o cadastro, a avaliação e a biblioteca da Trilume.</noscript>
-<script src="engine.js?v=0.2.0"></script>
-<script src="assessment.js?v=0.2.0"></script>
-<script src="nilo.js?v=0.2.0"></script>
-<script src="data/catalog.js?v=0.2.0"></script>
-<script src="app.js?v=0.2.0"></script>
+<script src="engine.js?v=0.3.0"></script>
+<script src="storage.js?v=0.3.0"></script>
+<script src="library-tools.js?v=0.3.0"></script>
+<script src="assessment.js?v=0.3.0"></script>
+<script src="nilo.js?v=0.3.0"></script>
+<script src="data/catalog.js?v=0.3.0"></script>
+<script src="app.js?v=0.3.0"></script>
 </body>
 </html>
