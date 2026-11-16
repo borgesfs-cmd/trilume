@@ -2,9 +2,9 @@
 const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs'),path=require('node:path');
 const E=require('../engine.js'),A=require('../assessment.js'),catalog=require('../data/catalog.json').skills;
 const read=file=>fs.readFileSync(path.join(__dirname,'..',file),'utf8');
-function boot(state=E.blank(),view='home'){
-const handlers={},windowHandlers={},nodes=new Map(),storage=new Map([['trilume.v1',JSON.stringify(state)]]),classes=new Set();
-const node=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',hidden:false,dataset:{},value:'',open:false,className:'',focus(){},setAttribute(){},addEventListener(type,fn){this[type]=fn;},classList:{toggle(){},remove(){}},showModal(){this.open=true;},close(){this.open=false;},querySelector(){return {value:'',hidden:false};}});return nodes.get(id);};
+function boot(state=E.blank(),view='home',options={}){
+const handlers={},windowHandlers={},nodes=new Map(),storage=new Map([['trilume.v1',options.raw??JSON.stringify(state)]]),classes=new Set();
+const node=id=>{if(!nodes.has(id))nodes.set(id,{innerHTML:'',textContent:'',hidden:false,dataset:{},value:'',open:false,className:'',focus(){},click(){},setAttribute(){},addEventListener(type,fn){this[type]=fn;},classList:{toggle(){},remove(){}},showModal(){this.open=true;},close(){this.open=false;},querySelector(){return {value:'',hidden:false};}});return nodes.get(id);};
 class FormDataMock{
 constructor(form){this.data=Object.entries(form.values||{}).flatMap(([k,v])=>Array.isArray(v)?v.map(x=>[k,x]):[[k,v]]);}
 [Symbol.iterator](){return this.data[Symbol.iterator]();}
@@ -14,10 +14,10 @@ getAll(name){return this.data.filter(([k])=>k===name).map(([,v])=>v);}
 const document={getElementById:node,querySelectorAll(){return [];},addEventListener(type,fn){handlers[type]=fn;},body:{classList:{toggle(name,on){on?classes.add(name):classes.delete(name);},remove(name){classes.delete(name);}}}};
 const location={search:'',hash:'#'+view};
 const window={TrilumeEngine:E,TRILUME_CATALOG:catalog,addEventListener(type,fn){windowHandlers[type]=fn;},scrollTo(){},print(){}};
-const sandbox={window,document,location,history:{pushState(data,title,hash){location.hash=hash;}},localStorage:{getItem:k=>storage.get(k)||null,setItem(k,v){storage.set(k,v);}},URLSearchParams,FormData:FormDataMock,setTimeout(){return 1;},clearTimeout(){},console};
+const sandbox={window,document,location,history:{pushState(data,title,hash){location.hash=hash;}},localStorage:{getItem:k=>storage.get(k)||null,setItem(k,v){if(options.failWrites?.(k,v))throw Error('Quota excedida.');storage.set(k,v);}},URLSearchParams,FormData:FormDataMock,setTimeout(){return 1;},clearTimeout(){},console};
 const context=vm.createContext(sandbox);
-vm.runInContext(read('nilo.js'),context);vm.runInContext(read('assessment.js'),context);vm.runInContext(read('app.js'),context);
-return {node,classes,window,html:()=>node('page').innerHTML,state:()=>JSON.parse(storage.get('trilume.v1')),async click(action,id){await handlers.click({target:{closest(){return {dataset:{action,id}};}}});},submit(name,values){const form={dataset:{form:name},values};handlers.submit({target:form,preventDefault(){}});},location,handlers};
+vm.runInContext(read('nilo.js'),context);vm.runInContext(read('storage.js'),context);vm.runInContext(read('library-tools.js'),context);vm.runInContext(read('assessment.js'),context);vm.runInContext(read('app.js'),context);
+return {node,classes,window,document,storage,html:()=>node('page').innerHTML,state:()=>JSON.parse(storage.get('trilume.v1')),async click(action,id){await handlers.click({target:{closest(){return {dataset:{action,id}};}}});},submit(name,values){const form={dataset:{form:name},values};handlers.submit({target:form,preventDefault(){}});},location,handlers};
 }
 function studentState(){
 const state=E.blank();state.students.push({id:'student-1',name:'Estudante de teste',year:1,access:''});state.settings.selectedId='student-1';return state;

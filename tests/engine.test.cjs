@@ -6,7 +6,7 @@ const catalog=require('../data/catalog.json').skills;
 const s={id:'student-1',name:'Estudante teste',year:6};
 const target=catalog.find(x=>x.id==='FUN-MAT-01');
 function fixture(outcome='incorrect'){const state=E.blank();state.students.push({...s});state.baselines.push({id:'baseline-1',studentId:s.id,studentYear:6,status:'completed',createdAt:'2026-11-16T10:00:00.000Z',slots:[{id:'slot-1',skillId:target.id,activity:target.activities[0]}],responses:[{slotId:'slot-1',skillId:target.id,outcome}]});return state;}
-function input(extra={}){return {skillIds:[target.id],educator:'Educador teste',minutes:20,when:'Horário combinado',location:'Mesa de estudo',...extra};}
+function input(extra={}){return {skillIds:[target.id],educator:'Educador teste',minutes:20,materialReady:true,when:'Horário combinado',location:'Mesa de estudo',...extra};}
 function response(i,extra={}){return {id:'r-'+i,studentId:s.id,skillId:target.id,activityId:'unseen-'+i,itemVersion:1,sessionId:i<3?'session-a':'session-b',phase:'independent',outcome:'independent',answer:'Resposta observada',at:'2026-11-'+String(16+i).padStart(2,'0')+'T10:00:00.000Z',...extra};}
 test('a trilha exige uma avaliação inicial válida',()=>{const state=E.blank();assert.throws(()=>E.propose(state,s,catalog),/avaliação inicial/);assert.throws(()=>E.makePlan(state,s,catalog,input()),/avaliação inicial/);});
 test('não aferida não é interpretada como dificuldade',()=>{const state=fixture('not_assessed');assert.equal(E.hasBaseline(state,s.id),false);assert.equal(E.evidence(state.baselines[0],target.id).valid,0);assert.equal(E.evidence(state.baselines[0],target.id).percent,null);});
