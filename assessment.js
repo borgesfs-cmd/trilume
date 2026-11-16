@@ -41,10 +41,10 @@ for(const slot of base.slots)if(!base.responses.some(r=>r.slotId===slot.id))base
 base.status='completed';base.paused=false;base.endedAt=new Date().toISOString();return base;
 }
 function review(base,responseId,input){if(base.status!=='completed')throw Error('Encerre a aplicação antes de analisar as respostas.');const r=base.responses.find(r=>r.id===responseId);if(!r)throw Error('Resposta não encontrada.');return E.reviewResponse(r,input);}
-function fields(activity,value='',required=true){
+function fields(activity,value='',required=true,observer=false){
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 if(activity.type==='choice')return '<fieldset class="answer-options"><legend>Escolha uma resposta</legend>'+activity.options.map((option,i)=>'<label class="answer-option"><input type="radio" name="answer" value="'+i+'" '+(String(value)===String(i)?'checked ':'')+(required?'required':'')+'><span class="option-letter" aria-hidden="true">'+String.fromCharCode(65+i)+'</span><span>'+esc(option)+'</span></label>').join('')+'</fieldset>';
-return '<label>Sua resposta<textarea name="answer" rows="4" maxlength="5000" '+(required?'required':'')+' placeholder="Digite sua resposta ou peça ao tutor que registre o que você falou ou fez.">'+esc(value)+'</textarea></label>';
+return '<label>'+(observer?'Registro do que a criança fez ou comunicou':'Sua resposta')+'<textarea name="answer" rows="4" maxlength="5000" '+(required?'required':'')+' placeholder="Digite sua resposta ou peça ao tutor que registre o que você falou ou fez.">'+esc(value)+'</textarea></label>';
 }
 return {key,text,readingTarget,create,record,complete,review,fields};
 });
