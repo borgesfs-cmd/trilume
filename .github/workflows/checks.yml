@@ -14,6 +14,8 @@ jobs:
       - name: Verificar sintaxe
         run: |
           node --check engine.js
+          node --check assessment.js
+          node --check nilo.js
           node --check app.js
           node --check data/catalog.js
       - name: Testar regras de aprendizagem

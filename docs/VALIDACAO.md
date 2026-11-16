@@ -19,15 +19,26 @@
 | Importação de dados | Como usar; biblioteca | validateBackup; validateSkill | Arquivos incompletos rejeitados |
 | Histórico anterior | history/ | protótipo e prompt executivo | Preservação sem substituir fonte anterior |
 
-## Verificações realizadas durante a elaboração
+## Verificações da versão 0.2
 
-- As 120 fichas foram validadas contra o esquema do motor.
-- A sintaxe de app.js e engine.js foi verificada em JavaScript.
-- As 21 regras de teste foram executadas em um ambiente JavaScript com adaptadores de asserção. O mesmo arquivo foi executado nativamente com node:test no GitHub Actions: 21 testes aprovados, execução 43962890867.
-- A publicação GitHub Pages foi concluída com sucesso (execução 43963099713); a tela inicial e o carregamento do Nilo foram verificados no navegador. A revisão completa de interações está em andamento. A existência de testes do motor não comprova acessibilidade completa, validade de instrumentos ou eficácia educacional.
+A suíte contém 54 testes: 24 regras do motor, 20 verificações da avaliação e dez verificações de renderização e fluxo com DOM simulado. Os testes cobrem:
+
+- planejamento com questões selecionadas, cópia do enunciado e versão;
+- tela do estudante sem gabarito, rubrica ou correção antecipada;
+- escolha objetiva, produção aberta, pendência de análise e revisão pelo tutor;
+- ajuda registrada preservada como assistência;
+- pausa, encerramento idempotente, itens não aferidos e reapresentação identificada;
+- avaliações complementares sem perda de evidência por habilidade;
+- presença do Nilo nas oito páginas e seus 12 contextos;
+- múltipla escolha no estudo e na criação de questões;
+- contraste das cores principais de texto, superfícies e botão.
+
+Os 54 testes passaram no ambiente JavaScript de elaboração. A execução nativa com Node é feita pelo GitHub Actions antes da promoção desta versão para main; o resultado da execução acompanha o commit no repositório. Os testes de interface usam simulação de DOM, não um navegador completo. A revisão visual e de interação em navegador desta atualização não pôde ser realizada no ambiente de elaboração. O histórico de validação da versão anterior não equivale à validação visual da versão 0.2.
 
 ## Limitações materiais
 
-Aplicação estática, armazenamento no navegador, sem autenticação ou autorização de servidor. Sem IA generativa. Acervo inicial de desenvolvimento, sem cobertura integral da BNCC. A importação de backup substitui registros locais apenas depois de conferência; uma cópia anterior é preservada em outra chave local. Uma falha de quota/localStorage deve ser resolvida com exportação, não confundida com salvamento concluído.
+Aplicação estática, armazenamento no navegador, sem autenticação ou autorização de servidor. A separação entre tutor e estudante organiza a interface e não protege dados com senha. Sem IA generativa. Acervo inicial, sem cobertura integral da BNCC. As 104 novas questões estruturadas concentram-se em linguagem e matemática; a representação dos demais componentes usa os itens abertos existentes. As fichas e questões permanecem sujeitas a curadoria disciplinar e não constituem instrumentos padronizados.
 
-Próximas frentes: backend e vínculos de acesso; curadoria disciplinar; novos itens equivalentes; rubricas específicas; testes com usuários autorizados; auditoria de acessibilidade; validação empírica do produto.
+A importação de backup substitui registros locais após conferência; uma cópia anterior é preservada em outra chave local. Uma falha de quota/localStorage precisa de exportação para evitar perda dos registros mantidos apenas na aba.
+
+Próximas frentes: curadoria disciplinar, novas questões equivalentes, rubricas específicas, revisão visual com usuários, auditoria de acessibilidade, backend e vínculos de acesso e validação empírica do produto.

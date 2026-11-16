@@ -10,9 +10,9 @@ A biblioteca e o currículo permanecem acessíveis antes da avaliação; a indiv
 
 ## Linha de base
 
-O educador seleciona de duas a seis habilidades por aplicação. Cada habilidade recebe uma sonda breve nesta versão. É uma evidência inicial, não medida suficiente de domínio estável ou teste psicométrico. Podem ser cadastrados itens equivalentes e realizadas outras aplicações. O registro preserva enunciado, versão, data, condições, resposta, ajuda e educador.
+O tutor seleciona de 1 a 24 questões de até seis habilidades por aplicação. Pode combinar múltipla escolha, respostas curtas e produções abertas. A quantidade e a seleção precisam corresponder à habilidade e ao tempo de exposição apropriado ao estudante. É uma evidência inicial, não medida suficiente de domínio estável ou teste psicométrico. Podem ser cadastrados itens equivalentes e realizadas outras aplicações. O registro preserva enunciado, versão, data, condições, resposta, ajuda e educador.
 
-A correção é adiada até o encerramento da aplicação. Leitura em voz alta do item não é oferecida nas sondas marcadas como alvo de leitura; o educador precisa registrar condições alternativas e avaliar o construto efetivamente observado.
+O planejamento e os gabaritos ficam na tela do tutor; o estudante responde em uma tela própria, com informações essenciais. A correção é adiada até o encerramento da aplicação. Produções abertas ficam pendentes até análise humana, com registro de tutor, justificativa e ajuda. Avaliações complementares preservam evidências anteriores por habilidade, sem apagar os enunciados ou versões utilizados. Leitura em voz alta do item não é oferecida nas sondas marcadas como alvo de leitura; o educador precisa registrar condições alternativas e avaliar o construto efetivamente observado.
 
 ## Ensino
 
@@ -40,7 +40,7 @@ O estudante vê atividades, horário, local e tempo estimado antes de iniciar. N
 
 ## Nilo e tecnologia
 
-Nilo usa textos determinísticos ligados aos eventos. Não há integração generativa nem conversa aberta com estudantes. O mascote pode ser ocultado. Não se inferem emoções, transtornos ou condições clínicas. Nenhuma nota interpretativa, certificação ou progressão escolar é decidida pelo software.
+Nilo usa textos determinísticos ligados aos eventos. Não há integração generativa nem conversa aberta com estudantes. O mascote apresenta 12 expressões ligadas ao contexto e aparece em todas as páginas, janelas e avisos de ação; pode ser reduzido nas opções de leitura. As mensagens de avaliação inicial não antecipam a correção. No estudo, o feedback descreve a resposta e o apoio observado e orienta o próximo passo. Não se inferem emoções, transtornos ou condições clínicas. Nenhuma nota interpretativa, certificação ou progressão escolar é decidida pelo software.
 
 Referências institucionais:
 
