@@ -1,7 +1,7 @@
 (function(){
 
 'use strict';
-const E=window.TrilumeEngine,KEY='trilume.v1';
+const E=window.TrilumeEngine,KEY=new URLSearchParams(location.search).has('qa')?'trilume.qa.v1':'trilume.v1';
 let storageWarning='',state;
 try{const raw=localStorage.getItem(KEY);state=raw?E.validateBackup(JSON.parse(raw)):E.blank();}catch(error){state=E.blank();storageWarning='Não foi possível recuperar os dados locais. Importe um backup ou comece uma sessão de teste; o arquivo anterior não foi apagado.';}
 let currentView='home',selectedId=state.settings?.selectedId||'',filterYear='',filterSubject='',filterSearch='',baselineCursor=0,editingStudent='',activeSkill='',observedResponse='';
@@ -35,10 +35,9 @@ const pages={home:renderHome,students:renderStudents,baseline:renderBaseline,tra
 $('page').innerHTML=(pages[currentView]||renderHome)();
 $('page').setAttribute('data-view',currentView);
 }
-function navigate(view){currentView=view;render();$('page').focus();window.scrollTo({top:0,behavior:'instant'});}
+function navigate(view){currentView=view;if(location.hash.slice(1)!==view)history.pushState({view},'', '#'+view);render();$('page').focus();window.scrollTo({top:0,behavior:'instant'});}
 function openDialog(title,body){$('dialog-title').textContent=title;$('dialog-body').innerHTML=body;$('dialog').showModal();}
 function download(name,data,type='application/json'){const blob=new Blob([data],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
-function readAsDataUrl(file){return new Promise((resolve,reject)=>{const fr=new FileReader();fr.onload=()=>resolve(fr.result);fr.onerror=reject;fr.readAsDataURL(file);});}
 function renderHome(){
 const s=student(),b=s&&E.hasBaseline(state,s.id),plan=s&&lastPlan(),session=s&&activeSession();
 const next=!s?['01','Cadastrar estudante','Um apelido, o ano escolar e os recursos que ajudam a participar.','students']:!b?['02','Conhecer o ponto de partida','A avaliação inicial registra o que já faz e onde precisa de apoio.','baseline']:!plan?['03','Preparar a trilha','Revise a proposta baseada nas respostas e escolha uma sessão breve.','trail']:['04',session?'Retomar o estudo':'Começar o estudo','Objetivo claro, exemplos, ajuda quando precisar e um fim combinado.','study'];
@@ -275,6 +274,8 @@ const ids=new Set(),valid=data.skills.map(s=>{const clean=E.validateSkill(s);if(
 catch(error){announce(error.message||'Não foi possível ler o arquivo.',true);}
 });
 window.addEventListener('hashchange',()=>{const view=location.hash.slice(1);if(['home','students','baseline','trail','study','library','progress','guide'].includes(view))navigate(view);});
+if(['home','students','baseline','trail','study','library','progress','guide'].includes(location.hash.slice(1)))currentView=location.hash.slice(1);
+window.addEventListener('popstate',()=>{const v=location.hash.slice(1);navigate(['home','students','baseline','trail','study','library','progress','guide'].includes(v)?v:'home');});
 render();
 
 })();

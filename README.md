@@ -2,6 +2,8 @@
 
 Aplicação educacional funcional de desenvolvimento para o **1º ao 9º ano do Ensino Fundamental e a 1ª à 3ª série do Ensino Médio**. O escopo não inclui Educação Infantil.
 
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)**
+
 Concepção pedagógica informada: **Flávio da Silva Borges**. Guia pedagógico: **Nilo**, com arte em 3D e fundo transparente.
 
 ## O que esta versão faz

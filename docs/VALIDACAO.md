@@ -23,8 +23,8 @@
 
 - As 120 fichas foram validadas contra o esquema do motor.
 - A sintaxe de app.js e engine.js foi verificada em JavaScript.
-- As 21 regras de teste foram executadas em um ambiente JavaScript com adaptadores de asserção. O mesmo arquivo está preparado para execução nativa com node:test no GitHub Actions.
-- A validação visual e de interações deve ser registrada após a publicação. A existência de testes do motor não comprova acessibilidade completa, validade de instrumentos ou eficácia educacional.
+- As 21 regras de teste foram executadas em um ambiente JavaScript com adaptadores de asserção. O mesmo arquivo foi executado nativamente com node:test no GitHub Actions: 21 testes aprovados, execução 43962890867.
+- A publicação GitHub Pages foi concluída com sucesso (execução 43963099713); a tela inicial e o carregamento do Nilo foram verificados no navegador. A revisão completa de interações está em andamento. A existência de testes do motor não comprova acessibilidade completa, validade de instrumentos ou eficácia educacional.
 
 ## Limitações materiais
 
