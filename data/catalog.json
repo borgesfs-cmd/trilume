@@ -8025,7 +8025,7 @@
       "objective": "Localizar informações explícitas em textos curtos e indicar o trecho que sustenta a resposta.",
       "content": "Procure no texto a informação pedida. No aviso Reunião quinta na biblioteca, a pergunta onde pede o local: biblioteca. Volte ao trecho para conferir.",
       "readingTarget": true,
-      "version": 2,
+      "version": 3,
       "year": 0,
       "stage": "all",
       "lane": "foundation",
@@ -8049,51 +8049,77 @@
       "activities": [
         {
           "id": "FUN-LEI-01-0",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "O grupo de robótica se reúne na quarta-feira, às 14h, na sala 8. Em qual sala ocorre a reunião?",
           "type": "short",
-          "answer": "8",
+          "answer": [
+            "8",
+            "sala 8",
+            "na sala 8"
+          ],
           "reference": "8",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-LEI-01-1",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "A exposição abre às 9h e encerra às 16h. A que horas ela encerra?",
           "type": "short",
-          "answer": "16h",
+          "answer": [
+            "16h",
+            "16 h",
+            "16 horas",
+            "às 16h",
+            "às 16 horas"
+          ],
           "reference": "16h",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-LEI-01-2",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "A oficina será na sexta, no laboratório. Em qual lugar ela será?",
           "type": "short",
-          "answer": "laboratório",
+          "answer": [
+            "laboratório",
+            "no laboratório",
+            "laboratorio",
+            "no laboratorio"
+          ],
           "reference": "laboratório",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-LEI-01-3",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "A inscrição termina na terça-feira. Em que dia ela termina?",
           "type": "short",
-          "answer": "terça-feira",
+          "answer": [
+            "terça-feira",
+            "terça",
+            "na terça-feira",
+            "terca-feira",
+            "terca",
+            "na terca-feira"
+          ],
           "reference": "terça-feira",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-LEI-01-4",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "O encontro mudou da sala 2 para a sala 5. Qual é o novo local?",
           "type": "short",
-          "answer": "sala 5",
+          "answer": [
+            "sala 5",
+            "5",
+            "na sala 5"
+          ],
           "reference": "sala 5",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
@@ -8362,7 +8388,7 @@
       "title": "Adição e subtração",
       "objective": "Resolver operações de adição e subtração e relacioná-las à situação apresentada.",
       "content": "Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
-      "version": 2,
+      "version": 3,
       "year": 0,
       "stage": "all",
       "lane": "foundation",
@@ -8386,51 +8412,72 @@
       "activities": [
         {
           "id": "FUN-MAT-01-0",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Havia 14 materiais e foram usados 5. Quantos restaram?",
           "type": "short",
-          "answer": "9",
+          "answer": [
+            "9",
+            "nove",
+            "9 materiais",
+            "nove materiais"
+          ],
           "reference": "9",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-01-1",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Um grupo reuniu 17 peças e recebeu mais 6. Quantas tem agora?",
           "type": "short",
-          "answer": "23",
+          "answer": [
+            "23",
+            "vinte e três",
+            "23 peças",
+            "vinte e três peças"
+          ],
           "reference": "23",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-01-2",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Um estoque tinha 26 peças e entregou 8. Quantas restaram?",
           "type": "short",
-          "answer": "18",
+          "answer": [
+            "18",
+            "dezoito",
+            "18 peças",
+            "dezoito peças"
+          ],
           "reference": "18",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-01-3",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 38 mais 14?",
           "type": "short",
-          "answer": "52",
+          "answer": [
+            "52",
+            "cinquenta e dois"
+          ],
           "reference": "52",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-01-4",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 41 menos 16?",
           "type": "short",
-          "answer": "25",
+          "answer": [
+            "25",
+            "vinte e cinco"
+          ],
           "reference": "25",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
@@ -8494,7 +8541,7 @@
       "title": "Multiplicação e divisão",
       "objective": "Resolver agrupamentos iguais e repartições, explicitando o significado da operação.",
       "content": "Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
-      "version": 2,
+      "version": 3,
       "year": 0,
       "stage": "all",
       "lane": "foundation",
@@ -8518,51 +8565,72 @@
       "activities": [
         {
           "id": "FUN-MAT-02-0",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Há 6 caixas com 4 itens cada. Quantos itens há?",
           "type": "short",
-          "answer": "24",
+          "answer": [
+            "24",
+            "vinte e quatro",
+            "24 itens",
+            "vinte e quatro itens"
+          ],
           "reference": "24",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-02-1",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Trinta itens serão repartidos em cinco grupos iguais. Quantos itens por grupo?",
           "type": "short",
-          "answer": "6",
+          "answer": [
+            "6",
+            "seis",
+            "6 itens",
+            "seis itens"
+          ],
           "reference": "6",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-02-2",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 7 vezes 3?",
           "type": "short",
-          "answer": "21",
+          "answer": [
+            "21",
+            "vinte e um"
+          ],
           "reference": "21",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-02-3",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 32 dividido por 4?",
           "type": "short",
-          "answer": "8",
+          "answer": [
+            "8",
+            "oito"
+          ],
           "reference": "8",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-02-4",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Há 5 fileiras com 8 lugares. Quantos lugares há?",
           "type": "short",
-          "answer": "40",
+          "answer": [
+            "40",
+            "quarenta",
+            "40 lugares",
+            "quarenta lugares"
+          ],
           "reference": "40",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
@@ -8626,7 +8694,7 @@
       "title": "Frações e porcentagens",
       "objective": "Calcular metades e quartas partes e relacioná-las a porcentagens simples.",
       "content": "A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
-      "version": 2,
+      "version": 3,
       "year": 0,
       "stage": "all",
       "lane": "foundation",
@@ -8652,51 +8720,66 @@
       "activities": [
         {
           "id": "FUN-MAT-03-0",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Qual é a quarta parte de 28?",
           "type": "short",
-          "answer": "7",
+          "answer": [
+            "7",
+            "sete"
+          ],
           "reference": "7",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-03-1",
-          "version": 1,
+          "version": 2,
           "phase": "baseline",
           "prompt": "Quanto é 50% de 34?",
           "type": "short",
-          "answer": "17",
+          "answer": [
+            "17",
+            "dezessete"
+          ],
           "reference": "17",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-03-2",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 25% de 48?",
           "type": "short",
-          "answer": "12",
+          "answer": [
+            "12",
+            "doze"
+          ],
           "reference": "12",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-03-3",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Qual é a metade de 46?",
           "type": "short",
-          "answer": "23",
+          "answer": [
+            "23",
+            "vinte e três"
+          ],
           "reference": "23",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
         {
           "id": "FUN-MAT-03-4",
-          "version": 1,
+          "version": 2,
           "phase": "practice",
           "prompt": "Quanto é 25% de 72?",
           "type": "short",
-          "answer": "18",
+          "answer": [
+            "18",
+            "dezoito"
+          ],
           "reference": "18",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
         },
