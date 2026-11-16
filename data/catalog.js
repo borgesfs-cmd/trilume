@@ -1,7 +1,7 @@
 window.TRILUME_CATALOG = [
   {
     "id": "CUR-01-01",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
@@ -53,12 +53,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
         "version": 1
+      },
+      {
+        "id": "CUR-01-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual palavra começa com o mesmo som inicial de MALA?",
+        "options": [
+          "PATO",
+          "MESA",
+          "SAPO",
+          "LUA"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: MESA. Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": true
+      },
+      {
+        "id": "CUR-01-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual é a letra inicial de PATO?",
+        "options": [
+          "P",
+          "T",
+          "O",
+          "A"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: P. Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": true
+      },
+      {
+        "id": "CUR-01-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Ao falar BO-LA, quantas sílabas foram destacadas?",
+        "options": [
+          "Uma",
+          "Três",
+          "Quatro",
+          "Duas"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Duas. Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": true
+      },
+      {
+        "id": "CUR-01-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual sequência forma a palavra MALA?",
+        "options": [
+          "LA-MA",
+          "MA-LA",
+          "MA-PA",
+          "PA-LA"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: MA-LA. Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": true
       }
     ]
   },
   {
     "id": "CUR-01-02",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
@@ -110,6 +178,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
         "version": 1
+      },
+      {
+        "id": "CUR-01-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Há 3 tampinhas e chegam mais 2. Qual é o total?",
+        "options": [
+          "4",
+          "6",
+          "5",
+          "2"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 5. Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-01-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual grupo tem mais objetos?",
+        "options": [
+          "O de 7 objetos",
+          "O de 4 objetos",
+          "Os dois têm o mesmo total",
+          "Não é possível comparar 4 e 7"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: O de 7 objetos. Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-01-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Na contagem correta de seis peças, o que indica o total?",
+        "options": [
+          "A primeira cor",
+          "O tamanho das peças",
+          "A distância entre elas",
+          "O último número falado: seis"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: O último número falado: seis. Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-01-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Há 5 copos para 3 pessoas, um para cada. Quantos sobram?",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "5"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 2. Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -457,7 +593,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-02-01",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
@@ -509,12 +645,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
         "version": 1
+      },
+      {
+        "id": "CUR-02-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: A roda de histórias será terça-feira na biblioteca. Onde será?",
+        "options": [
+          "Na biblioteca",
+          "Na sexta-feira",
+          "No domingo",
+          "Na entrada"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Na biblioteca. Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: Ana, traga o caderno amanhã. Assinado: Leo. Quem escreveu?",
+        "options": [
+          "Ana",
+          "O caderno",
+          "Não foi informado",
+          "Leo"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Leo. Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: Oficina de desenho, sábado, às 10h. Qual é o horário?",
+        "options": [
+          "Sábado",
+          "Desenho",
+          "10h",
+          "Oficina"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 10h. Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual informação falta em: A reunião será na sala 2?",
+        "options": [
+          "O local",
+          "O dia e o horário",
+          "A atividade",
+          "O número da sala"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: O dia e o horário. Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-02-02",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
@@ -566,6 +770,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
         "version": 1
+      },
+      {
+        "id": "CUR-02-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Havia 9 figurinhas e 3 foram dadas. Quantas ficaram?",
+        "options": [
+          "12",
+          "6",
+          "5",
+          "3"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 6. Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma caixa tem 7 peças e outra tem 5. Qual é o total?",
+        "options": [
+          "2",
+          "10",
+          "11",
+          "12"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 12. Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma equipe tinha 16 materiais e usou 8. Quantos restaram?",
+        "options": [
+          "8",
+          "9",
+          "24",
+          "6"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 8. Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-02-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Há 12 livros e chegam mais 4. Quantos ficam?",
+        "options": [
+          "8",
+          "14",
+          "16",
+          "18"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 16. Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -913,7 +1185,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-03-01",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
@@ -965,12 +1237,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
         "version": 1
+      },
+      {
+        "id": "CUR-03-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: Primeiro lavamos as mãos. Depois preparamos a mesa. O que ocorreu antes de preparar a mesa?",
+        "options": [
+          "Comer",
+          "Lavar as mãos",
+          "Guardar pratos",
+          "O texto não informa"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Lavar as mãos. Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual expressão indica a etapa final de uma sequência?",
+        "options": [
+          "Por fim",
+          "Primeiro",
+          "Antes de tudo",
+          "No início"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Por fim. Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual sequência de plantio é coerente?",
+        "options": [
+          "Colher, plantar, preparar a terra",
+          "Plantar, colher, preparar a terra",
+          "Colher, preparar a terra, plantar",
+          "Preparar a terra, plantar, acompanhar o crescimento"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Preparar a terra, plantar, acompanhar o crescimento. Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Por que informar tempo e lugar em um relato?",
+        "options": [
+          "Para ocupar mais linhas",
+          "Para dispensar os fatos",
+          "Para situar o leitor",
+          "Para impedir a revisão"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Para situar o leitor. Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-03-02",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
@@ -1022,6 +1362,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
         "version": 1
+      },
+      {
+        "id": "CUR-03-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Quatro grupos têm três objetos cada. Qual é o total?",
+        "options": [
+          "7",
+          "9",
+          "12",
+          "16"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 12. Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Dezoito peças são repartidas entre três grupos iguais. Quantas por grupo?",
+        "options": [
+          "9",
+          "6",
+          "3",
+          "15"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 6. Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual operação representa cinco caixas com quatro itens cada?",
+        "options": [
+          "5 - 4",
+          "5 + 4",
+          "5 ÷ 4",
+          "5 × 4"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 5 × 4. Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-03-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Vinte e quatro materiais serão distribuídos entre seis mesas. Quantos por mesa?",
+        "options": [
+          "4",
+          "6",
+          "18",
+          "30"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 4. Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -1369,7 +1777,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-04-01",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
@@ -1421,12 +1829,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
         "version": 1
+      },
+      {
+        "id": "CUR-04-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual frase deixa mais claro quem fez a ação?",
+        "options": [
+          "Ela pegou aquilo.",
+          "Foi feito depois.",
+          "A professora recolheu os cartazes da turma.",
+          "Mexeram nisso."
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: A professora recolheu os cartazes da turma.. Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual pergunta ajuda a revisar um parágrafo?",
+        "options": [
+          "Ele tem muitas linhas?",
+          "Qual ideia principal ele desenvolve?",
+          "Tem palavras difíceis suficientes?",
+          "É maior que os outros?"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Qual ideia principal ele desenvolve?. Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Lia entregou o livro a Bia porque ela terminara a leitura. Como esclarecer quem terminou?",
+        "options": [
+          "Retirar os nomes",
+          "Acrescentar adjetivos",
+          "Trocar livro por material",
+          "Substituir ela pelo nome de quem terminou"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Substituir ela pelo nome de quem terminou. Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual instrução é mais clara?",
+        "options": [
+          "Recorte o círculo e cole-o no centro da folha.",
+          "Faça isso direito.",
+          "Coloque aquilo ali.",
+          "Termine de qualquer jeito."
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Recorte o círculo e cole-o no centro da folha.. Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-04-02",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
@@ -1478,6 +1954,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
         "version": 1
+      },
+      {
+        "id": "CUR-04-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Três de quatro partes iguais foram pintadas. Qual fração representa a parte pintada?",
+        "options": [
+          "1/4",
+          "4/3",
+          "3/4",
+          "3/3"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 3/4. Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual é a metade de 18?",
+        "options": [
+          "9",
+          "8",
+          "6",
+          "36"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 9. Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual situação representa um quarto de uma quantidade?",
+        "options": [
+          "Usar uma de duas partes iguais",
+          "Usar uma de quatro partes iguais",
+          "Dividir em partes desiguais",
+          "Multiplicar por quatro"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Usar uma de quatro partes iguais. Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-04-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual é a quarta parte de 20?",
+        "options": [
+          "10",
+          "8",
+          "16",
+          "5"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 5. Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -1825,7 +2369,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-05-01",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
@@ -1877,12 +2421,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
         "version": 1
+      },
+      {
+        "id": "CUR-05-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual frase apresenta uma opinião?",
+        "options": [
+          "A biblioteca abre às 8h.",
+          "O aviso tem três linhas.",
+          "O mural fica ao lado da porta.",
+          "A biblioteca deveria abrir aos sábados."
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: A biblioteca deveria abrir aos sábados.. Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual evidência é pertinente para discutir ampliar o horário da biblioteca?",
+        "options": [
+          "O prédio é azul.",
+          "Há procura de empréstimos após o encerramento.",
+          "O pátio tem árvores.",
+          "A escola usa uniforme."
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Há procura de empréstimos após o encerramento.. Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual é a função de um argumento?",
+        "options": [
+          "Repetir a opinião sem razões",
+          "Usar palavras difíceis",
+          "Explicar e sustentar uma posição",
+          "Evitar evidências"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Explicar e sustentar uma posição. Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Como responder a uma objeção pertinente?",
+        "options": [
+          "Analisá-la e revisar o argumento se necessário",
+          "Ignorá-la",
+          "Atacar a pessoa",
+          "Mudar de assunto"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Analisá-la e revisar o argumento se necessário. Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-05-02",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
@@ -1934,6 +2546,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
         "version": 1
+      },
+      {
+        "id": "CUR-05-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual representação equivale a um meio?",
+        "options": [
+          "0,2",
+          "0,5",
+          "1,5",
+          "0,05"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 0,5. Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual número é maior?",
+        "options": [
+          "0,75",
+          "0,25",
+          "0,5",
+          "0,07"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 0,75. Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual ordem é crescente?",
+        "options": [
+          "0,75; 0,5; 0,25",
+          "0,5; 0,25; 0,75",
+          "0,25; 0,5; 0,75",
+          "0,25; 0,75; 0,5"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 0,25; 0,5; 0,75. Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-05-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual fração equivale a 0,25?",
+        "options": [
+          "1/2",
+          "3/4",
+          "2/5",
+          "1/4"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 1/4. Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -2281,7 +2961,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-06-01",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
@@ -2333,12 +3013,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
         "version": 1
+      },
+      {
+        "id": "CUR-06-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Lia fechou a janela quando as primeiras gotas tocaram o chão. Qual inferência tem apoio no texto?",
+        "options": [
+          "Lia perdeu o ônibus.",
+          "A chuva durava três dias.",
+          "Começava a chover.",
+          "Lia estava na escola."
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Começava a chover.. Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: O vento estava gelado, por isso Rui pegou um casaco. Qual informação está explícita?",
+        "options": [
+          "O vento estava gelado.",
+          "Rui perdeu o casaco.",
+          "Era noite.",
+          "Rui saiu da escola."
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: O vento estava gelado.. Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual descrição de inferência é adequada?",
+        "options": [
+          "Inventar sem considerar o texto",
+          "Copiar qualquer palavra",
+          "Aceitar qualquer opinião",
+          "Relacionar pistas do texto e conhecimentos pertinentes"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Relacionar pistas do texto e conhecimentos pertinentes. Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "A bateria marcava 2%, e Davi procurou uma tomada. Qual explicação é sustentada?",
+        "options": [
+          "Queria mudar de cadeira.",
+          "Procurava carregar o aparelho.",
+          "Jogava futebol.",
+          "A tomada estava quebrada."
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Procurava carregar o aparelho.. Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-06-02",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
@@ -2390,6 +3138,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
         "version": 1
+      },
+      {
+        "id": "CUR-06-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Quanto é 25% de 40?",
+        "options": [
+          "5",
+          "20",
+          "10",
+          "30"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 10. Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Um produto de 60 reais tem desconto de 25%. Qual é o desconto?",
+        "options": [
+          "15 reais",
+          "25 reais",
+          "35 reais",
+          "45 reais"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 15 reais. Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual relação é correta?",
+        "options": [
+          "25% = 1/2",
+          "50% = 1/4",
+          "25% = 3/4",
+          "25% = 1/4"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 25% = 1/4. Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-06-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Um produto de 80 reais tem desconto de 25%. Qual é o preço final?",
+        "options": [
+          "20 reais",
+          "60 reais",
+          "75 reais",
+          "100 reais"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 60 reais. Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -2794,7 +3610,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-07-01",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
@@ -2846,12 +3662,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
         "version": 1
+      },
+      {
+        "id": "CUR-07-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "O que ajuda a avaliar a confiabilidade de uma notícia?",
+        "options": [
+          "Contar apenas curtidas",
+          "Ler só o título",
+          "Conferir autoria, data e evidências",
+          "Escolher a melhor imagem"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Conferir autoria, data e evidências. Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma informação foi compartilhada muitas vezes. O que isso demonstra?",
+        "options": [
+          "Popularidade, sem garantir veracidade",
+          "Comprovação científica",
+          "Que a fonte é dispensável",
+          "Concordância de todas as pessoas"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Popularidade, sem garantir veracidade. Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual evidência sustenta uma afirmação sobre procura de um serviço?",
+        "options": [
+          "Comentário sem identificação",
+          "Número sem período",
+          "Preferência pessoal",
+          "Dados identificados de atendimentos no período"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Dados identificados de atendimentos no período. Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual revisão fortalece um argumento?",
+        "options": [
+          "Excluir as fontes",
+          "Substituir afirmação vaga por evidência verificável",
+          "Acrescentar exclamações",
+          "Atacar quem discordou"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Substituir afirmação vaga por evidência verificável. Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-07-02",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
@@ -2903,6 +3787,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
         "version": 1
+      },
+      {
+        "id": "CUR-07-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "A temperatura passa de -3 °C para 2 °C. Qual é a variação?",
+        "options": [
+          "-5 °C",
+          "1 °C",
+          "5 °C",
+          "-1 °C"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 5 °C. Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual é maior: 3/4 ou 0,7?",
+        "options": [
+          "São iguais",
+          "0,7",
+          "Não se pode comparar",
+          "3/4"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 3/4. Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Um saldo de -12 reais recebe 20 reais. Qual é o novo saldo?",
+        "options": [
+          "8 reais",
+          "-8 reais",
+          "32 reais",
+          "-32 reais"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 8 reais. Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-07-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual número está entre -2 e 0?",
+        "options": [
+          "-3",
+          "1",
+          "-1",
+          "2"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: -1. Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -3307,7 +4259,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-08-01",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
@@ -3359,12 +4311,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
         "version": 1
+      },
+      {
+        "id": "CUR-08-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Títulos usam palavras diferentes para relatar o mesmo fato. O que analisar?",
+        "options": [
+          "Apenas as letras",
+          "Como as palavras orientam a perspectiva",
+          "Só a ordem de publicação",
+          "A pontuação final apenas"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Como as palavras orientam a perspectiva. A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual expressão acrescenta uma avaliação ao fato?",
+        "options": [
+          "O projeto foi aprovado ontem.",
+          "Houve cinco votos favoráveis.",
+          "A votação ocorreu às 14h.",
+          "A aprovação foi uma grande vitória."
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: A aprovação foi uma grande vitória.. A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Perguntar para quem a mensagem foi escrita ajuda a identificar o quê?",
+        "options": [
+          "O público ou interlocutor",
+          "A quantidade de sílabas",
+          "A cor do papel",
+          "O impressor"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: O público ou interlocutor. A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual adaptação preserva a informação?",
+        "options": [
+          "Trocar dados sem conferir",
+          "Retirar a fonte",
+          "Mudar a linguagem mantendo os fatos verificáveis",
+          "Inventar uma conclusão"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Mudar a linguagem mantendo os fatos verificáveis. A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-08-02",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
@@ -3416,6 +4436,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
         "version": 1
+      },
+      {
+        "id": "CUR-08-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Três cadernos custam 18 reais. Ao mesmo preço unitário, quanto custam cinco?",
+        "options": [
+          "25 reais",
+          "30 reais",
+          "36 reais",
+          "40 reais"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 30 reais. Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual expressão representa o preço de x itens de 7 reais cada, sem taxa fixa?",
+        "options": [
+          "x + 7",
+          "7 - x",
+          "7x",
+          "x/7"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 7x. Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma cobrança de 10 reais fixos mais 2 por item não é diretamente proporcional à quantidade. Por quê?",
+        "options": [
+          "Há uma parcela fixa além da parte variável.",
+          "Não há números.",
+          "Somar é impossível.",
+          "A quantidade nunca muda."
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Há uma parcela fixa além da parte variável.. Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-08-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Se y = 3x, qual é y quando x = 4?",
+        "options": [
+          "7",
+          "1",
+          "9",
+          "12"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: 12. Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -3820,7 +4908,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-09-01",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
@@ -3872,12 +4960,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
         "version": 1
+      },
+      {
+        "id": "CUR-09-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual organização favorece a argumentação?",
+        "options": [
+          "Tese sem razões",
+          "Ataques pessoais",
+          "Tese, razões, evidências e consideração de objeções",
+          "Conclusões sem relação com o tema"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Tese, razões, evidências e consideração de objeções. Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Por que identificar a fonte de uma evidência?",
+        "options": [
+          "Para permitir verificar origem e contexto",
+          "Para aumentar o texto",
+          "Para dispensar explicações",
+          "Para impedir crítica"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Para permitir verificar origem e contexto. Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Como responder a um contra-argumento?",
+        "options": [
+          "Ignorá-lo sempre",
+          "Ofender a pessoa",
+          "Trocar de assunto",
+          "Examinar suas razões e responder com evidências"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Examinar suas razões e responder com evidências. Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "A conclusão vai além dos dados. O que fazer?",
+        "options": [
+          "Aumentar as letras",
+          "Restringir a conclusão ou buscar evidências",
+          "Repeti-la",
+          "Excluir os dados sem explicar"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Restringir a conclusão ou buscar evidências. Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-09-02",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
@@ -3929,6 +5085,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
         "version": 1
+      },
+      {
+        "id": "CUR-09-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Para y = 2x + 3, qual é y quando x = 4?",
+        "options": [
+          "7",
+          "8",
+          "11",
+          "14"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 11. Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma tarifa cobra 5 reais fixos e 2 por quilômetro. Qual expressão representa o custo para x quilômetros?",
+        "options": [
+          "5 + 2x",
+          "7x",
+          "5x + 2",
+          "5 - 2x"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 5 + 2x. Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Para y = 3x, qual par está de acordo com a regra?",
+        "options": [
+          "(2, 5)",
+          "(3, 5)",
+          "(4, 7)",
+          "(2, 6)"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: (2, 6). Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-09-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "O que uma função exige?",
+        "options": [
+          "Duas saídas diferentes para toda entrada",
+          "Uma saída definida para cada entrada do domínio",
+          "Saídas que nunca se repetem",
+          "Mudança da regra sem aviso"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Uma saída definida para cada entrada do domínio. Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -4333,7 +5557,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-10-01",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
@@ -4385,12 +5609,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
         "version": 1
+      },
+      {
+        "id": "CUR-10-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma pesquisa observou associação entre duas variáveis. Qual conclusão é mais cuidadosa?",
+        "options": [
+          "Uma certamente causa a outra.",
+          "Outras explicações estão excluídas.",
+          "É preciso investigar antes de concluir causalidade.",
+          "A observação não tem informação alguma."
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: É preciso investigar antes de concluir causalidade.. Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "O que é um pressuposto de um argumento?",
+        "options": [
+          "Uma ideia assumida que participa do raciocínio",
+          "A cor da página",
+          "O número do parágrafo",
+          "Uma palavra sempre verdadeira"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Uma ideia assumida que participa do raciocínio. Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual análise favorece a leitura crítica?",
+        "options": [
+          "Conferir só a conclusão",
+          "Olhar apenas a fama do autor",
+          "Contar citações sem lê-las",
+          "Examinar evidências, pressupostos e limites"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Examinar evidências, pressupostos e limites. Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "O que ajuda a avaliar uma alegação causal?",
+        "options": [
+          "Compartilhamentos",
+          "Como o estudo examinou explicações alternativas",
+          "Preferência do leitor",
+          "Tamanho do título"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Como o estudo examinou explicações alternativas. Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-10-02",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
@@ -4442,6 +5734,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
         "version": 1
+      },
+      {
+        "id": "CUR-10-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma tarifa cobra 5 reais fixos mais 3 por quilômetro. Quanto custa um percurso de 4 quilômetros?",
+        "options": [
+          "12 reais",
+          "9 reais",
+          "17 reais",
+          "20 reais"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 17 reais. Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Em y = 3x + 5, qual é y quando x = 0?",
+        "options": [
+          "5",
+          "3",
+          "8",
+          "0"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: 5. Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Para x = 5, compare A = 10 + 2x e B = 4x.",
+        "options": [
+          "A é maior",
+          "A é menor",
+          "Não se pode calcular",
+          "A e B são iguais"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: A e B são iguais. Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-10-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Em y = 6x + 8, o que o 6 representa?",
+        "options": [
+          "O valor inicial",
+          "A variação de y por unidade de x",
+          "O maior valor de y",
+          "Uma quantidade fixa de entradas"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: A variação de y por unidade de x. Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -5017,7 +6377,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-11-01",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
@@ -5069,12 +6429,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
         "version": 1
+      },
+      {
+        "id": "CUR-11-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual paráfrase é adequada?",
+        "options": [
+          "Uma que não precisa de fonte",
+          "Uma que inverte a conclusão",
+          "Uma reformulação que preserva o sentido e atribui a origem",
+          "Uma troca de palavras sem conferir o sentido"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Uma reformulação que preserva o sentido e atribui a origem. Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Duas fontes discordam. Como apresentar a síntese?",
+        "options": [
+          "Explicitar a divergência e seus fundamentos",
+          "Esconder a discordância",
+          "Dizer que concordam",
+          "Escolher a frase mais curta"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Explicitar a divergência e seus fundamentos. Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "A fonte observou um efeito em parte da amostra. Qual síntese é fiel?",
+        "options": [
+          "O efeito sempre ocorre.",
+          "Todos são iguais.",
+          "O efeito jamais ocorreu.",
+          "O efeito ocorreu em parte da amostra estudada."
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: O efeito ocorreu em parte da amostra estudada.. Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Por que indicar a origem das ideias?",
+        "options": [
+          "Para dispensar revisão",
+          "Para reconhecer contribuições e permitir conferência",
+          "Para transformar hipótese em certeza",
+          "Para eliminar a argumentação"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Para reconhecer contribuições e permitir conferência. Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-11-02",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
@@ -5126,6 +6554,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
         "version": 1
+      },
+      {
+        "id": "CUR-11-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Há cinco fichas em sorteio uniforme; duas são azuis. Qual a probabilidade de azul?",
+        "options": [
+          "1/5",
+          "3/5",
+          "2/5",
+          "5/2"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 2/5. Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual seleção tende a reduzir um viés de escolha?",
+        "options": [
+          "Sortear de uma lista pertinente ao público estudado",
+          "Ouvir apenas amigos",
+          "Ouvir só quem concorda",
+          "Escolher uma sala sem justificar"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Sortear de uma lista pertinente ao público estudado. Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma amostra tem muitos participantes. O que ainda é necessário analisar?",
+        "options": [
+          "Nada mais importa.",
+          "Só a cor do gráfico.",
+          "A idade do pesquisador apenas.",
+          "Como os participantes foram selecionados."
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Como os participantes foram selecionados.. Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-11-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Em um dado honesto de seis faces, qual a probabilidade de um número par?",
+        "options": [
+          "1/6",
+          "1/2",
+          "2/3",
+          "1"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: 1/2. Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -5701,7 +7197,7 @@ window.TRILUME_CATALOG = [
   },
   {
     "id": "CUR-12-01",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
@@ -5753,12 +7249,80 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
         "version": 1
+      },
+      {
+        "id": "CUR-12-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual conduta favorece autoria responsável?",
+        "options": [
+          "Usar fontes sem conferir",
+          "Aceitar toda saída de ferramenta",
+          "Conferir informações, atribuir fontes e responder pelo texto",
+          "Esconder contribuições"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: Conferir informações, atribuir fontes e responder pelo texto. Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-01-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Uma informação importante não foi confirmada. O que fazer?",
+        "options": [
+          "Buscar confirmação e explicitar o limite",
+          "Apresentá-la como comprovada",
+          "Esconder a dúvida",
+          "Inventar um dado"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Buscar confirmação e explicitar o limite. Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-01-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual revisão examina conclusão e evidências?",
+        "options": [
+          "Corrigir só margens",
+          "Trocar só a fonte tipográfica",
+          "Contar as páginas",
+          "Conferir se os dados sustentam o alcance da afirmação"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Conferir se os dados sustentam o alcance da afirmação. Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-01-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Ao adaptar um artigo para apresentação oral, o que preservar?",
+        "options": [
+          "Todas as frases sem mudança",
+          "Informações verificadas e atribuição das fontes",
+          "Número exato de palavras",
+          "Disposição gráfica idêntica"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Informações verificadas e atribuição das fontes. Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
   {
     "id": "CUR-12-02",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
@@ -5810,6 +7374,74 @@ window.TRILUME_CATALOG = [
         "rubric": "Verificar aplicação em contexto diferente e registrar qual contexto mudou. Necessário registro humano e nova observação para confirmar estabilidade.",
         "reference": "Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
         "version": 1
+      },
+      {
+        "id": "CUR-12-02-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "No modelo y = 100 + 5t, qual é y para t = 6?",
+        "options": [
+          "106",
+          "115",
+          "130",
+          "150"
+        ],
+        "answer": "2",
+        "reference": "Resposta esperada: 130. Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-02-OBJ-2",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Se y = 100 + 5t muda para y = 100 + 8t, compare em t = 2.",
+        "options": [
+          "Passa de 110 para 116",
+          "Continua 110",
+          "O valor inicial passa a 8",
+          "t deixa de existir"
+        ],
+        "answer": "0",
+        "reference": "Resposta esperada: Passa de 110 para 116. Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-02-OBJ-3",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Por que declarar hipóteses de um modelo?",
+        "options": [
+          "Para impedir o cálculo",
+          "Para garantir que nunca mude",
+          "Para esconder limites",
+          "Para indicar as condições de interpretação"
+        ],
+        "answer": "3",
+        "reference": "Resposta esperada: Para indicar as condições de interpretação. Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
+      },
+      {
+        "id": "CUR-12-02-OBJ-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "O modelo prevê crescimento constante, mas os dados mostram desaceleração. O que fazer?",
+        "options": [
+          "Ignorar os dados",
+          "Revisar o modelo e suas condições",
+          "Alterar dados para ajustar",
+          "Dizer que todo modelo é inútil"
+        ],
+        "answer": "1",
+        "reference": "Resposta esperada: Revisar o modelo e suas condições. Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
+        "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
+        "readingTarget": false
       }
     ]
   },
@@ -6390,7 +8022,7 @@ window.TRILUME_CATALOG = [
     "objective": "Localizar informações explícitas em textos curtos e indicar o trecho que sustenta a resposta.",
     "content": "Procure no texto a informação pedida. No aviso Reunião quinta na biblioteca, a pergunta onde pede o local: biblioteca. Volte ao trecho para conferir.",
     "readingTarget": true,
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
@@ -6481,6 +8113,40 @@ window.TRILUME_CATALOG = [
         "answer": null,
         "reference": "Procure no texto a informação pedida. No aviso Reunião quinta na biblioteca, a pergunta onde pede o local: biblioteca. Volte ao trecho para conferir.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
+      },
+      {
+        "id": "FUN-LEI-01-OBJ-0",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: A equipe de robótica se reúne na quarta, às 14h, na sala 8. Em qual sala ocorre a reunião?",
+        "options": [
+          "Sala 4",
+          "Sala 8",
+          "Sala 14",
+          "Não foi informado"
+        ],
+        "answer": "1",
+        "reference": "A resposta está explícita no texto.",
+        "rubric": "Localizar a informação solicitada no texto.",
+        "readingTarget": true
+      },
+      {
+        "id": "FUN-LEI-01-OBJ-1",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Leia: A exposição abre às 9h e encerra às 16h. Quando ela encerra?",
+        "options": [
+          "9h",
+          "12h",
+          "16h",
+          "18h"
+        ],
+        "answer": "2",
+        "reference": "A resposta está explícita no texto.",
+        "rubric": "Localizar a informação solicitada no texto.",
+        "readingTarget": true
       }
     ]
   },
@@ -6693,7 +8359,7 @@ window.TRILUME_CATALOG = [
     "title": "Adição e subtração",
     "objective": "Resolver operações de adição e subtração e relacioná-las à situação apresentada.",
     "content": "Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
@@ -6784,6 +8450,38 @@ window.TRILUME_CATALOG = [
         "answer": null,
         "reference": "Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
+      },
+      {
+        "id": "FUN-MAT-01-0-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Havia 14 materiais e foram usados 5. Quantos restaram?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 9. Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "10",
+          "9",
+          "8",
+          "12"
+        ]
+      },
+      {
+        "id": "FUN-MAT-01-1-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Um grupo reuniu 17 peças e recebeu mais 6. Quantas tem agora?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 23. Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "24",
+          "23",
+          "22",
+          "26"
+        ]
       }
     ]
   },
@@ -6793,7 +8491,7 @@ window.TRILUME_CATALOG = [
     "title": "Multiplicação e divisão",
     "objective": "Resolver agrupamentos iguais e repartições, explicitando o significado da operação.",
     "content": "Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
@@ -6884,6 +8582,38 @@ window.TRILUME_CATALOG = [
         "answer": null,
         "reference": "Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
+      },
+      {
+        "id": "FUN-MAT-02-0-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Há 6 caixas com 4 itens cada. Quantos itens há?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 24. Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "25",
+          "24",
+          "23",
+          "27"
+        ]
+      },
+      {
+        "id": "FUN-MAT-02-1-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Trinta itens serão repartidos em cinco grupos iguais. Quantos itens por grupo?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 6. Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "7",
+          "6",
+          "5",
+          "9"
+        ]
       }
     ]
   },
@@ -6893,7 +8623,7 @@ window.TRILUME_CATALOG = [
     "title": "Frações e porcentagens",
     "objective": "Calcular metades e quartas partes e relacioná-las a porcentagens simples.",
     "content": "A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
@@ -6986,6 +8716,38 @@ window.TRILUME_CATALOG = [
         "answer": null,
         "reference": "A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
+      },
+      {
+        "id": "FUN-MAT-03-0-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Qual é a quarta parte de 28?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 7. A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "8",
+          "7",
+          "6",
+          "10"
+        ]
+      },
+      {
+        "id": "FUN-MAT-03-1-OBJ",
+        "version": 1,
+        "phase": "baseline",
+        "prompt": "Quanto é 50% de 34?",
+        "type": "choice",
+        "answer": "1",
+        "reference": "Resposta esperada: 17. A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
+        "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
+        "options": [
+          "18",
+          "17",
+          "16",
+          "20"
+        ]
       }
     ]
   },
