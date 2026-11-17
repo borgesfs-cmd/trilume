@@ -71,20 +71,20 @@ const [sessionId,responseId]=String(id).split('::'),s=(c.state.literacySessions|
 c.openDialog('Análise do tutor — oficina','<p>Registro: '+esc(r.answer)+'</p><form data-form="lab-review"><input type="hidden" name="sessionId" value="'+esc(s.id)+'"><input type="hidden" name="responseId" value="'+esc(r.id)+'"><label>Observação<select name="outcome" required><option value="">Selecione</option><option value="independent">Demonstrado sem pista</option><option value="assisted">Demonstrado com ajuda</option><option value="incorrect">Ainda não demonstrado</option><option value="not_assessed">Não aferido</option></select></label><label class="inline-check"><input type="checkbox" name="helped" '+(r.helped?'checked':'')+'>Houve pista instrucional.</label><label>Tutor<input name="educator" required maxlength="100"></label><label>Justificativa<textarea name="note" required maxlength="1200"></textarea></label><button type="submit" class="primary">Guardar análise</button></form>');return;
 }
 const s=current(c.state,c.student?.id);if(!s)return;
-const t=s.tasks[s.index],target=words.find(w=>w.id===t.target);
+const t=s.tasks[s.index],target=words.find(w=>w.id===t.target);let message='';
 if(action==='lab-begin')s.started=true;
 else if(action==='lab-pause'){s.paused=true;s.events.push({type:'pause',at:new Date().toISOString()});if(typeof window!=='undefined'&&window.speechSynthesis)window.speechSynthesis.cancel();}
-else if(action==='lab-resume')s.paused=false;
+else if(action==='lab-resume'){if(s.paused)s.events.push({type:'resume',at:new Date().toISOString()});s.paused=false;}
 else if(action==='lab-end'){finish(s);}
 else if(action==='lab-next'){if(t.answer===null)throw Error('Registre esta tarefa antes de continuar.');if(s.index+1<s.tasks.length)s.index++;else finish(s);}
-else if(action==='lab-answer'){record(s,id);}
+else if(action==='lab-answer'){record(s,id);message='Resposta guardada. Seguimos no ritmo combinado.';}
 else if(action==='lab-audio'){
 if(typeof window==='undefined'||!window.speechSynthesis||!window.SpeechSynthesisUtterance){c.announce('O áudio não está disponível. Use a apresentação oral pelo tutor.',true);return;}
 window.speechSynthesis.cancel();const u=new window.SpeechSynthesisUtterance(t.relation==='FC'?target.meaning:target.word);u.lang='pt-BR';u.rate=.85;u.onend=()=>{t.audioDelivered=true;t.audioMode='speechSynthesis';c.persist();c.render();};u.onerror=()=>c.announce('Não foi possível concluir o áudio. O tutor pode apresentá-lo oralmente.',true);window.speechSynthesis.speak(u);return;
 }else if(action==='lab-adult-audio'){c.openDialog('Estímulo para apresentação pelo tutor','<p>'+esc(t.relation==='FC'?target.meaning:target.word)+'</p>'+c.button('Li o estímulo para o estudante','lab-confirm-audio','primary'));return;}
-else if(action==='lab-confirm-audio'){t.audioDelivered=true;t.audioMode='adult';if(typeof document!=='undefined')document.getElementById('dialog').close();}
+else if(action==='lab-confirm-audio'){t.audioDelivered=true;t.audioMode='adult';message='Apresentação do estímulo registrada.';if(typeof document!=='undefined')document.getElementById('dialog').close();}
 else return;
-c.persist();c.render();
+c.persist(message);c.render();
 }
 return {words,relationNames,modes,makeSession,current,record,finish,summary,render,review,action};
 });

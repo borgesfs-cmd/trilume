@@ -1,78 +1,55 @@
 # Trilume — Plataforma Inteligente de Aprendizagem
 
-Aplicação educacional funcional de desenvolvimento para o **1º ao 9º ano do Ensino Fundamental e a 1ª à 3ª série do Ensino Médio**. O escopo não inclui Educação Infantil.
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.3 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
 
-**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)**
+Educação Infantil, 1º ao 9º ano do Ensino Fundamental e 1ª à 3ª série do Ensino Médio. A experiência de ensino articula finalidade, exploração, demonstração, prática conjunta, reflexão, verificação e uso em outros contextos. O banco de exercícios apoia decisões do educador.
 
-Concepção pedagógica informada: **Flávio da Silva Borges**. Guia pedagógico: **Nilo**, com arte em 3D e fundo transparente.
+## Experiência e recursos
 
-## O que esta versão faz
+- Cadastro por apelido/código, grupo etário ou ano, objetivos e recursos de acesso.
+- Avaliação inicial planejada pelo tutor, participação em uma tarefa por vez, correção após a aplicação e revisão humana.
+- Plano com lista fechada, possibilidade de escolher a ordem das habilidades aprovadas, pausa e encerramento sem penalidade.
+- 120 fichas escolares/fundamentais com exemplos demonstrados, exploração, prática conjunta e reflexão opcional.
+- Educação Infantil com 93 códigos de objetivos e 380 propostas mediadas, sem nota de desenvolvimento. Bebês e crianças bem pequenas participam em vivências fora da tela.
+- Oficina de seis palavras que relaciona som, figura, escrita, função e contexto; distingue ensino, sondas e leitura oral analisada pelo tutor.
+- Minha jornada: meta ajustável ou pausada, XP de participação, dias com registros, conquistas e sugestões de retomada. XP não mede aprendizagem e pedir ajuda não reduz pontos.
+- Nilo com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
+- Biblioteca editável, materiais, pistas, respostas aceitas, versões, importação/exportação, recuperação e proteção contra sobrescrita entre abas.
 
-- Cadastra estudantes por apelido/código, ano escolar, objetivo e recursos de acesso.
-- Exige avaliação inicial antes de individualizar a trilha.
-- Separa o planejamento do tutor e a tela de execução do estudante, com questões estruturadas selecionáveis.
-- Registra respostas independentes, assistidas, ainda não demonstradas, pendentes de análise e não aferidas.
-- Propõe duas frentes: habilidades fundamentais e currículo atual.
-- Permite ao educador revisar e aprovar o plano, com horário, local e duração estimada.
-- Conduz uma sessão com objetivo, modelo, prática apoiada, verificação em item diferente e transferência.
-- Permite pausar, retomar ou encerrar sem penalidade e sem acrescentar tarefas.
-- Mantém respostas abertas aguardando análise humana.
-- Calcula evidências por habilidade sem contar repetições do mesmo item como novas provas de domínio.
-- Permite preparar retenção em outra data, antes de reapresentar o ensino.
-- Oferece biblioteca pesquisável e editável, importação/exportação de acervo, backup e registros CSV.
-- Inclui ampliação de texto, modo foco, Nilo em tamanho normal ou compacto e leitura em voz alta quando compatível com a habilidade avaliada.
+## Acervo e auditorias
 
-## Biblioteca inicial
+A aplicação contém **213 fichas/objetivos e 876 atividades**: catálogo escolar de 120/496 e catálogo EI de 93/380. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
 
-**120 habilidades e 496 atividades**, sendo 112 unidades curriculares e oito habilidades fundamentais. Todos os anos do escopo e seus componentes estão representados. A versão 0.2 acrescenta 104 questões de múltipla escolha de linguagem e matemática; os demais itens incluem produções abertas e respostas curtas. A presença de um componente não equivale à cobertura completa de suas habilidades.
+O banco reconstruído nos outros chats possui 3.583 registros ainda pendentes de validação e bloqueados ao aluno. Foi consultado para curadoria; não foi somado nem disponibilizado automaticamente no aplicativo. Veja [integração dos bancos](docs/INTEGRACAO_BANCOS.md).
 
-O acervo é **autoral, inicial e sujeito a curadoria**. Não equivale à cobertura integral da BNCC, não contém instrumentos psicológicos de uso restrito e não é um teste padronizado. Correspondências específicas por código BNCC permanecem pendentes até conferência pelo educador. No Ensino Médio, a distribuição por série é uma proposta local, não uma seriação obrigatória da BNCC.
+- [Auditoria metodológica e fundamentos](https://borgesfs-cmd.github.io/trilume/auditoria-metodologica.html)
+- [Análise curricular por ficha, com filtros e matriz CSV](https://borgesfs-cmd.github.io/trilume/auditoria-curricular.html)
+- [Auditoria técnica e correções](https://borgesfs-cmd.github.io/trilume/auditoria-tecnica.html)
+- [Resultados de validação](docs/VALIDACAO.md)
 
-Veja [cobertura e curadoria](docs/COBERTURA_E_CURADORIA.md) e [metodologia](docs/METODOLOGIA.md).
+As 120 fichas escolares ainda têm menos enunciados distintos de aquisição e de retenção que seus parâmetros exigem. Critérios não foram reduzidos para produzir aparente domínio. Exemplos e atividades são autorais iniciais, sujeitos à revisão de área e ao piloto.
 
-## Começar
+## Usar
 
-Abra `index.html` em um navegador atual ou utilize a publicação estática do repositório. Não há dependências de interface, instalação de pacotes ou chaves de API.
+Abra o endereço publicado ou index.html em navegador atual. Não exige conta, chaves de API, pacotes de interface ou backend.
 
-1. Clique em **Cadastrar estudante** ou use o perfil fictício de demonstração.
-2. Abra **Avaliação inicial** no espaço do tutor, selecione de 1 a 24 questões, de até seis habilidades, e informe o responsável e as condições.
-3. Salve o planejamento e abra a tela do estudante. As correções ficam para depois da aplicação; o estudante vê enunciados, campos de resposta, Nilo e os controles de pausa e encerramento.
-4. Encerre a avaliação, volte ao espaço do tutor e analise as produções abertas e as condições de ajuda. Confira o ponto de partida por habilidade.
-5. Em **Trilha de aprendizagem**, escolha uma ou duas habilidades já observadas e aprove o plano.
-6. Em **Meu estudo**, confira o combinado e realize as etapas.
-7. Em **Acompanhamento**, analise as respostas abertas.
-8. Cadastre novos itens equivalentes antes de reutilizar verificações já vistas.
+1. Cadastre um perfil fictício para testar e escolha grupo ou ano.
+2. Prepare uma avaliação breve com materiais e condições de acesso; aplique sem antecipar correção.
+3. Encerre e analise as produções e a ajuda observada no espaço do tutor.
+4. Escolha objetivos já observados, revise materiais e aprove uma sessão.
+5. Explore, veja exemplos, faça junto e registre o procedimento; use itens novos para verificar e revisar.
+6. Acompanhe as evidências e combine retomadas. A jornada reconhece participação, separadamente da análise de aprendizagem.
 
 ## Dados e limites
 
-Esta versão é uma aplicação estática para uso individual do educador. Os registros ficam em `localStorage` neste navegador, sem autenticação, isolamento por contas, banco central ou sincronização. A seleção de estudante e a troca entre as telas do tutor e do estudante são separações de interface, sem controle de acesso por senha. Use identificação fictícia nos testes. Exporte backups antes de trocar de navegador, limpar dados ou atualizar a origem de hospedagem.
+Versão estática para uso individual do educador: dados em localStorage neste navegador, sem contas, autenticação ou sincronização. Separação entre telas de tutor e estudante é somente de interface. Use identificação fictícia nos testes e exporte backups antes de trocar de dispositivo ou limpar dados. Corrupção e conflito entre abas têm proteção de melhor esforço; não substituem recuperação remota nem transações de banco.
 
-Não há chat generativo, diagnóstico clínico ou decisão escolar automatizada. Critérios são configuráveis por habilidade e exigem revisão humana. A proposta metodológica combinada precisa ser avaliada empiricamente no produto.
+Não há chat generativo, diagnóstico, teste psicológico padronizado, avaliação neuropsicológica ou certificação escolar automatizada. A metodologia combinada precisa de avaliação empírica. Uso institucional com dados reais exige backend, autenticação, autorização por vínculo, proteção de dados de menores e recuperação.
 
-Para uso institucional com dados reais, é necessário implementar backend seguro, autenticação e autorizações por vínculo, estratégia de proteção de dados de menores, governança, recuperação e auditoria de servidor. Estes recursos não são simulados como se estivessem prontos.
+## Desenvolvimento
 
-## Testes
+Node.js 20+ para executar `npm test`. Não há dependências de execução da interface. O workflow verifica sintaxe e testes a cada push. Os relatórios são gerados por `python scripts/build-audits.py`; o CSV acompanha o catálogo atual.
 
-Requer Node.js 20 ou superior somente para testes:
+Arquivos principais: app.js (interface), engine.js (regras), assessment.js (avaliação), storage.js (persistência), library-tools.js (curadoria), word-lab.js (oficina), gamification.js (jornada), nilo.js e assets/ (mascote), data/ (catálogos), tests/ (regressão), docs/ (auditorias). history/ preserva versões anteriores e não integra a aplicação atual.
 
-```sh
-npm test
-```
-
-Os testes cobrem linha de base obrigatória, aprovação do educador, ajuda versus independência, lista fechada, encerramento sem penalidade, itens inéditos, critérios de aprendizagem, retenção, generalização, importação e cobertura estrutural dos 12 anos. O GitHub Actions executa a verificação a cada push.
-
-## Arquivos
-
-- `index.html`, `styles.css`, `app.js`: interface responsiva.
-- `engine.js`: regras pedagógicas determinísticas.
-- `assessment.js`: planejamento, respostas e análise da avaliação inicial.
-- `nilo.js`: 12 contextos e mensagens do mascote.
-- `data/catalog.js` e `data/catalog.json`: acervo inicial versionado.
-- `assets/nilo.png` e `assets/nilo-contextos.png`: mascote 3D e suas 12 expressões.
-- `tests/*.test.cjs`: testes das regras, avaliação e renderização dos fluxos.
-- `docs/`: metodologia, cobertura, rastreabilidade e limites.
-- `history/`: protótipo anterior e prompt executivo recuperados como histórico; não fazem parte da interface atual.
-
-## Autoria
-
-© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. O crédito não comprova registro de marca ou exclusividade sobre ativos de terceiros. A arte do Nilo foi gerada com IA. O nome anterior **Trilha** é mantido apenas nos arquivos históricos. Não foi realizada verificação de disponibilidade jurídica da marca Trilume.
+© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. A arte do Nilo foi gerada com IA. A marca não foi apresentada como registrada. O nome anterior Trilha permanece apenas no histórico.

@@ -1,15 +1,15 @@
 window.TRILUME_CATALOG = [
   {
     "id": "CUR-01-01",
-    "version": 2,
+    "version": 3,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Sons e letras",
-    "objective": "Sons e letras: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar sons iniciais a letras e explorar a composição e a leitura de palavras, observando essas respostas separadamente.",
     "content": "Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
-    "model": "Na palavra MALA, cada parte falada pode ser observada: MA e LA. Letras representam sons; dizer o nome da letra é diferente de ler a palavra.",
+    "model": "Na palavra VELA, mostro o V escrito e faço o som /v/ prolongado, sem acrescentar uma vogal. Aproximo VA e VE de palavras conhecidas e construo VELA. Depois comparo o nome da letra com seu som na palavra; identificar um som não é ainda ler toda a palavra.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -122,19 +122,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": true
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-02",
-    "version": 2,
+    "version": 3,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Contar e comparar",
-    "objective": "Contar e comparar: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Contar objetos uma vez cada, indicar o total, comparar conjuntos e organizar uma quantidade para uma finalidade.",
     "content": "Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
-    "model": "Ao contar, aponte um objeto de cada vez. O último número dito informa quantos objetos há. Cinco tampinhas são mais que três, mesmo quando estão mais próximas.",
+    "model": "Coloco cinco blocos em fila. Aponto uma vez para cada bloco enquanto conto e digo: o último número foi cinco, então há cinco. Espalho os mesmos blocos e conto novamente: mudou o espaço, a quantidade continuou cinco.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -247,19 +255,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-03",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Materiais no cotidiano",
-    "objective": "Materiais no cotidiano: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar materiais por propriedades observáveis e justificar uma escolha de uso.",
     "content": "Um mesmo objeto pode ser feito de materiais diferentes. Uma colher de metal costuma ser rígida; um tecido pode dobrar. Observe a propriedade antes de classificar.",
-    "model": "Um mesmo objeto pode ser feito de materiais diferentes. Uma colher de metal costuma ser rígida; um tecido pode dobrar. Observe a propriedade antes de classificar.",
+    "model": "Apresento uma esponja seca e uma colher. Observo que a esponja se comprime quando apertada e a colher metálica mantém a forma. Relaciono a escolha da esponja à absorção, e confiro com uma pequena quantidade de água sob mediação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -304,19 +320,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um mesmo objeto pode ser feito de materiais diferentes. Uma colher de metal costuma ser rígida; um tecido pode dobrar. Observe a propriedade antes de classificar.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-04",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "História",
     "title": "Antes, agora e depois",
-    "objective": "Antes, agora e depois: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Ordenar acontecimentos e reconhecer uma mudança entre registros de momentos diferentes.",
     "content": "Uma sequência organiza acontecimentos. Antes de plantar, preparamos a terra; depois colocamos a semente. Fotografias e relatos ajudam a lembrar mudanças.",
-    "model": "Uma sequência organiza acontecimentos. Antes de plantar, preparamos a terra; depois colocamos a semente. Fotografias e relatos ajudam a lembrar mudanças.",
+    "model": "Em cartões feitos pelo adulto, a semente aparece antes da muda. Organizo preparar o vaso, plantar e acompanhar o crescimento. Explico a ordem pelas mudanças observadas e aviso que o tempo de crescer não aparece inteiro nas figuras.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -361,19 +385,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma sequência organiza acontecimentos. Antes de plantar, preparamos a terra; depois colocamos a semente. Fotografias e relatos ajudam a lembrar mudanças.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-05",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Lugares de convivência",
-    "objective": "Lugares de convivência: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar e explicar um percurso usando referências do espaço conhecido.",
     "content": "Uma descrição de lugar informa o que existe e onde fica. Perto e longe dependem do ponto de referência. Um desenho do caminho pode ajudar outra pessoa.",
-    "model": "Uma descrição de lugar informa o que existe e onde fica. Perto e longe dependem do ponto de referência. Um desenho do caminho pode ajudar outra pessoa.",
+    "model": "Faço um pequeno croqui: a estante fica à direita da entrada e o tapete à frente. Indico primeiro meu ponto de partida, depois os dois marcos. Percorro com o dedo e confiro no espaço real, aceitando orientação corporal acessível.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -418,19 +450,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma descrição de lugar informa o que existe e onde fica. Perto e longe dependem do ponto de referência. Um desenho do caminho pode ajudar outra pessoa.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-06",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Linhas, formas e cores",
-    "objective": "Linhas, formas e cores: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Criar e apreciar composições com linhas, formas e cores e explicar uma escolha.",
     "content": "Linhas podem ser retas ou curvas; formas podem ser combinadas. Uma composição pode mostrar uma ideia sem copiar um modelo. Explique uma escolha que fez.",
-    "model": "Linhas podem ser retas ou curvas; formas podem ser combinadas. Uma composição pode mostrar uma ideia sem copiar um modelo. Explique uma escolha que fez.",
+    "model": "Desenho uma curva para um rio e retas para uma ponte. Escolho azul e marrom e explico a intenção, sem dizer que essas são as únicas cores possíveis. Mudo uma forma e converso sobre o efeito na composição.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -475,19 +515,27 @@ window.TRILUME_CATALOG = [
         "reference": "Linhas podem ser retas ou curvas; formas podem ser combinadas. Uma composição pode mostrar uma ideia sem copiar um modelo. Explique uma escolha que fez.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-07",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Movimentos e espaço",
-    "objective": "Movimentos e espaço: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Explorar deslocamentos acessíveis e adaptar uma brincadeira com combinados de participação e segurança.",
     "content": "Deslocamentos podem mudar de direção e ritmo. Em uma brincadeira, respeitamos limites do espaço e combinados de segurança. Adapte o movimento às suas possibilidades.",
-    "model": "Deslocamentos podem mudar de direção e ritmo. Em uma brincadeira, respeitamos limites do espaço e combinados de segurança. Adapte o movimento às suas possibilidades.",
+    "model": "Marco um percurso curto e livre de obstáculos. Demonstro atravessá-lo andando ou deslocando um objeto com as mãos, conforme as possibilidades. Antes de começar, confiro espaço e conforto e combino um sinal de pausa.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -532,19 +580,27 @@ window.TRILUME_CATALOG = [
         "reference": "Deslocamentos podem mudar de direção e ritmo. Em uma brincadeira, respeitamos limites do espaço e combinados de segurança. Adapte o movimento às suas possibilidades.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-01-08",
-    "version": 1,
+    "version": 2,
     "year": 1,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Convivência e diferenças",
-    "objective": "Convivência e diferenças: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Propor formas de acolhimento que respeitem diferenças e a liberdade de consciência.",
     "content": "Pessoas podem ter crenças, tradições ou nenhuma religião. Perguntar com respeito é diferente de ridicularizar. Ninguém precisa declarar sua crença para participar.",
-    "model": "Pessoas podem ter crenças, tradições ou nenhuma religião. Perguntar com respeito é diferente de ridicularizar. Ninguém precisa declarar sua crença para participar.",
+    "model": "Em uma situação fictícia, Lia não participa de determinada celebração. Digo: você pode nos contar algo que queira ou escolher outra forma de participar. Mostro como o convite respeita a liberdade de falar e de não declarar crença.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -589,19 +645,27 @@ window.TRILUME_CATALOG = [
         "reference": "Pessoas podem ter crenças, tradições ou nenhuma religião. Perguntar com respeito é diferente de ridicularizar. Ninguém precisa declarar sua crença para participar.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-01",
-    "version": 2,
+    "version": 3,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Ler para encontrar informações",
-    "objective": "Ler para encontrar informações: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Localizar informações em um aviso ou bilhete apontando o trecho que sustenta a resposta; usar essa estrutura em uma produção com finalidade.",
     "content": "Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
-    "model": "Em um aviso, procure quem, o que, quando e onde. No exemplo Feira de livros, sexta, no pátio, o local é o pátio. Volte ao texto para conferir.",
+    "model": "Leio o aviso fictício: Oficina de desenho, quarta-feira, no jardim. Pergunto onde. Localizo no jardim e aponto o trecho que sustenta a resposta. Explico que escrever um aviso novo é uma habilidade de produção, diferente de localizar essa informação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -714,19 +778,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-02",
-    "version": 2,
+    "version": 3,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Adicionar e subtrair",
-    "objective": "Adicionar e subtrair: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar situações de juntar ou retirar, calcular e conferir a relação entre operação e pergunta.",
     "content": "Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
-    "model": "Adicionar pode reunir quantidades; subtrair pode retirar ou comparar. Se há oito lápis e chegam dois, ficam dez. Desenhos e objetos ajudam a representar a situação.",
+    "model": "Com dez fichas, retiro quatro e conto as seis restantes: 10 − 4 = 6. Depois junto dois conjuntos de três e quatro fichas: 3 + 4 = 7. Comparo retirar e juntar antes de escolher o símbolo da operação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -839,19 +911,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-03",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Seres vivos e necessidades",
-    "objective": "Seres vivos e necessidades: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Observar necessidades de plantas, formular uma hipótese e planejar acompanhamento sem causar dano.",
     "content": "Plantas precisam de condições adequadas de água, luz e ambiente. Uma observação registra o que aconteceu; uma hipótese apresenta uma explicação a verificar.",
-    "model": "Plantas precisam de condições adequadas de água, luz e ambiente. Uma observação registra o que aconteceu; uma hipótese apresenta uma explicação a verificar.",
+    "model": "Observo uma planta saudável perto da janela e registro folhas, luz e condição do solo. Proponho acompanhar sem retirar recursos essenciais. Distingo o registro de hoje da hipótese de que mudar a iluminação pode alterar o crescimento.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -896,19 +976,27 @@ window.TRILUME_CATALOG = [
         "reference": "Plantas precisam de condições adequadas de água, luz e ambiente. Uma observação registra o que aconteceu; uma hipótese apresenta uma explicação a verificar.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-04",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "História",
     "title": "Objetos como fontes",
-    "objective": "Objetos como fontes: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Investigar o que objetos e imagens informam sobre outros tempos e reconhecer o que ainda não se sabe.",
     "content": "Objetos, imagens e relatos fornecem pistas sobre outros tempos. Uma pista sustenta uma interpretação, mas pode não responder a todas as perguntas.",
-    "model": "Objetos, imagens e relatos fornecem pistas sobre outros tempos. Uma pista sustenta uma interpretação, mas pode não responder a todas as perguntas.",
+    "model": "Comparo um telefone com fio e um celular. Ambos permitem comunicação, mas têm materiais, tamanho e recursos diferentes. Identifico o que consigo observar e o que precisaria pesquisar sobre sua época e seus usos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -953,19 +1041,27 @@ window.TRILUME_CATALOG = [
         "reference": "Objetos, imagens e relatos fornecem pistas sobre outros tempos. Uma pista sustenta uma interpretação, mas pode não responder a todas as perguntas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-05",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Paisagem e transformação",
-    "objective": "Paisagem e transformação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Distinguir elementos de uma paisagem, descrever transformações e justificar uma proposta para o espaço.",
     "content": "Paisagem reúne elementos que percebemos em um lugar. Árvores, ruas e construções podem mudar com o tempo. Descrever é registrar características observáveis.",
-    "model": "Paisagem reúne elementos que percebemos em um lugar. Árvores, ruas e construções podem mudar com o tempo. Descrever é registrar características observáveis.",
+    "model": "Em dois desenhos fictícios do mesmo quarteirão, a árvore e a calçada permanecem, mas surge uma rampa. Aponto a mudança e relaciono-a à circulação, sem afirmar que uma imagem mostra toda a vida do bairro.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1010,19 +1106,27 @@ window.TRILUME_CATALOG = [
         "reference": "Paisagem reúne elementos que percebemos em um lugar. Árvores, ruas e construções podem mudar com o tempo. Descrever é registrar características observáveis.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-06",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Ritmos e sons",
-    "objective": "Ritmos e sons: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Reproduzir, criar e representar uma sequência de sons e silêncios, distinguindo essas ações.",
     "content": "Um ritmo organiza sons e silêncios. Podemos produzir sequências com palmas, voz ou objetos seguros. Volume alto não é requisito para participar.",
-    "model": "Um ritmo organiza sons e silêncios. Podemos produzir sequências com palmas, voz ou objetos seguros. Volume alto não é requisito para participar.",
+    "model": "Produzo palma, silêncio, palma, palma, em volume confortável. Represento cada som com um ponto e a pausa com um espaço. Acompanho a sequência devagar e depois convido a criar outra; reprodução e criação serão observadas separadamente.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1067,19 +1171,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um ritmo organiza sons e silêncios. Podemos produzir sequências com palmas, voz ou objetos seguros. Volume alto não é requisito para participar.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-07",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Jogos e combinados",
-    "objective": "Jogos e combinados: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Explicar regras, participar e adaptar uma brincadeira preservando seu objetivo e o acesso.",
     "content": "Regras definem como participar, iniciar e encerrar um jogo. Elas podem ser adaptadas de maneira combinada para ampliar a participação.",
-    "model": "Regras definem como participar, iniciar e encerrar um jogo. Elas podem ser adaptadas de maneira combinada para ampliar a participação.",
+    "model": "Em um jogo de levar peças a uma caixa, explico onde começa e quando termina. Se alguém não alcança a caixa, aproximo o alvo com acordo do grupo. Mostro que a mudança amplia participação e preserva a finalidade da brincadeira.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1124,19 +1236,27 @@ window.TRILUME_CATALOG = [
         "reference": "Regras definem como participar, iniciar e encerrar um jogo. Elas podem ser adaptadas de maneira combinada para ampliar a participação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-02-08",
-    "version": 1,
+    "version": 2,
     "year": 2,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Símbolos e respeito",
-    "objective": "Símbolos e respeito: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Situar o significado de símbolos em contextos culturais sem exigir adesão ou hierarquizar tradições.",
     "content": "Um símbolo representa uma ideia para um grupo. Seu significado depende do contexto. Uma atividade escolar pode conhecer símbolos sem exigir prática religiosa.",
-    "model": "Um símbolo representa uma ideia para um grupo. Seu significado depende do contexto. Uma atividade escolar pode conhecer símbolos sem exigir prática religiosa.",
+    "model": "Mostro uma bandeira fictícia desenhada pelo grupo para representar acolhimento. Explico o significado atribuído nesse contexto e pergunto se o símbolo teria o mesmo sentido em outro lugar. Não atribuo crença pessoal a quem participa.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1181,19 +1301,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um símbolo representa uma ideia para um grupo. Seu significado depende do contexto. Uma atividade escolar pode conhecer símbolos sem exigir prática religiosa.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-01",
-    "version": 2,
+    "version": 3,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Sequência e compreensão",
-    "objective": "Sequência e compreensão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Compreender e ordenar acontecimentos de um relato e planejar sua comunicação oral ou escrita.",
     "content": "Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
-    "model": "Um relato relaciona acontecimentos com expressões como primeiro, depois e por fim. Para compreender, localize o que aconteceu e como as partes se conectam.",
+    "model": "Apresento o relato: Primeiro o grupo preparou a terra. Depois plantou sementes. Por fim regou o vaso. Reconheço as três ações e as palavras que as conectam; reconto oralmente. Antes da escrita, organizo esses acontecimentos em cartões.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1306,19 +1434,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-02",
-    "version": 2,
+    "version": 3,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Multiplicar e repartir",
-    "objective": "Multiplicar e repartir: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar grupos iguais e repartições, calcular e conferir o total, o número de grupos e a quantidade de cada grupo.",
     "content": "Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
-    "model": "Multiplicar pode representar grupos iguais. Três grupos de quatro peças totalizam doze. Dividir pode repartir igualmente ou descobrir quantos grupos cabem.",
+    "model": "Formo dois grupos de cinco blocos e conto dez ao todo: 2 × 5 = 10. Reparto os mesmos dez em dois grupos iguais e confiro cinco em cada: 10 ÷ 2 = 5. Distingo número de grupos e quantidade por grupo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1431,19 +1567,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-03",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Luz e observação",
-    "objective": "Luz e observação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar passagem de luz em condições semelhantes, registrar observações e justificar uma escolha de material.",
     "content": "A luz permite enxergar objetos. Materiais podem permitir ou dificultar sua passagem. Comparar exige observar os materiais sob condições semelhantes.",
-    "model": "A luz permite enxergar objetos. Materiais podem permitir ou dificultar sua passagem. Comparar exige observar os materiais sob condições semelhantes.",
+    "model": "Com uma lanterna comum, sem dirigir a luz aos olhos, comparo cartão opaco e plástico transparente na mesma posição. Registro o que vejo, mantendo distância e fonte constantes. Evito concluir que todo material do mesmo nome se comporta igual.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1488,19 +1632,27 @@ window.TRILUME_CATALOG = [
         "reference": "A luz permite enxergar objetos. Materiais podem permitir ou dificultar sua passagem. Comparar exige observar os materiais sob condições semelhantes.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-04",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "História",
     "title": "Comunidade e memória",
-    "objective": "Comunidade e memória: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Elaborar perguntas e comparar fontes para investigar memórias de um lugar, distinguindo relato e interpretação.",
     "content": "Um lugar pode guardar memórias de grupos diferentes. Uma entrevista registra um ponto de vista. Compare relatos antes de concluir que todos viveram a mesma experiência.",
-    "model": "Um lugar pode guardar memórias de grupos diferentes. Uma entrevista registra um ponto de vista. Compare relatos antes de concluir que todos viveram a mesma experiência.",
+    "model": "Para conhecer a memória de uma praça, começo perguntando como ela era usada e quem a frequentava. Registro um relato fictício como ponto de vista, não como versão de todos. Busco outra fonte que possa confirmar, complementar ou contrariar a lembrança.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1545,19 +1697,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um lugar pode guardar memórias de grupos diferentes. Uma entrevista registra um ponto de vista. Compare relatos antes de concluir que todos viveram a mesma experiência.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-05",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Ler representações do espaço",
-    "objective": "Ler representações do espaço: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Localizar e representar lugares com símbolos e legenda e explicar um trajeto.",
     "content": "Mapas e croquis usam símbolos e legendas para representar lugares. A legenda explica o que cada símbolo significa e torna o desenho compreensível.",
-    "model": "Mapas e croquis usam símbolos e legendas para representar lugares. A legenda explica o que cada símbolo significa e torna o desenho compreensível.",
+    "model": "Crio um croqui com casa, lago e ponto de ônibus. Defino símbolos e uma legenda antes de pedir o trajeto. Descrevo sair da casa, contornar o lago e chegar ao ponto; confiro se outra pessoa entende usando a legenda.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1602,19 +1762,27 @@ window.TRILUME_CATALOG = [
         "reference": "Mapas e croquis usam símbolos e legendas para representar lugares. A legenda explica o que cada símbolo significa e torna o desenho compreensível.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-06",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Narrar com imagens",
-    "objective": "Narrar com imagens: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Compreender e criar uma sequência de imagens, explicando como as escolhas constroem a narrativa.",
     "content": "Uma sequência de imagens pode contar uma história. A posição dos personagens, as cores e os enquadramentos ajudam a construir sentidos.",
-    "model": "Uma sequência de imagens pode contar uma história. A posição dos personagens, as cores e os enquadramentos ajudam a construir sentidos.",
+    "model": "Em três quadros autorais, uma personagem perde uma bola, procura e a encontra. Explico como a posição da bola e a direção do olhar ajudam a ligar as cenas. Experimento mudar a ordem e observo a mudança de sentido.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1659,19 +1827,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma sequência de imagens pode contar uma história. A posição dos personagens, as cores e os enquadramentos ajudam a construir sentidos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-07",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Cooperação nos jogos",
-    "objective": "Cooperação nos jogos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Participar de um desafio coletivo e justificar uma adaptação que amplie cooperação e acesso.",
     "content": "Em desafios cooperativos, o grupo busca um resultado compartilhado. A comunicação e a adaptação dos papéis ajudam a incluir participantes.",
-    "model": "Em desafios cooperativos, o grupo busca um resultado compartilhado. A comunicação e a adaptação dos papéis ajudam a incluir participantes.",
+    "model": "Em uma tarefa coletiva de mover uma bola leve sobre tecido, combinamos funções e um sinal de parada. Ajusto a altura e o modo de segurar para ampliar participação. Registro uma ação concreta de comunicação que ajudou o grupo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1716,19 +1892,27 @@ window.TRILUME_CATALOG = [
         "reference": "Em desafios cooperativos, o grupo busca um resultado compartilhado. A comunicação e a adaptação dos papéis ajudam a incluir participantes.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-03-08",
-    "version": 1,
+    "version": 2,
     "year": 3,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Celebrações e diversidade",
-    "objective": "Celebrações e diversidade: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar celebrações situadas em fontes e formular perguntas respeitosas sobre seus contextos.",
     "content": "Celebrações podem reunir memórias, valores e formas de convivência. Conhecer uma celebração não exige adotá-la. Registre informações sem generalizar para todas as pessoas.",
-    "model": "Celebrações podem reunir memórias, valores e formas de convivência. Conhecer uma celebração não exige adotá-la. Registre informações sem generalizar para todas as pessoas.",
+    "model": "Descrevo duas celebrações fictícias: em uma há cantos; em outra, uma refeição coletiva. Comparo ações e finalidades informadas, sem hierarquizar grupos. Explico que pessoas de uma mesma tradição também podem participar de maneiras diferentes.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1773,19 +1957,27 @@ window.TRILUME_CATALOG = [
         "reference": "Celebrações podem reunir memórias, valores e formas de convivência. Conhecer uma celebração não exige adotá-la. Registre informações sem generalizar para todas as pessoas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-01",
-    "version": 2,
+    "version": 3,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Parágrafos e revisão",
-    "objective": "Parágrafos e revisão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Identificar ideias de parágrafos, revisar referências e repetições e explicar como a revisão ajuda o leitor.",
     "content": "Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
-    "model": "Um parágrafo desenvolve uma ideia ligada ao tema. Na revisão, confira se o leitor entende quem participa, o que acontece e como as partes se relacionam.",
+    "model": "Leio: Ana levou o livro para Joana. Ela agradeceu. Mostro a ambiguidade de ela e reviso: Joana agradeceu. Explico como nomear a personagem ajuda o leitor; depois confiro se a revisão preservou o sentido pretendido.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -1898,19 +2090,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-02",
-    "version": 2,
+    "version": 3,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Frações de uma quantidade",
-    "objective": "Frações de uma quantidade: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar frações de um todo e de uma quantidade, explicitando partes iguais e a unidade considerada.",
     "content": "Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
-    "model": "Uma fração indica partes iguais de um todo ou quantidade. A metade de dez é cinco porque dez pode ser dividido em dois grupos iguais de cinco.",
+    "model": "Com doze fichas, construo quatro grupos iguais de três. Uma quarta parte corresponde a um desses grupos: 12 ÷ 4 = 3. Comparo com um desenho repartido em quatro áreas iguais e explicito a ponte entre fração do todo e da quantidade.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2023,19 +2223,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-03",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Cadeias alimentares",
-    "objective": "Cadeias alimentares: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar relações de alimentação e explicar o sentido das setas e os limites de uma cadeia alimentar.",
     "content": "Uma cadeia alimentar representa relações de alimentação e transferência de energia. Plantas podem ser produtoras; animais ocupam posições conforme o que comem.",
-    "model": "Uma cadeia alimentar representa relações de alimentação e transferência de energia. Plantas podem ser produtoras; animais ocupam posições conforme o que comem.",
+    "model": "No modelo capim → gafanhoto → ave, a seta representa a transferência de matéria e energia do alimento para quem o consome. Identifico produtor e consumidores. Explico que o desenho simplifica uma rede maior e omite outras relações.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2080,19 +2288,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma cadeia alimentar representa relações de alimentação e transferência de energia. Plantas podem ser produtoras; animais ocupam posições conforme o que comem.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-04",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "História",
     "title": "Mudanças e permanências",
-    "objective": "Mudanças e permanências: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar fontes de épocas distintas e identificar mudanças e permanências para diferentes grupos.",
     "content": "Investigar uma mudança envolve comparar épocas, fontes e grupos. Algo pode mudar para uma parte da população e permanecer semelhante para outra.",
-    "model": "Investigar uma mudança envolve comparar épocas, fontes e grupos. Algo pode mudar para uma parte da população e permanecer semelhante para outra.",
+    "model": "Em registros fictícios de uma escola, antes havia um caminho de terra e depois um piso acessível. Comparo as duas fontes, identifico uma mudança e pergunto para quem ela alterou o acesso. Não infiro experiência de todos a partir de uma foto.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2137,19 +2353,27 @@ window.TRILUME_CATALOG = [
         "reference": "Investigar uma mudança envolve comparar épocas, fontes e grupos. Algo pode mudar para uma parte da população e permanecer semelhante para outra.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-05",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Campo, cidade e circulação",
-    "objective": "Campo, cidade e circulação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar campo e cidade pela circulação de produtos, pessoas e serviços.",
     "content": "Campo e cidade se relacionam pela circulação de alimentos, pessoas, serviços e informações. Um produto pode passar por diferentes lugares antes de chegar ao consumidor.",
-    "model": "Campo e cidade se relacionam pela circulação de alimentos, pessoas, serviços e informações. Um produto pode passar por diferentes lugares antes de chegar ao consumidor.",
+    "model": "Acompanho o caminho fictício de uma fruta: cultivo, transporte, feira e casa. Nomeio o trabalho em cada etapa e a circulação entre lugares. Relaciono o produto a serviços da cidade, sem reduzir campo e cidade a espaços isolados.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2194,19 +2418,27 @@ window.TRILUME_CATALOG = [
         "reference": "Campo e cidade se relacionam pela circulação de alimentos, pessoas, serviços e informações. Um produto pode passar por diferentes lugares antes de chegar ao consumidor.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-06",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Corpo e expressão",
-    "objective": "Corpo e expressão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Criar e apreciar uma cena por gestos, movimento, narração ou som, explicando decisões expressivas.",
     "content": "Gestos, movimentos e organização do espaço podem expressar situações. Há várias maneiras de participar, incluindo narrar, sonorizar e organizar a cena.",
-    "model": "Gestos, movimentos e organização do espaço podem expressar situações. Há várias maneiras de participar, incluindo narrar, sonorizar e organizar a cena.",
+    "model": "Crio uma cena de espera usando uma cadeira, um gesto e um silêncio. Demonstro também narrar ou sonorizar como formas de compor a cena. Pergunto como cada escolha comunica a situação e aceito leituras diferentes justificadas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2251,19 +2483,27 @@ window.TRILUME_CATALOG = [
         "reference": "Gestos, movimentos e organização do espaço podem expressar situações. Há várias maneiras de participar, incluindo narrar, sonorizar e organizar a cena.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-07",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Estratégias em jogos",
-    "objective": "Estratégias em jogos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar, experimentar e revisar uma estratégia de jogo em função do objetivo e da participação do grupo.",
     "content": "Uma estratégia relaciona uma ação ao objetivo do jogo. Observar o espaço e combinar papéis permite revisar decisões com o grupo.",
-    "model": "Uma estratégia relaciona uma ação ao objetivo do jogo. Observar o espaço e combinar papéis permite revisar decisões com o grupo.",
+    "model": "Em um jogo de passar um objeto até um alvo, observo que todos se concentram no mesmo lugar. Combinamos ampliar o espaço e alternar papéis. Testo a estratégia e confiro se ajudou o objetivo e a participação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2308,19 +2548,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma estratégia relaciona uma ação ao objetivo do jogo. Observar o espaço e combinar papéis permite revisar decisões com o grupo.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-04-08",
-    "version": 1,
+    "version": 2,
     "year": 4,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Tradições e narrativas",
-    "objective": "Tradições e narrativas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Situar narrativas culturais, distinguir relato e interpretação e reconhecer diferentes sentidos.",
     "content": "Narrativas de grupos diferentes podem transmitir memórias e valores. Ao estudá-las, distinguimos o relato, o contexto e as interpretações.",
-    "model": "Narrativas de grupos diferentes podem transmitir memórias e valores. Ao estudá-las, distinguimos o relato, o contexto e as interpretações.",
+    "model": "Apresento uma narrativa autoral de um grupo fictício que preserva uma árvore como memória. Distingo o que a história conta, o valor que transmite e minha interpretação. Não uso esse exemplo como descrição de uma comunidade real.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2365,19 +2613,27 @@ window.TRILUME_CATALOG = [
         "reference": "Narrativas de grupos diferentes podem transmitir memórias e valores. Ao estudá-las, distinguimos o relato, o contexto e as interpretações.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-01",
-    "version": 2,
+    "version": 3,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Argumentar com evidências",
-    "objective": "Argumentar com evidências: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Sustentar uma posição com razão e evidência pertinente e reconhecer limites de uma conclusão.",
     "content": "Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
-    "model": "Uma opinião apresenta uma posição; um argumento explica por que sustentá-la. Uma evidência precisa ter relação com a afirmação e pode ser conferida.",
+    "model": "Afirmo que um mural pode facilitar localizar avisos. Apresento um dado fictício: quatro de cinco grupos acharam o horário no teste da turma. Relaciono o dado à afirmação, reconheço a amostra pequena e não concluo que todo mural será eficaz.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2490,19 +2746,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-02",
-    "version": 2,
+    "version": 3,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Frações e decimais",
-    "objective": "Frações e decimais: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar frações e decimais e compará-los usando a mesma unidade ou todo.",
     "content": "Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
-    "model": "Uma mesma quantidade pode ter representações diferentes. Um meio equivale a cinco décimos, ou 0,5. Compare usando o mesmo todo ou a mesma unidade.",
+    "model": "Divido uma faixa em dez partes iguais e marco sete: 7/10 = 0,7. Depois marco metade de outra faixa do mesmo tamanho: 1/2 = 0,5. Comparo partes da mesma unidade antes de comparar as representações numéricas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2615,19 +2879,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-03",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Água e mudanças de estado",
-    "objective": "Água e mudanças de estado: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Distinguir mudanças de estado da água relacionando observações, condições e troca de energia.",
     "content": "A água pode mudar de estado com troca de energia. Evaporação e condensação são processos diferentes; observe qual transformação os dados sustentam.",
-    "model": "A água pode mudar de estado com troca de energia. Evaporação e condensação são processos diferentes; observe qual transformação os dados sustentam.",
+    "model": "Em um registro fictício, um recipiente aberto perdeu água sem vazamento e uma tampa fria apresentou gotículas. Relaciono a passagem do líquido para o vapor à evaporação e a formação de gotículas à condensação. Distingo observação e explicação, sem aquecer materiais com a criança.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2672,19 +2944,27 @@ window.TRILUME_CATALOG = [
         "reference": "A água pode mudar de estado com troca de energia. Evaporação e condensação são processos diferentes; observe qual transformação os dados sustentam.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-04",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "História",
     "title": "Cidadania e fontes",
-    "objective": "Cidadania e fontes: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Investigar direitos e participação em fontes históricas, situando autoria, tempo e grupos.",
     "content": "Direitos são construídos e disputados historicamente. Uma fonte permite investigar um contexto, mas precisa ser localizada no tempo e em sua autoria.",
-    "model": "Direitos são construídos e disputados historicamente. Uma fonte permite investigar um contexto, mas precisa ser localizada no tempo e em sua autoria.",
+    "model": "Em um registro fictício sobre uma praça, diferencio uma regra escrita de acesso e a experiência relatada por moradores. Pergunto quem pôde participar da decisão. Uma regra declarada e sua realização cotidiana precisam de evidências distintas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2729,19 +3009,27 @@ window.TRILUME_CATALOG = [
         "reference": "Direitos são construídos e disputados historicamente. Uma fonte permite investigar um contexto, mas precisa ser localizada no tempo e em sua autoria.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-05",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Ler dados sobre lugares",
-    "objective": "Ler dados sobre lugares: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar dados sobre lugares conferindo unidade, período, fonte e limites de comparação.",
     "content": "Tabelas e gráficos podem comparar características dos lugares. Leia título, unidade, período e fonte antes de interpretar diferenças.",
-    "model": "Tabelas e gráficos podem comparar características dos lugares. Leia título, unidade, período e fonte antes de interpretar diferenças.",
+    "model": "Em uma tabela fictícia, comparo dois bairros com a mesma população e números diferentes de pontos de ônibus. Identifico unidade e limite: o número de pontos não informa sozinho frequência, distância nem acessibilidade do transporte.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2786,19 +3074,27 @@ window.TRILUME_CATALOG = [
         "reference": "Tabelas e gráficos podem comparar características dos lugares. Leia título, unidade, período e fonte antes de interpretar diferenças.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-06",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Apreciar e criar",
-    "objective": "Apreciar e criar: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Apreciar e criar uma produção artística, relacionando interpretações a elementos e escolhas observáveis.",
     "content": "Apreciação envolve observar escolhas da obra e seus contextos. Uma interpretação precisa apontar o elemento que a sustenta, respeitando leituras diferentes.",
-    "model": "Apreciação envolve observar escolhas da obra e seus contextos. Uma interpretação precisa apontar o elemento que a sustenta, respeitando leituras diferentes.",
+    "model": "Planejo uma pequena exposição de produções da turma. Escolho intenção, materiais e formas de apresentação; registro uma referência e uma revisão. Valorizo o processo e as decisões, sem reduzir a criação a copiar um exemplo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2843,19 +3139,27 @@ window.TRILUME_CATALOG = [
         "reference": "Apreciação envolve observar escolhas da obra e seus contextos. Uma interpretação precisa apontar o elemento que a sustenta, respeitando leituras diferentes.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-07",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Práticas corporais e inclusão",
-    "objective": "Práticas corporais e inclusão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Participar e propor adaptações de práticas corporais considerando história, regras e inclusão.",
     "content": "Práticas corporais têm histórias, regras e significados. Participar pode exigir adaptações de espaço, comunicação e materiais, sem reduzir a dignidade de ninguém.",
-    "model": "Práticas corporais têm histórias, regras e significados. Participar pode exigir adaptações de espaço, comunicação e materiais, sem reduzir a dignidade de ninguém.",
+    "model": "Escolho uma brincadeira conhecida e identifico seu objetivo, suas regras e uma adaptação de espaço. Testo uma versão acessível com o grupo e pergunto como cada pessoa conseguiu participar. O resultado coletivo orienta nova mudança.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2900,19 +3204,27 @@ window.TRILUME_CATALOG = [
         "reference": "Práticas corporais têm histórias, regras e significados. Participar pode exigir adaptações de espaço, comunicação e materiais, sem reduzir a dignidade de ninguém.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-05-08",
-    "version": 1,
+    "version": 2,
     "year": 5,
     "stage": "ef1",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Diálogo e convivência",
-    "objective": "Diálogo e convivência: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Ouvir, perguntar e justificar propostas de convivência que respeitem crenças e a liberdade de não crer.",
     "content": "Dialogar envolve ouvir, perguntar e apresentar razões sem constranger a outra pessoa a mudar de crença. O respeito inclui a liberdade de não crer.",
-    "model": "Dialogar envolve ouvir, perguntar e apresentar razões sem constranger a outra pessoa a mudar de crença. O respeito inclui a liberdade de não crer.",
+    "model": "Em uma situação fictícia de discordância sobre uma tradição, descrevo os pontos de vista e proponho conversar sem exigir adesão. Mostro como uma regra de respeito deve proteger também quem não possui vínculo religioso.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -2957,19 +3269,27 @@ window.TRILUME_CATALOG = [
         "reference": "Dialogar envolve ouvir, perguntar e apresentar razões sem constranger a outra pessoa a mudar de crença. O respeito inclui a liberdade de não crer.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-01",
-    "version": 2,
+    "version": 3,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Informação e inferência",
-    "objective": "Informação e inferência: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Distinguir informação explícita e inferência e indicar a pista que sustenta uma interpretação.",
     "content": "Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
-    "model": "Uma informação explícita aparece no texto; uma inferência relaciona pistas a conhecimentos pertinentes. A conclusão precisa ser sustentada por algo que o texto permite observar.",
+    "model": "Leio: Quando o sinal tocou, Caio fechou o caderno e saiu para o pátio. Está explícito que ele fechou o caderno; é possível inferir uma mudança de atividade. Explico a pista e reconheço que não sabemos sua emoção.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3082,19 +3402,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-02",
-    "version": 2,
+    "version": 3,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Porcentagem: quarta parte",
-    "objective": "Porcentagem: quarta parte: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Calcular a quarta parte, relacioná-la a 25% e distinguir valor de desconto e preço final.",
     "content": "Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
-    "model": "Porcentagem expressa uma relação em cada cem. Vinte e cinco por cento correspondem à quarta parte. Em oitenta unidades, divida oitenta por quatro para obter vinte.",
+    "model": "Para achar 25% de 40 peças, relaciono 25 de cada 100 à quarta parte. Divido as quarenta em quatro grupos iguais e encontro dez. Confiro que quatro grupos de dez recompõem o total e mantenho a unidade peças.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3207,19 +3535,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-03",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Misturas e separação",
-    "objective": "Misturas e separação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Escolher e justificar um método de separação de misturas a partir de propriedades dos materiais.",
     "content": "Uma mistura reúne substâncias sem que isso implique uma nova substância. O método de separação depende de propriedades como tamanho das partículas e solubilidade.",
-    "model": "Uma mistura reúne substâncias sem que isso implique uma nova substância. O método de separação depende de propriedades como tamanho das partículas e solubilidade.",
+    "model": "Para uma mistura seca de pedrinhas e areia, escolho peneirar pela diferença de tamanho. Para sal dissolvido em água, a peneira comum não basta. Relaciono método e propriedade; aquecimento não é atividade autônoma da criança.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3264,19 +3600,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma mistura reúne substâncias sem que isso implique uma nova substância. O método de separação depende de propriedades como tamanho das partículas e solubilidade.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-04",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "História",
     "title": "Fontes e interpretações",
-    "objective": "Fontes e interpretações: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar fontes históricas situando autoria, contexto, finalidade e limites de interpretação.",
     "content": "Fontes históricas são vestígios investigados com perguntas. Autoria, contexto e finalidade influenciam o que se pode inferir. Fontes diferentes podem sustentar interpretações distintas.",
-    "model": "Fontes históricas são vestígios investigados com perguntas. Autoria, contexto e finalidade influenciam o que se pode inferir. Fontes diferentes podem sustentar interpretações distintas.",
+    "model": "Em duas fontes fictícias sobre a abertura de uma ponte, uma propaganda destaca benefícios e um relato menciona deslocamentos de moradores. Identifico autoria e finalidade antes de comparar as informações; uma fonte não representa todos os grupos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3321,19 +3665,27 @@ window.TRILUME_CATALOG = [
         "reference": "Fontes históricas são vestígios investigados com perguntas. Autoria, contexto e finalidade influenciam o que se pode inferir. Fontes diferentes podem sustentar interpretações distintas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-05",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Orientação e escala",
-    "objective": "Orientação e escala: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar escala com conversão de unidades e reconhecer a orientação como informação distinta no mapa.",
     "content": "Uma escala relaciona a medida no mapa à medida no espaço. Primeiro iguale as unidades. Em uma escala de um para mil, um centímetro representa mil centímetros.",
-    "model": "Uma escala relaciona a medida no mapa à medida no espaço. Primeiro iguale as unidades. Em uma escala de um para mil, um centímetro representa mil centímetros.",
+    "model": "Em escala 1:2.000, um segmento de 3 cm representa 6.000 cm, ou 60 m. Escrevo a conversão para não confundir unidades. Marco também o norte no croqui e explico que orientação é outra informação, não um resultado da escala.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3378,19 +3730,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma escala relaciona a medida no mapa à medida no espaço. Primeiro iguale as unidades. Em uma escala de um para mil, um centímetro representa mil centímetros.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-06",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Elementos da linguagem visual",
-    "objective": "Elementos da linguagem visual: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Descrever elementos de uma composição visual e relacioná-los a uma interpretação justificada.",
     "content": "Forma, cor, textura e organização do espaço participam da produção de sentidos. Uma análise descreve escolhas da obra e relaciona essas escolhas a uma interpretação.",
-    "model": "Forma, cor, textura e organização do espaço participam da produção de sentidos. Uma análise descreve escolhas da obra e relaciona essas escolhas a uma interpretação.",
+    "model": "Em uma composição autoral com um círculo vermelho sobre fundo cinza, descrevo cor, forma e posição antes de interpretar destaque. Mudo o círculo de lugar e comparo o efeito. A interpretação precisa se apoiar nas escolhas visíveis.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3435,19 +3795,27 @@ window.TRILUME_CATALOG = [
         "reference": "Forma, cor, textura e organização do espaço participam da produção de sentidos. Uma análise descreve escolhas da obra e relaciona essas escolhas a uma interpretação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-07",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Regras e estratégias",
-    "objective": "Regras e estratégias: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Distinguir regra e estratégia e experimentar adaptações que preservem desafio e participação.",
     "content": "As regras orientam o que é permitido; as estratégias orientam escolhas para alcançar objetivos. Adaptações podem preservar o desafio e ampliar a participação.",
-    "model": "As regras orientam o que é permitido; as estratégias orientam escolhas para alcançar objetivos. Adaptações podem preservar o desafio e ampliar a participação.",
+    "model": "Em uma brincadeira com alvo, a regra define lançar de uma linha; a estratégia define direção e força possíveis. Altero a distância com acordo do grupo para ampliar acesso. Distingo a regra comum da escolha feita em cada jogada.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3492,19 +3860,27 @@ window.TRILUME_CATALOG = [
         "reference": "As regras orientam o que é permitido; as estratégias orientam escolhas para alcançar objetivos. Adaptações podem preservar o desafio e ampliar a participação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-08",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Informações pessoais em contexto",
-    "objective": "Informações pessoais em contexto: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Localizar nome, interesses e ações da rotina em um perfil em inglês, indicando as pistas textuais.",
     "content": "Um pequeno perfil em inglês costuma informar nome, interesses e rotina. Procure palavras conhecidas e pistas do contexto sem exigir tradução de cada palavra.",
-    "model": "Um pequeno perfil em inglês costuma informar nome, interesses e rotina. Procure palavras conhecidas e pistas do contexto sem exigir tradução de cada palavra.",
+    "model": "Leio o perfil fictício: My name is Sam. I like music. I walk to school. Localizo nome, interesse e uma ação da rotina sem traduzir palavra por palavra. Confiro cada resposta apontando o trecho correspondente.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3549,19 +3925,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um pequeno perfil em inglês costuma informar nome, interesses e rotina. Procure palavras conhecidas e pistas do contexto sem exigir tradução de cada palavra.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-06-09",
-    "version": 1,
+    "version": 2,
     "year": 6,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Tradição e expressão cultural",
-    "objective": "Tradição e expressão cultural: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Situar manifestações culturais em fontes e reconhecer diversidade e liberdade de consciência.",
     "content": "Manifestações religiosas e não religiosas se relacionam a contextos culturais. Estudá-las requer respeito à liberdade de consciência e atenção à diversidade interna dos grupos.",
-    "model": "Manifestações religiosas e não religiosas se relacionam a contextos culturais. Estudá-las requer respeito à liberdade de consciência e atenção à diversidade interna dos grupos.",
+    "model": "Em um exemplo fictício de encontro cultural, identifico origem das informações e diversidade das participações. Conhecer a manifestação não implica adotá-la. Explico que a liberdade de consciência inclui participar, observar ou não aderir.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3606,19 +3990,27 @@ window.TRILUME_CATALOG = [
         "reference": "Manifestações religiosas e não religiosas se relacionam a contextos culturais. Estudá-las requer respeito à liberdade de consciência e atenção à diversidade interna dos grupos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-01",
-    "version": 2,
+    "version": 3,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Argumentos e confiabilidade",
-    "objective": "Argumentos e confiabilidade: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Examinar uma afirmação verificando autoria, razões, evidências e limites de confiabilidade.",
     "content": "Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
-    "model": "Uma afirmação ganha sustentação com razões e evidências pertinentes. Verifique autoria, data e origem da informação. Popularidade não demonstra veracidade.",
+    "model": "Comparo a frase todo mundo diz com um relatório que identifica data, autoria e método. Mostro que popularidade não sustenta a conclusão. Confiro o que o relatório realmente mediu e mantenho a conclusão dentro desse limite.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3731,19 +4123,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-02",
-    "version": 2,
+    "version": 3,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Números racionais",
-    "objective": "Números racionais: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar e comparar números racionais e interpretar sinais e unidades em contextos distintos.",
     "content": "Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
-    "model": "Frações, decimais e números negativos representam relações e posições. Antes de operar, identifique a unidade e o significado dos sinais na situação.",
+    "model": "Na reta numérica, marco −2 e 3 e conto cinco unidades entre as posições. Em outra reta, marco 0,5 e 1/2 no mesmo ponto. Explico que comparar sinais e reconhecer representações equivalentes são objetivos relacionados, mas distintos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3856,19 +4256,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-03",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Ecossistemas e relações",
-    "objective": "Ecossistemas e relações: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Explicar relações em um ecossistema usando evidências e reconhecendo causas e limites do modelo.",
     "content": "Uma mudança em um ecossistema pode afetar várias relações. Para explicar um efeito, apresente uma cadeia de razões sustentada por evidências, sem assumir uma única causa.",
-    "model": "Uma mudança em um ecossistema pode afetar várias relações. Para explicar um efeito, apresente uma cadeia de razões sustentada por evidências, sem assumir uma única causa.",
+    "model": "Em uma teia alimentar simplificada, a redução de plantas pode afetar herbívoros e seus consumidores. Descrevo caminhos possíveis e as condições que precisariam ser observadas. Não trato uma previsão do modelo como causa demonstrada.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3913,19 +4321,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma mudança em um ecossistema pode afetar várias relações. Para explicar um efeito, apresente uma cadeia de razões sustentada por evidências, sem assumir uma única causa.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-04",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "História",
     "title": "Encontros e relações de poder",
-    "objective": "Encontros e relações de poder: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar perspectivas sobre encontros entre povos considerando fontes, conflitos e relações de poder.",
     "content": "Narrativas sobre encontros entre povos devem considerar perspectivas, conflitos e relações de poder. Uma única fonte não representa automaticamente todos os envolvidos.",
-    "model": "Narrativas sobre encontros entre povos devem considerar perspectivas, conflitos e relações de poder. Uma única fonte não representa automaticamente todos os envolvidos.",
+    "model": "Comparo dois relatos fictícios sobre um encontro entre grupos: um destaca comércio, outro perda de acesso ao território. Situo quem fala e quais interesses aparecem. Procuro evidências adicionais antes de sintetizar o processo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -3970,19 +4386,27 @@ window.TRILUME_CATALOG = [
         "reference": "Narrativas sobre encontros entre povos devem considerar perspectivas, conflitos e relações de poder. Uma única fonte não representa automaticamente todos os envolvidos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-05",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Território e desigualdade",
-    "objective": "Território e desigualdade: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar indicadores territoriais e explicar por que uma média pode ocultar diferenças entre grupos.",
     "content": "Indicadores territoriais precisam ser lidos com unidade, data e contexto. Uma média pode esconder diferenças entre grupos e regiões.",
-    "model": "Indicadores territoriais precisam ser lidos com unidade, data e contexto. Uma média pode esconder diferenças entre grupos e regiões.",
+    "model": "Em dados fictícios, duas regiões têm a mesma renda média e distribuições diferentes. Construo uma lista de valores para mostrar como uma média igual pode esconder desigualdades. Registro ano, unidade e recorte dos dados.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4027,19 +4451,27 @@ window.TRILUME_CATALOG = [
         "reference": "Indicadores territoriais precisam ser lidos com unidade, data e contexto. Uma média pode esconder diferenças entre grupos e regiões.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-06",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Criação e contexto",
-    "objective": "Criação e contexto: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Experimentar e revisar uma criação artística justificando relações entre materiais, técnicas e contexto.",
     "content": "Uma produção artística dialoga com materiais, técnicas e contextos. Experimentar implica registrar escolhas, observar seus efeitos e revisar a composição.",
-    "model": "Uma produção artística dialoga com materiais, técnicas e contextos. Experimentar implica registrar escolhas, observar seus efeitos e revisar a composição.",
+    "model": "Escolho uma textura e uma referência identificada para criar uma composição autoral. Faço duas versões, comparo seus efeitos e explico uma revisão. A referência informa a criação, sem ser tratada como modelo obrigatório.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4084,19 +4516,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma produção artística dialoga com materiais, técnicas e contextos. Experimentar implica registrar escolhas, observar seus efeitos e revisar a composição.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-07",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Esportes e tomada de decisão",
-    "objective": "Esportes e tomada de decisão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Justificar e revisar decisões em práticas corporais em função de regras, objetivo e condições de participação.",
     "content": "A tomada de decisão em práticas corporais depende do objetivo, das regras e das condições de participação. Desempenho não se resume a força ou velocidade.",
-    "model": "A tomada de decisão em práticas corporais depende do objetivo, das regras e das condições de participação. Desempenho não se resume a força ou velocidade.",
+    "model": "Em um jogo adaptado de passes, vejo que um colega ficou sem opção de receber. Mudo o posicionamento e explico a decisão em função da regra e do objetivo. Verifico o resultado com o grupo, sem classificar pessoas por força ou velocidade.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4141,19 +4581,27 @@ window.TRILUME_CATALOG = [
         "reference": "A tomada de decisão em práticas corporais depende do objetivo, das regras e das condições de participação. Desempenho não se resume a força ou velocidade.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-08",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Ler instruções e rotinas",
-    "objective": "Ler instruções e rotinas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Compreender e organizar instruções e rotinas em inglês usando verbos, conectores e contexto.",
     "content": "Verbos e conectores ajudam a compreender instruções. First indica início; then indica sequência. Consulte contexto e recursos de acesso sem supor o sentido só pela aparência.",
-    "model": "Verbos e conectores ajudam a compreender instruções. First indica início; then indica sequência. Consulte contexto e recursos de acesso sem supor o sentido só pela aparência.",
+    "model": "Leio: First, open the box. Then, take a card. Relaciono first e then à ordem de ações e demonstro com uma caixa segura. Depois retiro a demonstração e confiro a compreensão em uma instrução diferente.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4198,19 +4646,27 @@ window.TRILUME_CATALOG = [
         "reference": "Verbos e conectores ajudam a compreender instruções. First indica início; then indica sequência. Consulte contexto e recursos de acesso sem supor o sentido só pela aparência.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-07-09",
-    "version": 1,
+    "version": 2,
     "year": 7,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Lideranças e convivência",
-    "objective": "Lideranças e convivência: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar ações de lideranças por seus efeitos e pelo respeito aos direitos, sem hierarquizar crenças.",
     "content": "Lideranças podem atuar em grupos religiosos ou seculares. Avaliar uma ação requer observar seus efeitos e o respeito aos direitos, sem pressupor superioridade de uma crença.",
-    "model": "Lideranças podem atuar em grupos religiosos ou seculares. Avaliar uma ação requer observar seus efeitos e o respeito aos direitos, sem pressupor superioridade de uma crença.",
+    "model": "Em uma situação fictícia, uma liderança organiza uso compartilhado de um espaço. Avalio se a ação ouviu participantes e preservou direitos. Distingo autoridade declarada dos efeitos concretos, sem avaliar o valor de uma crença.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4255,19 +4711,27 @@ window.TRILUME_CATALOG = [
         "reference": "Lideranças podem atuar em grupos religiosos ou seculares. Avaliar uma ação requer observar seus efeitos e o respeito aos direitos, sem pressupor superioridade de uma crença.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-01",
-    "version": 2,
+    "version": 3,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Pontos de vista e sentidos",
-    "objective": "Pontos de vista e sentidos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar pontos de vista indicando como palavras, público e contexto participam dos sentidos.",
     "content": "A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
-    "model": "A escolha de palavras e o contexto influenciam sentidos. Identifique quem fala, para quem e com qual finalidade. Uma interpretação precisa apontar evidências do texto.",
+    "model": "Comparo o espaço ficou vazio com o espaço ficou disponível. Aponto como as palavras sugerem avaliações diferentes do mesmo lugar. Relaciono a escolha lexical ao público e à finalidade antes de defender uma interpretação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4380,19 +4844,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-02",
-    "version": 2,
+    "version": 3,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Proporcionalidade e álgebra",
-    "objective": "Proporcionalidade e álgebra: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar relações proporcionais, conferir razões e explicar uma expressão algébrica e seus limites.",
     "content": "Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
-    "model": "Em relações proporcionais, a razão entre grandezas se mantém. Uma expressão algébrica representa uma relação; confira se ela vale para mais de um exemplo.",
+    "model": "Se cada kit exige três peças iguais, dois kits exigem seis e quatro exigem doze. Registro y = 3x e confiro a razão y/x para x positivo. Comparo com uma situação com taxa fixa, que não mantém a mesma razão.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4505,19 +4977,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-03",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Energia e transformações",
-    "objective": "Energia e transformações: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Distinguir fonte, transferência e transformação de energia em um fenômeno ou aparelho.",
     "content": "Energia pode ser transferida e transformada. Um aparelho não cria energia do nada. Diferencie a transformação observada da fonte que sustenta o funcionamento.",
-    "model": "Energia pode ser transferida e transformada. Um aparelho não cria energia do nada. Diferencie a transformação observada da fonte que sustenta o funcionamento.",
+    "model": "Em uma lanterna de pilha, descrevo energia armazenada que alimenta o circuito e se transforma em luz e aquecimento. Diferencio fonte e transformação. Não desmonto aparelhos nem conecto atividades à tomada.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4562,19 +5042,27 @@ window.TRILUME_CATALOG = [
         "reference": "Energia pode ser transferida e transformada. Um aparelho não cria energia do nada. Diferencie a transformação observada da fonte que sustenta o funcionamento.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-04",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "História",
     "title": "Revoluções e mudança social",
-    "objective": "Revoluções e mudança social: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Explicar condições e consequências de mudanças sociais para grupos diferentes, apoiando-se em fontes.",
     "content": "Processos revolucionários envolvem disputas e mudanças com efeitos diferentes sobre grupos. Relacione condições, ações e consequências sem reduzir tudo a uma pessoa.",
-    "model": "Processos revolucionários envolvem disputas e mudanças com efeitos diferentes sobre grupos. Relacione condições, ações e consequências sem reduzir tudo a uma pessoa.",
+    "model": "Em um caso histórico fictício para analisar um modelo de revolução, organizo condições, ações e consequências para dois grupos. Explico que o esquema ajuda a perguntar, mas fatos reais exigem fontes e recortes próprios.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4619,19 +5107,27 @@ window.TRILUME_CATALOG = [
         "reference": "Processos revolucionários envolvem disputas e mudanças com efeitos diferentes sobre grupos. Relacione condições, ações e consequências sem reduzir tudo a uma pessoa.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-05",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Fluxos e redes",
-    "objective": "Fluxos e redes: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Representar fluxos e redes e explicar conexões e desigualdades com dados situados.",
     "content": "Redes conectam lugares por fluxos de pessoas, bens e informações. A intensidade dessas conexões pode ser desigual e mudar com condições econômicas e políticas.",
-    "model": "Redes conectam lugares por fluxos de pessoas, bens e informações. A intensidade dessas conexões pode ser desigual e mudar com condições econômicas e políticas.",
+    "model": "Desenho uma rede fictícia de três cidades com fluxos de mercadorias. Uma ponte interrompida altera uma rota e pode aumentar o tempo. Distingo conexão possível de intensidade efetiva e pergunto quais dados faltam.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4676,19 +5172,27 @@ window.TRILUME_CATALOG = [
         "reference": "Redes conectam lugares por fluxos de pessoas, bens e informações. A intensidade dessas conexões pode ser desigual e mudar com condições econômicas e políticas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-06",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Artes integradas",
-    "objective": "Artes integradas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Criar uma produção que relacione linguagens artísticas e justificar a função de cada escolha.",
     "content": "Uma produção pode combinar imagem, corpo, som e palavra. Integrar linguagens exige relacionar escolhas ao objetivo, sem apenas acumular elementos.",
-    "model": "Uma produção pode combinar imagem, corpo, som e palavra. Integrar linguagens exige relacionar escolhas ao objetivo, sem apenas acumular elementos.",
+    "model": "Para comunicar uma travessia, combino três imagens e uma paisagem sonora autoral. Explico a função de cada linguagem e retiro um som para comparar o efeito. Integração depende da relação com a intenção, não da quantidade de recursos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4733,19 +5237,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma produção pode combinar imagem, corpo, som e palavra. Integrar linguagens exige relacionar escolhas ao objetivo, sem apenas acumular elementos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-07",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Corpo, mídia e respeito",
-    "objective": "Corpo, mídia e respeito: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Examinar mensagens sobre corpos e práticas corporais identificando fonte, interesse e consequências.",
     "content": "Mensagens sobre corpos podem apresentar padrões e interesses comerciais. Analise a fonte e as consequências sem julgar o valor de uma pessoa por sua aparência.",
-    "model": "Mensagens sobre corpos podem apresentar padrões e interesses comerciais. Analise a fonte e as consequências sem julgar o valor de uma pessoa por sua aparência.",
+    "model": "Analiso o anúncio fictício transforme seu corpo em dez dias. Identifico a promessa, o interesse comercial e a ausência de evidência apresentada. Discuto efeitos da mensagem sem comparar nem julgar corpos de participantes.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4790,19 +5302,27 @@ window.TRILUME_CATALOG = [
         "reference": "Mensagens sobre corpos podem apresentar padrões e interesses comerciais. Analise a fonte e as consequências sem julgar o valor de uma pessoa por sua aparência.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-08",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Compreender e comparar textos",
-    "objective": "Compreender e comparar textos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Compreender e comparar textos em inglês, conferindo hipóteses de sentido no contexto.",
     "content": "Títulos, cognatos e organização textual ajudam a formular hipóteses de leitura. Confirme o sentido no contexto; palavras parecidas podem ter significados diferentes.",
-    "model": "Títulos, cognatos e organização textual ajudam a formular hipóteses de leitura. Confirme o sentido no contexto; palavras parecidas podem ter significados diferentes.",
+    "model": "Leio: The library opens at nine. I actually arrive at ten. Confiro library como biblioteca e actually como na verdade, usando contexto. Mostro que semelhança gráfica pode ajudar uma hipótese, mas não garante o sentido.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4847,19 +5367,27 @@ window.TRILUME_CATALOG = [
         "reference": "Títulos, cognatos e organização textual ajudam a formular hipóteses de leitura. Confirme o sentido no contexto; palavras parecidas podem ter significados diferentes.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-08-09",
-    "version": 1,
+    "version": 2,
     "year": 8,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Convicções e direitos",
-    "objective": "Convicções e direitos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Justificar propostas para conciliar convicções e direitos sem impor práticas a outras pessoas.",
     "content": "Convicções pessoais coexistem com direitos coletivos. A liberdade de consciência inclui manifestar crenças sem impor práticas às demais pessoas.",
-    "model": "Convicções pessoais coexistem com direitos coletivos. A liberdade de consciência inclui manifestar crenças sem impor práticas às demais pessoas.",
+    "model": "Em uma decisão fictícia sobre uso de um espaço comum, identifico uma preferência pessoal e um direito de participação. Proponho uma regra que preserve ambos sempre que possível e explico como discutir um conflito sem impor crença.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -4904,19 +5432,27 @@ window.TRILUME_CATALOG = [
         "reference": "Convicções pessoais coexistem com direitos coletivos. A liberdade de consciência inclui manifestar crenças sem impor práticas às demais pessoas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-01",
-    "version": 2,
+    "version": 3,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Produção argumentativa",
-    "objective": "Produção argumentativa: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar, produzir e revisar uma argumentação com tese, razões, evidências e consideração de uma objeção.",
     "content": "Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
-    "model": "Um texto argumentativo articula tese, razões, evidências e consideração de objeções. Revisar envolve conferir a relação entre afirmações e fontes, além da organização.",
+    "model": "Planejo uma tese sobre um espaço de leitura. Escrevo uma razão, um dado fictício claramente identificado e uma objeção sobre acesso. Respondo à objeção sem desqualificar quem discorda e reviso se cada evidência sustenta a tese.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5029,19 +5565,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-02",
-    "version": 2,
+    "version": 3,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Relações e funções",
-    "objective": "Relações e funções: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar tabela, gráfico e expressão de uma função, explicitando regra, domínio e unidade.",
     "content": "Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
-    "model": "Uma função associa a cada entrada uma saída conforme uma regra. Tabelas, gráficos e expressões precisam representar a mesma relação.",
+    "model": "Na regra y = 2x + 3, calculo saídas para x = 0, 1 e 2: 3, 5 e 7. Organizo a tabela e os pontos correspondentes no gráfico. Confiro que cada entrada do domínio considerado tem uma única saída.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5154,19 +5698,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-03",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ciências",
     "title": "Matéria e evidências",
-    "objective": "Matéria e evidências: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar observações e modelos para explicar transformações da matéria e os limites da evidência.",
     "content": "Uma explicação sobre transformação da matéria deve relacionar observações, modelos e condições. Aparência diferente não basta para concluir qual processo ocorreu.",
-    "model": "Uma explicação sobre transformação da matéria deve relacionar observações, modelos e condições. Aparência diferente não basta para concluir qual processo ocorreu.",
+    "model": "Comparo gelo derretendo e papel sendo queimado em registros fornecidos pelo adulto, sem realizar combustão. Descrevo mudanças e relaciono fusão a mudança de estado. A análise de combustão precisa considerar formação de outras substâncias e evidências.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5211,19 +5763,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma explicação sobre transformação da matéria deve relacionar observações, modelos e condições. Aparência diferente não basta para concluir qual processo ocorreu.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma pergunta do cotidiano com observação e cuidado.",
+      "exploration": "Use objetos seguros, desenhos ou dados fornecidos pelo adulto; combine o que observar antes de comparar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que foi observado e o que ainda é uma hipótese?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-04",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "História",
     "title": "Memória, democracia e direitos",
-    "objective": "Memória, democracia e direitos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Confrontar memórias e fontes sobre democracia e direitos, situando contextos e relações de poder.",
     "content": "Memórias e narrativas históricas podem divergir. A análise exige confrontar fontes, identificar contextos e considerar relações entre poder, democracia e direitos.",
-    "model": "Memórias e narrativas históricas podem divergir. A análise exige confrontar fontes, identificar contextos e considerar relações entre poder, democracia e direitos.",
+    "model": "Comparo dois registros fictícios sobre uma decisão pública e identifico quem fala e quais direitos são mencionados. Distingo lembrança, registro e interpretação. Não concluo que uma narrativa isolada representa todo o período histórico.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5268,19 +5828,27 @@ window.TRILUME_CATALOG = [
         "reference": "Memórias e narrativas históricas podem divergir. A análise exige confrontar fontes, identificar contextos e considerar relações entre poder, democracia e direitos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-05",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Globalização e escalas",
-    "objective": "Globalização e escalas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar conexões entre escalas locais e globais sem apagar particularidades dos lugares.",
     "content": "Um fenômeno pode ter efeitos locais, nacionais e globais. Comparar escalas ajuda a perceber conexões e diferenças; uma explicação global não elimina particularidades.",
-    "model": "Um fenômeno pode ter efeitos locais, nacionais e globais. Comparar escalas ajuda a perceber conexões e diferenças; uma explicação global não elimina particularidades.",
+    "model": "Acompanho um produto fictício da matéria-prima ao descarte e marco efeitos locais e ligações internacionais. Explico que uma conexão global não informa sozinha condições de trabalho de cada lugar; são necessários dados específicos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5325,19 +5893,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um fenômeno pode ter efeitos locais, nacionais e globais. Comparar escalas ajuda a perceber conexões e diferenças; uma explicação global não elimina particularidades.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-06",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Projeto artístico e autoria",
-    "objective": "Projeto artístico e autoria: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar e revisar um projeto artístico com intenção, referências e atribuição de contribuições.",
     "content": "Um projeto explicita intenção, referências, procedimentos e revisões. Reconheça contribuições de outras pessoas e diferencie inspiração de reprodução sem atribuição.",
-    "model": "Um projeto explicita intenção, referências, procedimentos e revisões. Reconheça contribuições de outras pessoas e diferencie inspiração de reprodução sem atribuição.",
+    "model": "Planejo um cartaz autoral com uma referência identificada, intenção e público. Registro o que produzi e o que tomei como inspiração. Reviso contraste e legibilidade e explico como essas decisões atendem ao público.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5382,19 +5958,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um projeto explicita intenção, referências, procedimentos e revisões. Reconheça contribuições de outras pessoas e diferencie inspiração de reprodução sem atribuição.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-07",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Planejar práticas acessíveis",
-    "objective": "Planejar práticas acessíveis: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar uma prática corporal educativa com participação, acesso, segurança e critérios de revisão.",
     "content": "Planejar uma prática envolve objetivos, possibilidades dos participantes, segurança e avaliação. Tempo e intensidade devem ser ajustados ao contexto, sem prescrição clínica.",
-    "model": "Planejar uma prática envolve objetivos, possibilidades dos participantes, segurança e avaliação. Tempo e intensidade devem ser ajustados ao contexto, sem prescrição clínica.",
+    "model": "Para um encontro de jogos, combino objetivo, espaço, adaptações e sinal de pausa. Pergunto preferências e possibilidades aos participantes, em vez de decidir por aparência. Reviso a proposta a partir do conforto e da participação observados.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5439,19 +6023,27 @@ window.TRILUME_CATALOG = [
         "reference": "Planejar uma prática envolve objetivos, possibilidades dos participantes, segurança e avaliação. Tempo e intensidade devem ser ajustados ao contexto, sem prescrição clínica.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-08",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Argumentar em outra língua",
-    "objective": "Argumentar em outra língua: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Sustentar uma opinião em inglês com razão e exemplo adequados a um público.",
     "content": "Uma opinião em inglês pode ser sustentada por uma razão e um exemplo. Clareza e adequação ao público importam; recursos de acesso não substituem a habilidade-alvo.",
-    "model": "Uma opinião em inglês pode ser sustentada por uma razão e um exemplo. Clareza e adequação ao público importam; recursos de acesso não substituem a habilidade-alvo.",
+    "model": "Escrevo: I think a reading corner helps our class because books become easier to find. For example, we can label the shelves. Identifico posição, razão e exemplo e reviso a adequação ao público sem confundir correção linguística com força da evidência.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5496,19 +6088,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma opinião em inglês pode ser sustentada por uma razão e um exemplo. Clareza e adequação ao público importam; recursos de acesso não substituem a habilidade-alvo.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-09-09",
-    "version": 1,
+    "version": 2,
     "year": 9,
     "stage": "ef2",
     "lane": "curriculum",
     "subject": "Ensino Religioso",
     "title": "Diversidade e cultura de paz",
-    "objective": "Diversidade e cultura de paz: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Reconhecer discriminação e propor ações de proteção de direitos e convivência.",
     "content": "Enfrentar intolerância envolve reconhecer discriminação, proteger direitos e propor ações de convivência. O estudo escolar não exige declarar ou praticar uma religião.",
-    "model": "Enfrentar intolerância envolve reconhecer discriminação, proteger direitos e propor ações de convivência. O estudo escolar não exige declarar ou praticar uma religião.",
+    "model": "Em uma situação fictícia de intolerância, identifico a conduta discriminatória, acolho quem foi atingido e proponho regra de proteção e encaminhamento ao adulto responsável. Não exijo que a pessoa revele sua crença para receber apoio.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5553,19 +6153,27 @@ window.TRILUME_CATALOG = [
         "reference": "Enfrentar intolerância envolve reconhecer discriminação, proteger direitos e propor ações de convivência. O estudo escolar não exige declarar ou praticar uma religião.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos conhecer modos de viver e conviver com respeito à liberdade de cada pessoa.",
+      "exploration": "Use situações fictícias e fontes identificadas, sem exigir declaração ou prática de crença.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Sua proposta protege também quem pensa ou vive de outro modo?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-01",
-    "version": 2,
+    "version": 3,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Análise crítica de argumentos",
-    "objective": "Análise crítica de argumentos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar tese, evidências e pressupostos e distinguir associação observada de conclusão causal.",
     "content": "Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
-    "model": "Uma tese precisa ser examinada junto às evidências e aos pressupostos. Distinguir correlação de causa evita conclusões que os dados não sustentam.",
+    "model": "Em dados fictícios, turmas que frequentam a biblioteca também leem mais. Mostro que a associação permite uma hipótese, mas não prova que a visita causou o resultado. Considero interesse prévio e acesso como explicações a investigar.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5678,19 +6286,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-02",
-    "version": 2,
+    "version": 3,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Função afim e modelagem",
-    "objective": "Função afim e modelagem: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Construir e conferir um modelo afim identificando parcela fixa, variação, unidades e limites.",
     "content": "Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
-    "model": "Um modelo afim tem parcela fixa e variação constante. Na expressão y igual a três x mais cinco, cinco é o valor inicial e três é a variação por unidade.",
+    "model": "No custo fictício y = 4x + 6, seis é a parcela fixa e quatro o acréscimo por unidade. Calculo valores para zero e duas unidades e obtenho seis e quatorze. Confiro unidades e pergunto em que intervalo a regra é plausível.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5803,19 +6419,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-03",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Biologia",
     "title": "Células e organização",
-    "objective": "Células e organização: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar estruturas e funções celulares, reconhecendo limites e variações do modelo representado.",
     "content": "Células são unidades de organização dos seres vivos. Estruturas celulares participam de funções; modelos simplificam a realidade e precisam ter seus limites reconhecidos.",
-    "model": "Células são unidades de organização dos seres vivos. Estruturas celulares participam de funções; modelos simplificam a realidade e precisam ter seus limites reconhecidos.",
+    "model": "Em um desenho de célula eucariótica, relaciono membrana à delimitação e a trocas com o meio, e núcleo ao material genético naquele modelo. Explico que organelas e escalas foram simplificadas e que o desenho não representa todos os tipos celulares.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5860,19 +6484,27 @@ window.TRILUME_CATALOG = [
         "reference": "Células são unidades de organização dos seres vivos. Estruturas celulares participam de funções; modelos simplificam a realidade e precisam ter seus limites reconhecidos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar modelos para investigar a vida e seus processos.",
+      "exploration": "Construa um esquema, indique suas hipóteses e compare previsões com dados fornecidos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que esse modelo explica e o que ele deixa de representar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-04",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Física",
     "title": "Medidas e movimento",
-    "objective": "Medidas e movimento: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Descrever movimento com referencial, medidas e unidades e distinguir velocidade média de valores instantâneos.",
     "content": "Uma descrição de movimento depende de referencial, tempo e unidade. Velocidade média relaciona deslocamento e intervalo; não descreve cada instante do percurso.",
-    "model": "Uma descrição de movimento depende de referencial, tempo e unidade. Velocidade média relaciona deslocamento e intervalo; não descreve cada instante do percurso.",
+    "model": "Um móvel vai de 2 m a 14 m em 4 s no referencial escolhido. O deslocamento é 12 m e a velocidade média é 3 m/s. Explico que esse valor não informa a velocidade em cada instante e diferencio deslocamento de distância percorrida.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5917,19 +6549,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma descrição de movimento depende de referencial, tempo e unidade. Velocidade média relaciona deslocamento e intervalo; não descreve cada instante do percurso.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descrever um fenômeno e conferir as relações entre medidas.",
+      "exploration": "Use desenho ou simulação no papel; nomeie sistema, referencial e unidades antes de calcular.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Quais hipóteses e unidades sustentam sua conclusão?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-05",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Química",
     "title": "Modelos de matéria",
-    "objective": "Modelos de matéria: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar modelos de matéria em função das perguntas, evidências e limites que apresentam.",
     "content": "Modelos atômicos ajudam a explicar propriedades e transformações. Um modelo tem finalidade e limites; evidências novas podem exigir revisão da explicação.",
-    "model": "Modelos atômicos ajudam a explicar propriedades e transformações. Um modelo tem finalidade e limites; evidências novas podem exigir revisão da explicação.",
+    "model": "Comparo dois modelos de átomo por suas perguntas e limites: um núcleo com região eletrônica permite explicar aspectos que uma esfera indivisível não descrevia. Evito representar órbitas desenhadas como trajetórias exatas de elétrons em qualquer modelo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -5974,19 +6614,27 @@ window.TRILUME_CATALOG = [
         "reference": "Modelos atômicos ajudam a explicar propriedades e transformações. Um modelo tem finalidade e limites; evidências novas podem exigir revisão da explicação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos relacionar substâncias, modelos e evidências de transformação.",
+      "exploration": "Use representações e dados; não realize aquecimento, misturas ou montagens sem planejamento e mediação adequados.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que evidência sustenta a explicação e quais condições foram consideradas?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-06",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "História",
     "title": "Tempo histórico e perspectivas",
-    "objective": "Tempo histórico e perspectivas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Justificar uma periodização histórica e reconhecer diferenças entre recortes e perspectivas.",
     "content": "Periodizações são construções usadas para organizar o estudo. Elas não descrevem mudanças simultâneas e idênticas em todas as sociedades.",
-    "model": "Periodizações são construções usadas para organizar o estudo. Elas não descrevem mudanças simultâneas e idênticas em todas as sociedades.",
+    "model": "Para estudar uma comunidade fictícia, divido registros em antes e depois de uma ponte. Explico que esse recorte serve à pergunta sobre circulação e pode não organizar outras comunidades do mesmo modo. Periodização é uma escolha analítica.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6031,19 +6679,27 @@ window.TRILUME_CATALOG = [
         "reference": "Periodizações são construções usadas para organizar o estudo. Elas não descrevem mudanças simultâneas e idênticas em todas as sociedades.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-07",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Cartografia e território",
-    "objective": "Cartografia e território: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar mapas considerando escala, projeção, legenda, recorte e finalidade.",
     "content": "Mapas fazem escolhas de escala, projeção, símbolos e recorte. Essas escolhas favorecem certas leituras e precisam ser consideradas na interpretação.",
-    "model": "Mapas fazem escolhas de escala, projeção, símbolos e recorte. Essas escolhas favorecem certas leituras e precisam ser consideradas na interpretação.",
+    "model": "Comparo dois mapas do mesmo território em escalas diferentes. O de maior detalhamento mostra ruas e o outro destaca conexões regionais. Explico que projeção e recorte alteram a representação e examino legenda e fonte antes da leitura.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6088,19 +6744,27 @@ window.TRILUME_CATALOG = [
         "reference": "Mapas fazem escolhas de escala, projeção, símbolos e recorte. Essas escolhas favorecem certas leituras e precisam ser consideradas na interpretação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-08",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Filosofia",
     "title": "Perguntas e argumentos",
-    "objective": "Perguntas e argumentos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Formular uma pergunta e reconstruir argumentos distinguindo premissas, conclusão e justificação.",
     "content": "Uma pergunta filosófica problematiza conceitos e razões. Um argumento articula premissas e conclusão; concordar com a conclusão não demonstra validade.",
-    "model": "Uma pergunta filosófica problematiza conceitos e razões. Um argumento articula premissas e conclusão; concordar com a conclusão não demonstra validade.",
+    "model": "No argumento todas as aves do grupo observado têm penas; este animal é uma ave desse grupo; portanto tem penas, identifico premissas e conclusão. Separo a relação lógica da necessidade de conferir a verdade das premissas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6145,19 +6809,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma pergunta filosófica problematiza conceitos e razões. Um argumento articula premissas e conclusão; concordar com a conclusão não demonstra validade.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos construir uma pergunta e examinar as razões de uma resposta.",
+      "exploration": "Reconstrua uma posição, formule uma objeção e revise a justificativa sem exigir concordância pessoal.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual razão você manteria diante de uma objeção forte?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-09",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Sociologia",
     "title": "Socialização e instituições",
-    "objective": "Socialização e instituições: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar práticas individuais, normas e instituições em uma explicação situada, evitando estereótipos.",
     "content": "Práticas individuais se relacionam a normas, instituições e contextos. Uma explicação sociológica investiga padrões sem reduzir pessoas a estereótipos.",
-    "model": "Práticas individuais se relacionam a normas, instituições e contextos. Uma explicação sociológica investiga padrões sem reduzir pessoas a estereótipos.",
+    "model": "Em uma escola fictícia, observo uma regra de horário e relatos de estudantes com trajetos diferentes. Relaciono normas, transporte e rotina, sem atribuir atraso a um traço de toda a pessoa. Uma hipótese social requer padrões e dados.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6202,19 +6874,27 @@ window.TRILUME_CATALOG = [
         "reference": "Práticas individuais se relacionam a normas, instituições e contextos. Uma explicação sociológica investiga padrões sem reduzir pessoas a estereótipos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma situação social com conceitos e evidências.",
+      "exploration": "Situe os dados e diferencie descrição, hipótese e explicação antes de generalizar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que contexto ou informação mudaria sua interpretação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-10",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Processo criativo e repertório",
-    "objective": "Processo criativo e repertório: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Desenvolver e revisar uma criação com referências identificadas e registro das escolhas.",
     "content": "Um processo criativo articula referências, experimentação, escolhas e revisão. Referências devem ser identificadas; diversidade de repertório amplia possibilidades sem impor um padrão único.",
-    "model": "Um processo criativo articula referências, experimentação, escolhas e revisão. Referências devem ser identificadas; diversidade de repertório amplia possibilidades sem impor um padrão único.",
+    "model": "Reúno duas referências identificadas e testo materiais para uma produção autoral. Registro a intenção de cada versão, comparo efeitos e justifico uma mudança. Reconheço limites do meu olhar e convido outras leituras.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6259,19 +6939,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um processo criativo articula referências, experimentação, escolhas e revisão. Referências devem ser identificadas; diversidade de repertório amplia possibilidades sem impor um padrão único.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-11",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Cultura corporal e participação",
-    "objective": "Cultura corporal e participação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar práticas corporais como produções culturais e planejar participação acessível.",
     "content": "Práticas corporais expressam histórias e relações sociais. Organizar participação envolve reconhecer barreiras, segurança e possibilidades, sem reduzir saúde à aparência.",
-    "model": "Práticas corporais expressam histórias e relações sociais. Organizar participação envolve reconhecer barreiras, segurança e possibilidades, sem reduzir saúde à aparência.",
+    "model": "Analiso uma prática corporal por história, regras e condições de acesso. Em uma organização fictícia, mudo espaço e papéis após ouvir participantes. Avalio inclusão e segurança do encontro, sem usar aparência como indicador de saúde.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6316,19 +7004,27 @@ window.TRILUME_CATALOG = [
         "reference": "Práticas corporais expressam histórias e relações sociais. Organizar participação envolve reconhecer barreiras, segurança e possibilidades, sem reduzir saúde à aparência.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-10-12",
-    "version": 1,
+    "version": 2,
     "year": 10,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Letramento e fontes",
-    "objective": "Letramento e fontes: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Ler criticamente em inglês identificando autoria, finalidade e evidências e conferindo o sentido.",
     "content": "Ler criticamente em inglês envolve identificar autoria, finalidade, público e evidências. Tradução automática pode apoiar acesso sob mediação, mas exige conferência de sentidos.",
-    "model": "Ler criticamente em inglês envolve identificar autoria, finalidade, público e evidências. Tradução automática pode apoiar acesso sob mediação, mas exige conferência de sentidos.",
+    "model": "Leio o texto autoral: Our school garden project recorded plant growth weekly. Identifico autoria declarada, ação e periodicidade informada. Pergunto que dados sustentariam uma conclusão sobre crescimento; o enunciado sozinho não prova eficácia.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6373,19 +7069,27 @@ window.TRILUME_CATALOG = [
         "reference": "Ler criticamente em inglês envolve identificar autoria, finalidade, público e evidências. Tradução automática pode apoiar acesso sob mediação, mas exige conferência de sentidos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-01",
-    "version": 2,
+    "version": 3,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Síntese e autoria",
-    "objective": "Síntese e autoria: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Sintetizar ideias de fontes diferentes com atribuição, preservando sentidos e reconhecendo divergências.",
     "content": "Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
-    "model": "Uma síntese relaciona ideias de fontes diferentes com atribuição. Parafrasear exige reformular a estrutura, preservar o sentido e indicar a origem das ideias.",
+    "model": "Em dois textos autorais fictícios, uma fonte discute acesso a livros e outra uso do espaço de leitura. Sintetizo a relação sem apagar diferenças e atribuo cada ideia à fonte. Confiro se a paráfrase preserva sentido e traz estrutura própria.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6498,19 +7202,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-02",
-    "version": 2,
+    "version": 3,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Probabilidade e amostragem",
-    "objective": "Probabilidade e amostragem: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Calcular probabilidade sob hipóteses explícitas e analisar seleção amostral como alvo distinto.",
     "content": "Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
-    "model": "Probabilidade relaciona eventos a um espaço de possibilidades definido. Uma amostra pode produzir estimativas, mas tamanho e seleção afetam sua interpretação.",
+    "model": "Em uma urna com três fichas verdes e três amarelas, com sorteio equiprovável de uma ficha, a probabilidade de verde é 3/6 = 1/2. Separadamente, explico por que entrevistar só voluntários de um clube não representa toda a escola: amostragem é outro alvo.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6623,19 +7335,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-03",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Biologia",
     "title": "Hereditariedade e variação",
-    "objective": "Hereditariedade e variação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Interpretar um modelo de herança e suas probabilidades reconhecendo hipóteses e limites.",
     "content": "Modelos de herança descrevem relações entre material genético, características e probabilidades. Nem toda característica resulta de uma única relação simples.",
-    "model": "Modelos de herança descrevem relações entre material genético, características e probabilidades. Nem toda característica resulta de uma única relação simples.",
+    "model": "Em um modelo mendeliano simplificado Aa × Aa, organizo AA, Aa, Aa e aa e obtenho 1/4 para aa sob as hipóteses do modelo. Diferencio probabilidade por evento e previsão de um resultado individual; características reais podem envolver muitos genes e ambiente.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6680,19 +7400,27 @@ window.TRILUME_CATALOG = [
         "reference": "Modelos de herança descrevem relações entre material genético, características e probabilidades. Nem toda característica resulta de uma única relação simples.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar modelos para investigar a vida e seus processos.",
+      "exploration": "Construa um esquema, indique suas hipóteses e compare previsões com dados fornecidos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que esse modelo explica e o que ele deixa de representar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-04",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Física",
     "title": "Energia e conservação",
-    "objective": "Energia e conservação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar transferências e transformações de energia em um sistema explicitamente delimitado.",
     "content": "Em um sistema definido, contabilizar transferências ajuda a analisar conservação de energia. Perdas aparentes podem envolver transformações não consideradas no modelo.",
-    "model": "Em um sistema definido, contabilizar transferências ajuda a analisar conservação de energia. Perdas aparentes podem envolver transformações não consideradas no modelo.",
+    "model": "Uma esfera desce uma rampa. Delimito o sistema e explico a redução de energia potencial gravitacional com aumento de energia cinética e outras transferências. Com atrito, considero aquecimento; não concluo que a energia desapareceu.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6737,19 +7465,27 @@ window.TRILUME_CATALOG = [
         "reference": "Em um sistema definido, contabilizar transferências ajuda a analisar conservação de energia. Perdas aparentes podem envolver transformações não consideradas no modelo.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descrever um fenômeno e conferir as relações entre medidas.",
+      "exploration": "Use desenho ou simulação no papel; nomeie sistema, referencial e unidades antes de calcular.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Quais hipóteses e unidades sustentam sua conclusão?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-05",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Química",
     "title": "Quantidades e reações",
-    "objective": "Quantidades e reações: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Balancear equações conservando átomos e interpretar relações de quantidade sem alterar fórmulas.",
     "content": "Uma equação balanceada representa relações entre partículas e quantidades. Conserve os átomos de cada elemento e diferencie coeficientes de índices da fórmula.",
-    "model": "Uma equação balanceada representa relações entre partículas e quantidades. Conserve os átomos de cada elemento e diferencie coeficientes de índices da fórmula.",
+    "model": "Balanceio H₂ + O₂ → H₂O contando átomos. Escrevo 2 H₂ + O₂ → 2 H₂O e confiro quatro átomos de H e dois de O de cada lado. Altero coeficientes, preservando as fórmulas; não realizo a reação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6794,19 +7530,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma equação balanceada representa relações entre partículas e quantidades. Conserve os átomos de cada elemento e diferencie coeficientes de índices da fórmula.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos relacionar substâncias, modelos e evidências de transformação.",
+      "exploration": "Use representações e dados; não realize aquecimento, misturas ou montagens sem planejamento e mediação adequados.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que evidência sustenta a explicação e quais condições foram consideradas?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-06",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "História",
     "title": "Industrialização e trabalho",
-    "objective": "Industrialização e trabalho: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar fontes sobre industrialização e trabalho relacionando mudanças, grupos e direitos.",
     "content": "Mudanças tecnológicas e econômicas afetam grupos de modos diferentes. Analise relações entre produção, trabalho e direitos apoiando-se em fontes situadas.",
-    "model": "Mudanças tecnológicas e econômicas afetam grupos de modos diferentes. Analise relações entre produção, trabalho e direitos apoiando-se em fontes situadas.",
+    "model": "Em fontes fictícias sobre uma fábrica, comparo aumento de produção e relatos sobre jornada. Distingo dado, reivindicação e interpretação e pergunto como benefícios e custos se distribuíram. Uma narrativa de progresso não resume todos os grupos.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6851,19 +7595,27 @@ window.TRILUME_CATALOG = [
         "reference": "Mudanças tecnológicas e econômicas afetam grupos de modos diferentes. Analise relações entre produção, trabalho e direitos apoiando-se em fontes situadas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-07",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Urbanização e ambiente",
-    "objective": "Urbanização e ambiente: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar indicadores de urbanização e ambiente com períodos, unidades e escalas comparáveis.",
     "content": "Urbanização relaciona moradia, mobilidade, trabalho e infraestrutura. Indicadores espaciais ajudam a analisar desigualdades, mas exigem escalas e períodos comparáveis.",
-    "model": "Urbanização relaciona moradia, mobilidade, trabalho e infraestrutura. Indicadores espaciais ajudam a analisar desigualdades, mas exigem escalas e períodos comparáveis.",
+    "model": "Comparo indicadores fictícios de saneamento de duas áreas no mesmo período e com denominadores equivalentes. Relaciono infraestrutura e moradia, evitando concluir sobre indivíduos a partir da média territorial. Registro fonte e limites.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6908,19 +7660,27 @@ window.TRILUME_CATALOG = [
         "reference": "Urbanização relaciona moradia, mobilidade, trabalho e infraestrutura. Indicadores espaciais ajudam a analisar desigualdades, mas exigem escalas e períodos comparáveis.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-08",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Filosofia",
     "title": "Ética e justificação",
-    "objective": "Ética e justificação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Justificar uma decisão ética por critérios explícitos e examinar uma objeção pertinente.",
     "content": "Uma decisão ética pode ser examinada por consequências, deveres e condições de justiça. Explicitar o critério permite discutir razões sem reduzir a análise a preferências.",
-    "model": "Uma decisão ética pode ser examinada por consequências, deveres e condições de justiça. Explicitar o critério permite discutir razões sem reduzir a análise a preferências.",
+    "model": "Em um dilema fictício sobre compartilhar um recurso escasso, explicito três critérios: consequências, dever de respeito e distribuição justa. Mostro como cada um sustenta razões e examino uma objeção antes de justificar uma decisão provisória.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -6965,19 +7725,27 @@ window.TRILUME_CATALOG = [
         "reference": "Uma decisão ética pode ser examinada por consequências, deveres e condições de justiça. Explicitar o critério permite discutir razões sem reduzir a análise a preferências.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos construir uma pergunta e examinar as razões de uma resposta.",
+      "exploration": "Reconstrua uma posição, formule uma objeção e revise a justificativa sem exigir concordância pessoal.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual razão você manteria diante de uma objeção forte?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-09",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Sociologia",
     "title": "Desigualdade e evidências",
-    "objective": "Desigualdade e evidências: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Descrever desigualdades com dados e conceitos e distinguir observação de hipótese explicativa.",
     "content": "Desigualdades são investigadas com conceitos e dados contextualizados. Uma diferença observada não explica sozinha suas causas; considere processos e instituições.",
-    "model": "Desigualdades são investigadas com conceitos e dados contextualizados. Uma diferença observada não explica sozinha suas causas; considere processos e instituições.",
+    "model": "Em uma amostra fictícia, grupos têm acessos diferentes ao transporte. Calculo e descrevo a diferença antes de propor explicações sobre infraestrutura e renda. Distingo associação observada, hipótese e evidência necessária para uma explicação causal.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7022,19 +7790,27 @@ window.TRILUME_CATALOG = [
         "reference": "Desigualdades são investigadas com conceitos e dados contextualizados. Uma diferença observada não explica sozinha suas causas; considere processos e instituições.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma situação social com conceitos e evidências.",
+      "exploration": "Situe os dados e diferencie descrição, hipótese e explicação antes de generalizar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que contexto ou informação mudaria sua interpretação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-10",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Arte, circulação e público",
-    "objective": "Arte, circulação e público: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar como meios, instituições e contextos de circulação participam da experiência artística.",
     "content": "A circulação de uma obra depende de meios, instituições e públicos. Uma mesma produção pode ganhar sentidos diferentes conforme seu contexto de apresentação.",
-    "model": "A circulação de uma obra depende de meios, instituições e públicos. Uma mesma produção pode ganhar sentidos diferentes conforme seu contexto de apresentação.",
+    "model": "Uma produção autoral aparece na escola e em uma praça. Comparo visibilidade, acesso e possibilidades de interação nos dois lugares. Explico que mudar o contexto de circulação pode mudar a experiência do público sem alterar toda a obra.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7079,19 +7855,27 @@ window.TRILUME_CATALOG = [
         "reference": "A circulação de uma obra depende de meios, instituições e públicos. Uma mesma produção pode ganhar sentidos diferentes conforme seu contexto de apresentação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-11",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Mídia, corpo e escolhas",
-    "objective": "Mídia, corpo e escolhas: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Avaliar evidências e interesses em mensagens sobre práticas corporais sem reduzir saúde à aparência.",
     "content": "Informações sobre práticas corporais podem misturar evidências, publicidade e padrões sociais. Avaliar a fonte e a força da evidência ajuda a tomar decisões informadas.",
-    "model": "Informações sobre práticas corporais podem misturar evidências, publicidade e padrões sociais. Avaliar a fonte e a força da evidência ajuda a tomar decisões informadas.",
+    "model": "Analiso um anúncio fictício de treino que usa uma celebridade como prova. Distingo testemunho, estudo e promessa comercial. Pergunto quais resultados e condições foram medidos antes de discutir uma escolha educativa; não prescrevo treino clínico.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7136,19 +7920,27 @@ window.TRILUME_CATALOG = [
         "reference": "Informações sobre práticas corporais podem misturar evidências, publicidade e padrões sociais. Avaliar a fonte e a força da evidência ajuda a tomar decisões informadas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-11-12",
-    "version": 1,
+    "version": 2,
     "year": 11,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Argumentação e interlocução",
-    "objective": "Argumentação e interlocução: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Argumentar em inglês considerando interlocutor, razões, conectores e objeções.",
     "content": "Argumentar em inglês exige adequar a mensagem ao público e sustentar uma posição. Marcadores de contraste e causa ajudam a organizar razões e objeções.",
-    "model": "Argumentar em inglês exige adequar a mensagem ao público e sustentar uma posição. Marcadores de contraste e causa ajudam a organizar razões e objeções.",
+    "model": "Escrevo: A quiet room may help some students study; however, access also matters. Identifico posição, razão e ressalva. Ajusto a mensagem a um conselho escolar e confiro termos sem usar tradução automática como prova de argumentação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7193,19 +7985,27 @@ window.TRILUME_CATALOG = [
         "reference": "Argumentar em inglês exige adequar a mensagem ao público e sustentar uma posição. Marcadores de contraste e causa ajudam a organizar razões e objeções.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-01",
-    "version": 2,
+    "version": 3,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Portuguesa",
     "title": "Projeto autoral e revisão",
-    "objective": "Projeto autoral e revisão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar e revisar uma produção autoral conferindo fontes, argumentos e contribuições de pessoas e ferramentas.",
     "content": "Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
-    "model": "Uma produção autoral integra planejamento, fontes, argumentação e revisão. Declare contribuições de ferramentas quando usadas e responda pela consistência das informações.",
+    "model": "Planejo um artigo autoral sobre um problema fictício de circulação na escola. Delimito pergunta, fontes, tese e contraponto; reviso se os dados realmente sustentam as conclusões. Registro contribuições de pessoas e ferramentas e assumo a conferência final.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7318,19 +8118,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-02",
-    "version": 2,
+    "version": 3,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Matemática",
     "title": "Modelos, dados e decisão",
-    "objective": "Modelos, dados e decisão: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar cenários por modelos matemáticos com hipóteses, unidades, limites e análise de sensibilidade.",
     "content": "Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
-    "model": "Um modelo matemático precisa explicitar hipóteses, unidades e limites. Compare cenários e verifique a sensibilidade do resultado às condições assumidas.",
+    "model": "Comparo dois modelos fictícios de custo: A = 2x + 12 e B = 4x. Igualo as expressões e encontro x = 6. Confiro valores antes e depois e explico que a decisão muda se houver outra taxa, limite ou unidade.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7443,19 +8251,27 @@ window.TRILUME_CATALOG = [
         "rubric": "Sonda objetiva autoral. Registrar resposta e condições. O acerto isolado não comprova domínio da habilidade.",
         "readingTarget": false
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-03",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Biologia",
     "title": "Evolução e ambiente",
-    "objective": "Evolução e ambiente: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Explicar mudanças evolutivas por variação, herança, seleção e tempo, sem atribuí-las à vontade do organismo.",
     "content": "Explicações evolutivas relacionam variação, herança, seleção e tempo. Evite descrever mudanças como vontade ou necessidade dos organismos.",
-    "model": "Explicações evolutivas relacionam variação, herança, seleção e tempo. Evite descrever mudanças como vontade ou necessidade dos organismos.",
+    "model": "Em uma população hipotética há variação herdável de uma característica. Se certas variantes deixam mais descendentes em um contexto, suas frequências podem mudar entre gerações. Distingo seleção de uma mudança por vontade ou necessidade individual.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7500,19 +8316,27 @@ window.TRILUME_CATALOG = [
         "reference": "Explicações evolutivas relacionam variação, herança, seleção e tempo. Evite descrever mudanças como vontade ou necessidade dos organismos.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar modelos para investigar a vida e seus processos.",
+      "exploration": "Construa um esquema, indique suas hipóteses e compare previsões com dados fornecidos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que esse modelo explica e o que ele deixa de representar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-04",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Física",
     "title": "Eletricidade e modelos",
-    "objective": "Eletricidade e modelos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Relacionar tensão, corrente e resistência em modelos seguros de circuito e interpretar suas unidades.",
     "content": "Corrente, tensão e resistência têm significados e unidades diferentes. Modelos de circuito permitem prever relações em situações idealizadas; atividades práticas exigem materiais seguros.",
-    "model": "Corrente, tensão e resistência têm significados e unidades diferentes. Modelos de circuito permitem prever relações em situações idealizadas; atividades práticas exigem materiais seguros.",
+    "model": "Em um circuito idealizado representado no papel, com resistência de 3 Ω e tensão de 6 V, uso I = V/R e obtenho 2 A. Nomeio cada unidade e os limites do modelo. Nenhuma montagem usa tomada ou rede elétrica.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7557,19 +8381,27 @@ window.TRILUME_CATALOG = [
         "reference": "Corrente, tensão e resistência têm significados e unidades diferentes. Modelos de circuito permitem prever relações em situações idealizadas; atividades práticas exigem materiais seguros.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descrever um fenômeno e conferir as relações entre medidas.",
+      "exploration": "Use desenho ou simulação no papel; nomeie sistema, referencial e unidades antes de calcular.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Quais hipóteses e unidades sustentam sua conclusão?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-05",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Química",
     "title": "Transformações e impactos",
-    "objective": "Transformações e impactos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar um processo químico e impactos com substâncias, condições, produtos e dados comparáveis.",
     "content": "Analisar um processo químico exige considerar substâncias, condições, produtos e consequências. Uma alegação ambiental precisa de critérios e dados comparáveis.",
-    "model": "Analisar um processo químico exige considerar substâncias, condições, produtos e consequências. Uma alegação ambiental precisa de critérios e dados comparáveis.",
+    "model": "Em um processo representado por dados fictícios, o produto gera menos resíduo por unidade, mas consome mais água. Identifico substâncias, condições e fronteiras da comparação antes de avaliar impacto. Uma única medida não comprova superioridade ambiental geral.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7614,19 +8446,27 @@ window.TRILUME_CATALOG = [
         "reference": "Analisar um processo químico exige considerar substâncias, condições, produtos e consequências. Uma alegação ambiental precisa de critérios e dados comparáveis.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos relacionar substâncias, modelos e evidências de transformação.",
+      "exploration": "Use representações e dados; não realize aquecimento, misturas ou montagens sem planejamento e mediação adequados.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que evidência sustenta a explicação e quais condições foram consideradas?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-06",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "História",
     "title": "História contemporânea e direitos",
-    "objective": "História contemporânea e direitos: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Comparar fontes sobre processos contemporâneos situando recortes, direitos e controvérsias.",
     "content": "A análise de processos contemporâneos requer fontes verificáveis, recortes explícitos e consideração de perspectivas. Memória, propaganda e pesquisa têm funções distintas.",
-    "model": "A análise de processos contemporâneos requer fontes verificáveis, recortes explícitos e consideração de perspectivas. Memória, propaganda e pesquisa têm funções distintas.",
+    "model": "Em duas fontes fictícias sobre uma política pública, verifico autoria, data, finalidade e dados apresentados. Distingo memória, propaganda e análise de pesquisa. Explicito a controvérsia e o que as fontes ainda não permitem concluir.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7671,19 +8511,27 @@ window.TRILUME_CATALOG = [
         "reference": "A análise de processos contemporâneos requer fontes verificáveis, recortes explícitos e consideração de perspectivas. Memória, propaganda e pesquisa têm funções distintas.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar como pessoas e lugares mudam, por diferentes pontos de vista.",
+      "exploration": "Examine uma fonte identificada, situe autoria e tempo e compare uma segunda perspectiva.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que a fonte permite afirmar e qual informação ainda falta?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-07",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Geografia",
     "title": "Geopolítica e interdependência",
-    "objective": "Geopolítica e interdependência: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Analisar atores, interesses e escalas em um caso geopolítico e construir cenários com incertezas explícitas.",
     "content": "Relações entre territórios envolvem recursos, interesses, poder e cooperação. Uma análise precisa distinguir os atores, as escalas e as fontes de informação.",
-    "model": "Relações entre territórios envolvem recursos, interesses, poder e cooperação. Uma análise precisa distinguir os atores, as escalas e as fontes de informação.",
+    "model": "Em um caso geopolítico fictício sobre um rio compartilhado, identifico territórios, usos e interesses. Comparo cenários de cooperação e disputa com hipóteses explícitas. Não trato uma simulação como previsão de acontecimentos reais.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7728,19 +8576,27 @@ window.TRILUME_CATALOG = [
         "reference": "Relações entre territórios envolvem recursos, interesses, poder e cooperação. Uma análise precisa distinguir os atores, as escalas e as fontes de informação.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos compreender relações entre lugares, pessoas e representações.",
+      "exploration": "Construa um croqui, percurso acessível ou tabela com dados identificados e compare escalas.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual lugar, escala e fonte sustentam sua explicação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-08",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Filosofia",
     "title": "Conhecimento e tecnologia",
-    "objective": "Conhecimento e tecnologia: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Examinar como uma alegação é produzida e justificada e construir uma posição que considere objeções.",
     "content": "Examinar uma alegação envolve perguntar como ela foi produzida, justificada e contestada. Uma ferramenta pode apoiar o raciocínio sem assumir a responsabilidade pela conclusão.",
-    "model": "Examinar uma alegação envolve perguntar como ela foi produzida, justificada e contestada. Uma ferramenta pode apoiar o raciocínio sem assumir a responsabilidade pela conclusão.",
+    "model": "Uma ferramenta apresenta uma conclusão sem fontes. Reconstruo a alegação, peço critérios e busco evidências antes de aceitar. Explico que fluência da resposta não substitui justificação e examino uma objeção à minha própria posição.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7785,19 +8641,27 @@ window.TRILUME_CATALOG = [
         "reference": "Examinar uma alegação envolve perguntar como ela foi produzida, justificada e contestada. Uma ferramenta pode apoiar o raciocínio sem assumir a responsabilidade pela conclusão.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos construir uma pergunta e examinar as razões de uma resposta.",
+      "exploration": "Reconstrua uma posição, formule uma objeção e revise a justificativa sem exigir concordância pessoal.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual razão você manteria diante de uma objeção forte?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-09",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Sociologia",
     "title": "Participação e projeto social",
-    "objective": "Participação e projeto social: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar e revisar uma ação social com participação, hipótese de intervenção e indicadores adequados.",
     "content": "Um projeto social relaciona problema, hipótese de intervenção, participação e avaliação. Indicadores devem observar efeitos relevantes sem expor dados pessoais desnecessários.",
-    "model": "Um projeto social relaciona problema, hipótese de intervenção, participação e avaliação. Indicadores devem observar efeitos relevantes sem expor dados pessoais desnecessários.",
+    "model": "Para um projeto fictício de acesso à leitura, defino problema, participação e uma hipótese de ação. Escolho indicador de acesso e escuto usuários; se o resultado não melhora, reviso condições e estratégia. Não atribuo causalidade por uma comparação isolada.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7842,19 +8706,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um projeto social relaciona problema, hipótese de intervenção, participação e avaliação. Indicadores devem observar efeitos relevantes sem expor dados pessoais desnecessários.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos investigar uma situação social com conceitos e evidências.",
+      "exploration": "Situe os dados e diferencie descrição, hipótese e explicação antes de generalizar.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que contexto ou informação mudaria sua interpretação?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-10",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Arte",
     "title": "Projeto cultural e avaliação",
-    "objective": "Projeto cultural e avaliação: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar uma produção cultural com referências, acessibilidade, circulação e critérios de avaliação.",
     "content": "Um projeto cultural articula intenção, referências, produção, acessibilidade e circulação. Avaliar o processo inclui registrar revisões e reconhecer autoria compartilhada.",
-    "model": "Um projeto cultural articula intenção, referências, produção, acessibilidade e circulação. Avaliar o processo inclui registrar revisões e reconhecer autoria compartilhada.",
+    "model": "Planejo uma mostra autoral com objetivo, público, etapas, atribuição e recursos acessíveis. Antecipadamente combino critérios de observação. Após uma apresentação piloto, reviso uma barreira de acesso com base em retorno concreto.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7899,19 +8771,27 @@ window.TRILUME_CATALOG = [
         "reference": "Um projeto cultural articula intenção, referências, produção, acessibilidade e circulação. Avaliar o processo inclui registrar revisões e reconhecer autoria compartilhada.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos experimentar uma ideia e descobrir modos de expressá-la.",
+      "exploration": "Escolha uma linguagem acessível, experimente duas versões e converse sobre suas decisões.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que escolha você fez e o que mudou quando a revisou?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-11",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Educação Física",
     "title": "Autonomia e participação continuada",
-    "objective": "Autonomia e participação continuada: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Planejar e rever práticas corporais educativas conforme interesses, acesso e mudanças da rotina.",
     "content": "Organizar práticas corporais ao longo do tempo exige considerar interesses, acesso, segurança e possibilidade de revisão. O planejamento educativo não substitui orientação profissional individualizada.",
-    "model": "Organizar práticas corporais ao longo do tempo exige considerar interesses, acesso, segurança e possibilidade de revisão. O planejamento educativo não substitui orientação profissional individualizada.",
+    "model": "Com participantes, planejo práticas corporais de interesse, locais e recursos disponíveis. Combino formas de participação e revisão do plano quando a rotina muda. O objetivo educativo é participação continuada, sem prescrição clínica individual.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -7956,19 +8836,27 @@ window.TRILUME_CATALOG = [
         "reference": "Organizar práticas corporais ao longo do tempo exige considerar interesses, acesso, segurança e possibilidade de revisão. O planejamento educativo não substitui orientação profissional individualizada.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos participar de uma prática corporal com escolhas e combinados possíveis.",
+      "exploration": "Combine espaço, regras, adaptações e sinal de pausa; observe participação e conforto, sem comparação de corpos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você e as outras pessoas a participar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "CUR-12-12",
-    "version": 1,
+    "version": 2,
     "year": 12,
     "stage": "em",
     "lane": "curriculum",
     "subject": "Língua Inglesa",
     "title": "Projeto comunicativo",
-    "objective": "Projeto comunicativo: realizar a tarefa proposta e explicar as relações utilizadas, com registro do apoio necessário.",
+    "objective": "Produzir e adaptar uma comunicação em inglês com finalidade, pesquisa, revisão e interlocução.",
     "content": "Um projeto em inglês combina finalidade, pesquisa, produção e revisão. A adequação ao público e a conferência de fontes orientam escolhas de linguagem.",
-    "model": "Um projeto em inglês combina finalidade, pesquisa, produção e revisão. A adequação ao público e a conferência de fontes orientam escolhas de linguagem.",
+    "model": "Planejo em inglês uma apresentação autoral: pergunta, fonte identificada, mensagem central e convite a uma pergunta. Reviso clareza para o público escolhido e preparo uma resposta que reconheça informações ainda desconhecidas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8013,7 +8901,15 @@ window.TRILUME_CATALOG = [
         "reference": "Um projeto em inglês combina finalidade, pesquisa, produção e revisão. A adequação ao público e a conferência de fontes orientam escolhas de linguagem.",
         "version": 1
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar o inglês para compreender ou comunicar algo com uma finalidade.",
+      "exploration": "Leia um material autoral adequado ao repertório, localize pistas e confira o sentido no contexto.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Qual pista sustenta o sentido e como a mensagem atende ao público?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-LEI-01",
@@ -8022,11 +8918,11 @@ window.TRILUME_CATALOG = [
     "objective": "Localizar informações explícitas em textos curtos e indicar o trecho que sustenta a resposta.",
     "content": "Procure no texto a informação pedida. No aviso Reunião quinta na biblioteca, a pergunta onde pede o local: biblioteca. Volte ao trecho para conferir.",
     "readingTarget": true,
-    "version": 3,
+    "version": 4,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Procure no texto a informação pedida. No aviso Reunião quinta na biblioteca, a pergunta onde pede o local: biblioteca. Volte ao trecho para conferir.",
+    "model": "No aviso fictício Encontro de leitura: sábado, no jardim, pergunto quando. Localizo sábado e aponto a palavra no aviso. Explico por que no jardim responde a onde e não a quando. A verificação usará outro aviso.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8174,7 +9070,15 @@ window.TRILUME_CATALOG = [
         "rubric": "Localizar a informação solicitada no texto.",
         "readingTarget": true
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-LEI-02",
@@ -8182,11 +9086,11 @@ window.TRILUME_CATALOG = [
     "title": "Inferir com apoio em pistas",
     "objective": "Produzir uma inferência e indicar a pista textual que a sustenta.",
     "content": "Uma inferência reúne pistas do texto. Se alguém guarda o guarda-chuva molhado ao entrar, é possível que tenha chovido. Isso não informa automaticamente há quanto tempo choveu.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Uma inferência reúne pistas do texto. Se alguém guarda o guarda-chuva molhado ao entrar, é possível que tenha chovido. Isso não informa automaticamente há quanto tempo choveu.",
+    "model": "Leio: Dora entrou com os sapatos encharcados e abriu um guarda-chuva molhado. A hipótese de chuva se apoia nessas pistas, mas não sei quando começou. Distingo essa inferência de uma informação explicitamente declarada.",
     "prerequisites": [
       "FUN-LEI-01"
     ],
@@ -8276,7 +9180,15 @@ window.TRILUME_CATALOG = [
         "reference": "Uma inferência reúne pistas do texto. Se alguém guarda o guarda-chuva molhado ao entrar, é possível que tenha chovido. Isso não informa automaticamente há quanto tempo choveu.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-DEC-01",
@@ -8285,11 +9197,11 @@ window.TRILUME_CATALOG = [
     "objective": "Ler palavras escolhidas pelo educador sem receber leitura do item ou pista que forneça a resposta.",
     "content": "Observe a sequência de letras e relacione-a aos sons. Uma demonstração pode segmentar uma palavra de exemplo; a verificação usa outra palavra, sem modelo. A linguagem e o material devem respeitar a idade.",
     "readingTarget": true,
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Observe a sequência de letras e relacione-a aos sons. Uma demonstração pode segmentar uma palavra de exemplo; a verificação usa outra palavra, sem modelo. A linguagem e o material devem respeitar a idade.",
+    "model": "Com a palavra de ensino VELA, relaciono letras e sons, começo pelo /v/ e componho a leitura conforme o repertório do estudante. Diferencio ler, copiar e reconhecer uma figura. A verificação usa palavra nova e registro da leitura efetiva; o material respeita a idade.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8377,7 +9289,15 @@ window.TRILUME_CATALOG = [
         "reference": "Observe a sequência de letras e relacione-a aos sons. Uma demonstração pode segmentar uma palavra de exemplo; a verificação usa outra palavra, sem modelo. A linguagem e o material devem respeitar a idade.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-MAT-01",
@@ -8385,11 +9305,11 @@ window.TRILUME_CATALOG = [
     "title": "Adição e subtração",
     "objective": "Resolver operações de adição e subtração e relacioná-las à situação apresentada.",
     "content": "Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
-    "version": 3,
+    "version": 4,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Representar as quantidades ajuda a escolher a operação. Se havia 15 itens e saíram 6, ficam 9. Confira se o resultado responde à pergunta.",
+    "model": "Na organização fictícia de uma caixa, havia 21 peças e foram retiradas 8. Represento 21, decomponho a retirada em 1 e 7, e encontro 13. Confiro por 13 + 8 = 21 e nomeio a unidade peças.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8530,7 +9450,15 @@ window.TRILUME_CATALOG = [
           "26"
         ]
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-MAT-02",
@@ -8538,11 +9466,11 @@ window.TRILUME_CATALOG = [
     "title": "Multiplicação e divisão",
     "objective": "Resolver agrupamentos iguais e repartições, explicitando o significado da operação.",
     "content": "Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
-    "version": 3,
+    "version": 4,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Quatro grupos com cinco unidades correspondem a 4 vezes 5, totalizando 20. Repartir 20 unidades em quatro grupos iguais resulta em cinco por grupo.",
+    "model": "Distribuo 28 fichas em quatro grupos iguais: cada grupo recebe 7. Confiro 4 × 7 = 28 e diferencio total, número de grupos e quantidade por grupo. Depois comparo com descobrir quantos grupos de sete cabem no total.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8683,7 +9611,15 @@ window.TRILUME_CATALOG = [
           "9"
         ]
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-MAT-03",
@@ -8691,11 +9627,11 @@ window.TRILUME_CATALOG = [
     "title": "Frações e porcentagens",
     "objective": "Calcular metades e quartas partes e relacioná-las a porcentagens simples.",
     "content": "A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
-    "version": 3,
+    "version": 4,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "A metade corresponde a dividir em duas partes iguais e equivale a 50%. A quarta parte corresponde a dividir em quatro partes iguais e equivale a 25%.",
+    "model": "Em 36 peças, a quarta parte é 36 ÷ 4 = 9. Relaciono 1/4 a 25% usando a mesma unidade. Para comparar ofertas, identifico primeiro o preço de referência e não comparo apenas os percentuais.",
     "prerequisites": [
       "FUN-MAT-02"
     ],
@@ -8832,7 +9768,15 @@ window.TRILUME_CATALOG = [
           "20"
         ]
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos descobrir uma relação e conferir se ela faz sentido.",
+      "exploration": "Represente a situação com objetos grandes, desenho ou tabela e explique a passagem para os símbolos.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Como você conferiu a quantidade, a unidade e a relação usada?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-ESC-01",
@@ -8840,11 +9784,11 @@ window.TRILUME_CATALOG = [
     "title": "Planejar e revisar uma mensagem",
     "objective": "Produzir uma mensagem com propósito, informação suficiente e revisão orientada por critérios.",
     "content": "Defina quem vai ler e o que precisa saber. No convite fictício, informe atividade, dia e lugar. Revise clareza e organização antes de corrigir detalhes ortográficos.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Defina quem vai ler e o que precisa saber. No convite fictício, informe atividade, dia e lugar. Revise clareza e organização antes de corrigir detalhes ortográficos.",
+    "model": "Para convidar um grupo, escrevo: Oficina de desenho, sábado, às 10h, no pátio. Confiro quem lerá e quais informações precisa. Reviso uma informação ausente antes de discutir ortografia e não copio esse aviso na verificação.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -8932,7 +9876,15 @@ window.TRILUME_CATALOG = [
         "reference": "Defina quem vai ler e o que precisa saber. No convite fictício, informe atividade, dia e lugar. Revise clareza e organização antes de corrigir detalhes ortográficos.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos usar a linguagem para compreender e fazer uma mensagem chegar a alguém.",
+      "exploration": "Escolha ler, ouvir uma explicação de ensino ou organizar cartões com o tutor; nas sondas de leitura, preserve a condição registrada.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "Que trecho, escolha de palavra ou revisão ajudou você a construir o sentido?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   },
   {
     "id": "FUN-AUT-01",
@@ -8940,11 +9892,11 @@ window.TRILUME_CATALOG = [
     "title": "Planejar, conferir e encerrar",
     "objective": "Organizar duas etapas de estudo, identificar o combinado e registrar a conclusão ou a necessidade de retomada.",
     "content": "Antes de começar, confira o objetivo, as atividades previstas e os recursos. O tempo é uma estimativa. Você pode pausar e encerrar; atividades novas ficam para outro combinado.",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "all",
     "lane": "foundation",
-    "model": "Antes de começar, confira o objetivo, as atividades previstas e os recursos. O tempo é uma estimativa. Você pode pausar e encerrar; atividades novas ficam para outro combinado.",
+    "model": "Combino ler um aviso e organizar três materiais. Mostro a lista visível e marco cada etapa feita; se preciso de pausa, guardo o ponto de retomada. Ao encerrar, registro o que fiz e o que ficou para outro encontro, sem acrescentar tarefas.",
     "prerequisites": [],
     "duration": 8,
     "bnccCode": null,
@@ -9032,6 +9984,14 @@ window.TRILUME_CATALOG = [
         "reference": "Antes de começar, confira o objetivo, as atividades previstas e os recursos. O tempo é uma estimativa. Você pode pausar e encerrar; atividades novas ficam para outro combinado.",
         "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas."
       }
-    ]
+    ],
+    "teachingPlan": {
+      "invitation": "Vamos combinar uma maneira possível de aprender com autonomia.",
+      "exploration": "Planeje com o tutor duas etapas, recursos de acesso e uma pausa possível.",
+      "coPractice": "O tutor demonstra uma etapa com um exemplo de ensino, observa a tentativa e oferece apenas o apoio necessário. Registra a pista usada e planeja sua retirada em uma oportunidade diferente.",
+      "reflection": "O que ajudou você a escolher, conferir ou retomar?",
+      "transfer": "Combine um uso desta aprendizagem em uma situação significativa da turma ou da vida cotidiana. Mudanças de contexto precisam ser descritas; um único êxito não prova generalização.",
+      "tutorNotes": "Antes de ensinar, confirme acesso, interesse e repertório. Escolha uma pista que efetivamente ajude, evite adivinhar por posição ou aparência e reduza o apoio conforme as observações. Verificação e revisão ocorrem com itens novos e condições registradas."
+    }
   }
 ];

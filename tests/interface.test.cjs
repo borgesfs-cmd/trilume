@@ -16,7 +16,7 @@ const location={search:'',hash:'#'+view};
 const window={TrilumeEngine:E,TRILUME_CATALOG:catalog,addEventListener(type,fn){windowHandlers[type]=fn;},scrollTo(){},print(){}};
 const sandbox={window,document,location,history:{pushState(data,title,hash){location.hash=hash;}},localStorage:{getItem:k=>storage.get(k)||null,setItem(k,v){if(options.failWrites?.(k,v))throw Error('Quota excedida.');storage.set(k,v);}},URLSearchParams,FormData:FormDataMock,setTimeout(){return 1;},clearTimeout(){},console};
 const context=vm.createContext(sandbox);
-vm.runInContext(read('nilo.js'),context);vm.runInContext(read('storage.js'),context);vm.runInContext(read('library-tools.js'),context);vm.runInContext(read('word-lab.js'),context);vm.runInContext(read('assessment.js'),context);vm.runInContext(read('app.js'),context);
+vm.runInContext(read('nilo.js'),context);vm.runInContext(read('storage.js'),context);vm.runInContext(read('library-tools.js'),context);vm.runInContext(read('word-lab.js'),context);vm.runInContext(read('assessment.js'),context);vm.runInContext(read('data/early-childhood.js'),context);vm.runInContext(read('gamification.js'),context);vm.runInContext(read('app.js'),context);
 return {node,classes,window,document,storage,html:()=>node('page').innerHTML,state:()=>JSON.parse(storage.get('trilume.v1')),async click(action,id){await handlers.click({target:{closest(){return {dataset:{action,id}};}}});},submit(name,values){const form={dataset:{form:name},values};handlers.submit({target:form,preventDefault(){}});},location,handlers};
 }
 function studentState(){
@@ -75,3 +75,7 @@ function contrast(a,b){const x=luminance(a),y=luminance(b);return (Math.max(x,y)
 const css=read('styles.css');for(const [fg,bg] of [['35445e','fffefa'],['43516a','fffefa'],['ffffff','5947c5'],['342c53','eae5fa']]){assert.ok(css.includes('#'+fg)||fg==='ffffff');assert.ok(contrast(fg,bg)>=4.5);}
 assert.ok(css.includes('.focus-mode .nilo-card{display:grid}'));
 });
+
+test('a jornada abre com metas e mantém a avaliação separada do XP',async()=>{const ui=boot(studentState(),'journey');assert.ok(ui.html().includes('XP hoje'));assert.ok(ui.html().includes('não mede competência'));await ui.click('journey-goal');ui.submit('journey-goal',{targetXp:'40'});assert.equal(ui.state().gamification.goals.at(-1).targetXp,40);assert.ok(ui.html().includes('40 XP combinados'));});
+
+test('a ficha EI mostra observação e não apresenta o critério numérico escolar',async()=>{const ui=boot(E.blank(),'library');await ui.click('skill-detail','EI03ET07');const html=ui.node('dialog-body').innerHTML;assert.ok(html.includes('Crianças pequenas'));assert.ok(html.includes('Observação na Educação Infantil'));assert.equal(html.includes('80% de respostas independentes'),false);});

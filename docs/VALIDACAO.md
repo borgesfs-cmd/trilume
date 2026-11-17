@@ -1,44 +1,26 @@
-# Rastreabilidade e validação
+# Validação — versão 0.3
 
-| Requisito | Interface | Regra / registro | Verificação |
-| --- | --- | --- | --- |
-| Cadastrar estudante | Estudantes | validateStudent; students | Validação do ano e cadastro |
-| Linha de base antes da trilha | Avaliação inicial → Trilha | hasBaseline; propose; makePlan | Testes de bloqueio e não aferida |
-| Dois percursos | Trilha | lane foundation / curriculum | Preservação de habilidades não aferidas |
-| Revisão e aprovação humana | Plano da sessão | approvedBy; baselineId | Plano sem educador rejeitado |
-| Separar apoio e independência | Meu estudo → Acompanhamento | score; helpEvents; human_review | Acerto assistido não vira domínio |
-| Verificar em item diferente | Plano; biblioteca | unused; identificação + versão | Itens vistos não repetem evidência |
-| Lista fechada de atividades | Combinado; estudo | cópia do plano ao iniciar | Pausa e encerramento preservam lista |
-| Encerrar sem punição | Meu estudo | finishSession | Encerramento idempotente sem penalidade |
-| Produção aberta com análise humana | Acompanhamento | pending; review | Fluxo de revisão e justificativa |
-| Aquisição | Acompanhamento | mastery | Itens distintos, precisão e sessões |
-| Retenção | Plano de retenção | maintenance após aquisição | Não cria aquisição e exige datas distintas |
-| Generalização | Aplicação em outro contexto | transfer e context | Contextos distintos após aquisição |
-| Acervo por todos os anos | Biblioteca | year 1 a 12; componentes | Testes de presença por ano e componente |
-| Sem Educação Infantil | Cadastro; biblioteca | year 1 a 12, year 0 transversal | Teste de exclusão da etapa |
-| Importação de dados | Como usar; biblioteca | validateBackup; validateSkill | Arquivos incompletos rejeitados |
-| Histórico anterior | history/ | protótipo e prompt executivo | Preservação sem substituir fonte anterior |
+Data: 17/11/2026. Perfis e respostas fictícios; nenhuma aplicação com crianças.
 
-## Verificações da versão 0.2
+## Regressão automatizada
 
-A suíte contém 54 testes: 24 regras do motor, 20 verificações da avaliação e dez verificações de renderização e fluxo com DOM simulado. Os testes cobrem:
+88 testes nativos Node.js passaram. Abrangem avaliação sem feedback antecipado, revisão humana, ajuda e independência, primeira tentativa, novidade por enunciado e exposição, verificação antes de ensino, retenção em datas locais, materiais, listas fechadas e escolha autorizada. Incluem corrupção, recuperação, quota, substituição e conflitos entre abas, além de todos os intervalos dos 93 códigos EI, catálogo combinado 213/876, oficina, áudio, pistas e XP.
 
-- planejamento com questões selecionadas, cópia do enunciado e versão;
-- tela do estudante sem gabarito, rubrica ou correção antecipada;
-- escolha objetiva, produção aberta, pendência de análise e revisão pelo tutor;
-- ajuda registrada preservada como assistência;
-- pausa, encerramento idempotente, itens não aferidos e reapresentação identificada;
-- avaliações complementares sem perda de evidência por habilidade;
-- presença do Nilo nas oito páginas e seus 12 contextos;
-- múltipla escolha no estudo e na criação de questões;
-- contraste das cores principais de texto, superfícies e botão.
+Os 54 testes existentes foram mantidos e complementados; uma alteração de título distingue o catálogo escolar do catálogo EI. Houve atualização do ambiente simulado da interface para carregar os novos módulos. Não há dependências de pacotes para executar a suíte. O workflow verifica sintaxe dos módulos e executa npm test.
 
-Os 54 testes passaram no ambiente JavaScript de elaboração. A execução nativa com Node é feita pelo GitHub Actions antes da promoção desta versão para main; o resultado da execução acompanha o commit no repositório. Os testes de interface usam simulação de DOM, não um navegador completo. A revisão visual e de interação em navegador desta atualização não pôde ser realizada no ambiente de elaboração. O histórico de validação da versão anterior não equivale à validação visual da versão 0.2.
+## Inspeção em navegador
 
-## Limitações materiais
+- Página inicial com prioridade para exploração e autonomia; Nilo e balão ampliados.
+- Perfil fictício, seleção de uma avaliação breve, resposta e conclusão sem exibir correção ao estudante.
+- Retorno ao tutor, preparação do plano com materiais e abertura da sequência de ensino.
+- Exploração, registro opcional de reflexão, pausa e retomada com texto preservado.
+- Jornada com 15 XP derivados das etapas realizadas, ajuste de meta de 20 para 40 XP e lista de atividades aprovadas.
+- Oficina de ensino com três palavras, lista fechada, bloqueio de resposta antes da apresentação sonora, alternativa de apresentação oral e resposta registrada como apoiada.
+- Layout em viewport estreito de aproximadamente 375 px úteis, por quadro de 390 px: sem transbordamento horizontal do corpo. É verificação de layout; não emula todos os dispositivos, tecnologias assistivas ou condições de toque.
+- Relatórios metodológico, curricular e técnico acessíveis a partir do guia; matriz com filtros por etapa e componente.
 
-Aplicação estática, armazenamento no navegador, sem autenticação ou autorização de servidor. A separação entre tutor e estudante organiza a interface e não protege dados com senha. Sem IA generativa. Acervo inicial, sem cobertura integral da BNCC. As 104 novas questões estruturadas concentram-se em linguagem e matemática; a representação dos demais componentes usa os itens abertos existentes. As fichas e questões permanecem sujeitas a curadoria disciplinar e não constituem instrumentos padronizados.
+A checagem final da publicação confirma as páginas e a versão disponibilizada. Os dados de teste usam chave local isolada por ?qa=1 e não são incorporados ao repositório nem ao acervo publicado.
 
-A importação de backup substitui registros locais após conferência; uma cópia anterior é preservada em outra chave local. Uma falha de quota/localStorage precisa de exportação para evitar perda dos registros mantidos apenas na aba.
+## Limites
 
-Próximas frentes: curadoria disciplinar, novas questões equivalentes, rubricas específicas, revisão visual com usuários, auditoria de acessibilidade, backend e vínculos de acesso e validação empírica do produto.
+Testes verificam comportamentos programados e regressões conhecidas, não eficácia pedagógica, validação psicológica ou cobertura normativa integral. TTS e desenho de emojis variam entre navegadores. Rubricas e materiais ainda exigem curadoria, e a separação das telas não implementa autenticação.

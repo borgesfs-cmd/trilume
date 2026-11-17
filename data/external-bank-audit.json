@@ -1,0 +1,18 @@
+{
+  "consultado_em": "2026-11-17",
+  "arquivo_fonte": "TRILUME_BANCO_RECONSTRUIDO_NUWK_v05.zip",
+  "sha256_questoes_json": "6497b1e20aeadba1aaff1f7b4b33c72df0d18416ce5500c8c91d7f53d6837a92",
+  "registros": 3583,
+  "ids_unicos": 3583,
+  "enunciados_distintos": 2140,
+  "por_etapa": {
+    "EI": 151,
+    "EF": 2520,
+    "EM": 912
+  },
+  "pendentes_validacao": 3583,
+  "liberados_ao_aluno": 0,
+  "publicaveis": 0,
+  "vinculo_candidato": 616,
+  "integrado_automaticamente": false
+}

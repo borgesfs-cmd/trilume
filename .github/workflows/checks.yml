@@ -13,6 +13,11 @@ jobs:
           persist-credentials: false
       - name: Verificar sintaxe
         run: |
+          node --check storage.js
+          node --check library-tools.js
+          node --check word-lab.js
+          node --check gamification.js
+          node --check data/early-childhood.js
           node --check engine.js
           node --check assessment.js
           node --check nilo.js
