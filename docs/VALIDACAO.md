@@ -4,7 +4,7 @@ Data: 17/11/2026. Perfis e respostas fictícios; nenhuma aplicação com crianç
 
 ## Regressão automatizada
 
-109 testes nativos Node.js passaram. Abrangem avaliação sem feedback antecipado, revisão humana, ajuda e independência, primeira tentativa, novidade por enunciado e exposição, verificação antes de ensino, retenção em datas locais, materiais, listas fechadas e escolha autorizada. Incluem corrupção, recuperação, quota, substituição e conflitos entre abas, além de todos os intervalos dos 93 códigos EI, catálogo combinado 226/1336, oficina, áudio, pistas e XP.
+111 testes nativos Node.js passaram. Abrangem avaliação sem feedback antecipado, revisão humana, ajuda e independência, primeira tentativa, novidade por enunciado e exposição, verificação antes de ensino, retenção em datas locais, materiais, listas fechadas e escolha autorizada. Incluem corrupção, recuperação, quota, substituição e conflitos entre abas, além de todos os intervalos dos 93 códigos EI, catálogo combinado 226/1336, oficina, áudio, pistas e XP.
 
 Os 88 testes da versão 0.3 foram mantidos e complementados; uma alteração de título distingue o catálogo escolar do catálogo EI. Houve atualização do ambiente simulado da interface para carregar os novos módulos. Não há dependências de pacotes para executar a suíte. O workflow verifica sintaxe dos módulos e executa npm test.
 
@@ -29,4 +29,8 @@ Testes verificam comportamentos programados e regressões conhecidas, não efic�
 
 Os novos testes cobrem: maioria de escolhas no Fundamental; gabaritos de leitura convertidos; quatro registros observacionais com texto opcional; confirmação após avaliação; não observado sem erro/XP; pisos e congelamento de bônus; retirada exclusiva de distratores com índices estáveis; 13 áreas, três formas e limites de tamanho; escopo etário; áudio obrigatório como estímulo; histórico entre sondagens; exclusão de reconhecimento parcial do domínio integral; ajuda no ensino e ausência de ajuda nas sondas; cadastro múltiplo preservado na edição; plano por seletores e registro assistido após eliminação.
 
-A prévia local retornou conexão recusada apesar do status ativo do serviço. A inspeção da versão publicada será registrada após o deploy. Até lá, os fluxos 0.4 têm validação automatizada, sem alegação de conferência visual concluída.
+A prévia local retornou conexão recusada apesar do status ativo. A versão publicada foi inspecionada em navegador com perfis fictícios e chave ?qa=1. Cadastro com objetivos, recursos e interesses múltiplos e identificação gerada; avaliação de contagem por toque sem gabarito antecipado; plano por dia/período/duração/local e vários materiais sem digitação; sessão de verificação; dica e retirada de distrator sem resposta automática; acerto assistido e 6 XP (16 XP no dia incluindo a avaliação); observação corporal em três oportunidades, confirmação após encerrar e histórico com registros distintos. A imagem de verificação acompanha o código em docs/preview-0-4.jpg.
+
+A conexão inicial do navegador falhou durante a conferência do plano. O restante foi concluído em outro navegador, sem reutilizar dados normais da aplicação. A inspeção 0.4 foi realizada em tela de desktop; não houve nova emulação de celular nesta revisão. O teste de layout estreito descrito acima refere-se à 0.3. Mudanças de responsividade ainda precisam de conferência em dispositivos e tecnologias assistivas reais.
+
+A conferência motivou mais dois ajustes: apenas uma sugestão de escolha por componente prioritário do ano escolar, sem pré-seleção automática de atividades transversais; e preservação do texto de dicas anteriores ao retirar um distrator. Repertórios ainda não observados ficam na página própria, evitando alongar a trilha principal.

@@ -92,4 +92,4 @@ As correções tornam o comportamento mais rastreável. A aprovação de aprendi
 - Atividades auditivas bloqueiam resposta sem apresentação do som ou confirmação do tutor. Não há gravação ou reconhecimento de voz.
 - Ações observadas têm quatro seleções e detalhe opcional. Na avaliação inicial, aguardam confirmação/revisão do adulto após encerrar; ajuda registrada permanece assistida.
 
-109 testes automatizados passaram na revisão inicial 0.4; resultados finais e inspeção da publicação ficam em VALIDACAO.md. A indisponibilidade da prévia local é limitação de infraestrutura, não evidência de validação visual.
+111 testes automatizados passaram na revisão inicial 0.4; resultados finais e inspeção da publicação ficam em VALIDACAO.md. A indisponibilidade da prévia local é limitação de infraestrutura, não evidência de validação visual.
