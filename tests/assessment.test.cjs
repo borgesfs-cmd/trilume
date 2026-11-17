@@ -87,8 +87,8 @@ assert.ok(html.includes('type="radio"'));assert.equal(html.includes('CRITÉRIO P
 test('o alvo de leitura pode pertencer à questão específica',()=>{
 assert.equal(A.readingTarget({readingTarget:false},{readingTarget:true}),true);
 });
-test('as 104 novas questões têm alternativas válidas e podem ser corrigidas',()=>{
-const choices=catalog.flatMap(s=>s.activities.filter(a=>a.type==='choice').map(a=>({s,a})));assert.equal(choices.length,104);
+test('as 428 questões de escolha têm alternativas válidas e podem ser corrigidas',()=>{
+const choices=catalog.flatMap(s=>s.activities.filter(a=>a.type==='choice').map(a=>({s,a})));assert.equal(choices.length,428);
 for(const {s,a} of choices){E.validateSkill(s);assert.equal(E.score(a.answer,a.answer,false),'independent');}
 });
 test('a importação rejeita alternativa duplicada e gabarito fora dos limites',()=>{

@@ -1,0 +1,9 @@
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory();else root.TrilumeSupport=factory();})(typeof window!=='undefined'?window:this,function(){
+'use strict';
+const POLICY='supports-v1';
+function award(maximum,events=[]){const base=maximum>=10?5:3,count=events.filter(e=>['tip','eliminate'].includes(e.kind)).length,cost=count*2;return {policy:POLICY,maximum,base,earned:base+Math.max(0,maximum-base-cost),supportCount:count,supportCost:cost};}
+function eliminated(events=[]){return [...new Set(events.filter(e=>e.kind==='eliminate').map(e=>e.optionIndex))];}
+function nextElimination(options,correct,events=[],random=Math.random){const hidden=eliminated(events),candidates=options.map((_,i)=>i).filter(i=>i!==Number(correct)&&!hidden.includes(i));if(!candidates.length)throw Error('As alternativas previstas já foram retiradas. Você pode usar uma dica ou responder.');return candidates[Math.min(candidates.length-1,Math.floor(random()*candidates.length))];}
+function validAward(x){return x&&x.policy===POLICY&&Number.isInteger(x.maximum)&&[5,10,12].includes(x.maximum)&&Number.isInteger(x.supportCount)&&x.supportCount>=0&&x.supportCount<=20&&x.supportCost===x.supportCount*2&&x.base===(x.maximum>=10?5:3)&&x.earned===x.base+Math.max(0,x.maximum-x.base-x.supportCost);}
+function observation(code){return {alone:{answer:'O tutor observou a realização sem pista instrucional.',outcome:'independent',helped:false},help:{answer:'O tutor observou a realização com ajuda instrucional.',outcome:'assisted',helped:true},not_yet:{answer:'A ação ainda não foi observada nesta situação.',outcome:'incorrect',helped:false},not_observed:{answer:'',outcome:'not_assessed',helped:false}}[code]||null;}
+return {POLICY,award,eliminated,nextElimination,validAward,observation};});

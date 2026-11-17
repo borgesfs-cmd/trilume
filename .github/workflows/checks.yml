@@ -13,6 +13,10 @@ jobs:
           persist-credentials: false
       - name: Verificar sintaxe
         run: |
+          node --check support.js
+          node --check quick-forms.js
+          node --check repertoire.js
+          node --check data/repertoire.js
           node --check storage.js
           node --check library-tools.js
           node --check word-lab.js
