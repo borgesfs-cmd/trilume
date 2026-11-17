@@ -4,7 +4,7 @@ Em 17/11/2026 foram consultados os arquivos TRILUME_BANCO_RECONSTRUIDO_NUWK_v05.
 
 A leitura direta do JSON confirmou 3.583 IDs únicos e 2.140 enunciados distintos: 151 registros de EI, 2.520 de EF e 912 de EM. Os 3.583 estavam com validação pedagógica pendente, publicavel=false e liberado_ao_aluno=false. Há 616 registros com vínculos candidatos e nenhum homologado declarado pelo pacote. A matriz de 1.721 referências não traz todos os descritores oficiais completos. O hash e os indicadores conferidos estão em data/external-bank-audit.json.
 
-A aplicação atual mantém separadamente seus 213 objetivos/fichas e 876 atividades. Não foi realizada soma entre os acervos sem análise de sobreposição e qualidade. O banco recuperado não foi publicado em massa em uma página de estudante.
+A aplicação atual mantém separadamente seus 226 fichas/áreas e 1.336 atividades. Não foi realizada soma entre os acervos sem análise de sobreposição e qualidade. O banco recuperado não foi publicado em massa em uma página de estudante.
 
 ## O banco a serviço do ensino
 

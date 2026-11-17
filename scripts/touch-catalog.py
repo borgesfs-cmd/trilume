@@ -107,7 +107,7 @@ def main():
    if a['type']=='short':
     old=a['answer'];accepted=old if isinstance(old,list) else [old]
     if s['id']=='FUN-LEI-01':
-     i=int(a['id'].split('-')[-1])-1;correct,d1,d2=[('Sala 8','Sala 2','Sala 5'),('16h','9h','14h'),('Laboratório','Biblioteca','Pátio'),('Terça-feira','Quinta-feira','Sexta-feira'),('Sala 5','Sala 2','Sala 8')][i%5];opts=[correct,d1,d2]
+     i=int(a['id'].split('-')[-1]);correct,d1,d2=[('Sala 8','Sala 2','Sala 5'),('16h','9h','14h'),('Laboratório','Biblioteca','Pátio'),('Terça-feira','Quinta-feira','Sexta-feira'),('Sala 5','Sala 2','Sala 8')][i%5];opts=[correct,d1,d2]
     else:
      correct=str(accepted[0]);n=int(str(correct).strip());opts=[correct,str(n-1),str(n+1)]
     pos=len(a['id'])%3;opts=opts[pos:]+opts[:pos];a.update(type='choice',answer=str(opts.index(correct)),options=opts,acceptedTextAnswers=accepted,recognitionOnly=True,responseMode='touch',version=a['version']+1)

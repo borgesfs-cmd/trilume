@@ -17045,9 +17045,9 @@
           "reference": "8",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
           "options": [
-            "Sala 5",
+            "Sala 8",
             "Sala 2",
-            "Sala 8"
+            "Sala 5"
           ],
           "acceptedTextAnswers": [
             "8",
@@ -17067,9 +17067,9 @@
           "reference": "16h",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
           "options": [
-            "Sala 8",
-            "Sala 2",
-            "Sala 5"
+            "16h",
+            "9h",
+            "14h"
           ],
           "acceptedTextAnswers": [
             "16h",
@@ -17091,9 +17091,9 @@
           "reference": "laboratório",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
           "options": [
-            "16h",
-            "9h",
-            "14h"
+            "Laboratório",
+            "Biblioteca",
+            "Pátio"
           ],
           "acceptedTextAnswers": [
             "laboratório",
@@ -17114,9 +17114,9 @@
           "reference": "terça-feira",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
           "options": [
-            "Laboratório",
-            "Biblioteca",
-            "Pátio"
+            "Terça-feira",
+            "Quinta-feira",
+            "Sexta-feira"
           ],
           "acceptedTextAnswers": [
             "terça-feira",
@@ -17139,9 +17139,9 @@
           "reference": "sala 5",
           "rubric": "Registrar a resposta efetiva. Acerto com pista é assistido; recurso de acesso é registrado separadamente. Confirmar independência em itens inéditos e sessões distintas.",
           "options": [
-            "Terça-feira",
-            "Quinta-feira",
-            "Sexta-feira"
+            "Sala 5",
+            "Sala 2",
+            "Sala 8"
           ],
           "acceptedTextAnswers": [
             "sala 5",

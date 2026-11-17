@@ -1,24 +1,25 @@
 # Trilume — Plataforma Inteligente de Aprendizagem
 
-**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.3 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.4 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
 
 Educação Infantil, 1º ao 9º ano do Ensino Fundamental e 1ª à 3ª série do Ensino Médio. A experiência de ensino articula finalidade, exploração, demonstração, prática conjunta, reflexão, verificação e uso em outros contextos. O banco de exercícios apoia decisões do educador.
 
 ## Experiência e recursos
 
-- Cadastro por apelido/código, grupo etário ou ano, objetivos e recursos de acesso.
+- Cadastro por toque: grupo escolar, vários objetivos, recursos de acesso e interesses; identificação gerada e detalhes opcionais.
 - Avaliação inicial planejada pelo tutor, participação em uma tarefa por vez, correção após a aplicação e revisão humana.
-- Plano com lista fechada, possibilidade de escolher a ordem das habilidades aprovadas, pausa e encerramento sem penalidade.
+- Repertórios em 13 áreas, com três formas autorais, comparação entre sondagens e observação por toque. [Fundamentos e limites](docs/REPERTORIOS_E_ACESSO_0_4.md).
+- Plano com seletores e múltiplos materiais, lista fechada, possibilidade de escolher a ordem das habilidades aprovadas, pausa e encerramento sem penalidade.
 - 120 fichas escolares/fundamentais com exemplos demonstrados, exploração, prática conjunta e reflexão opcional.
 - Educação Infantil com 93 códigos de objetivos e 380 propostas mediadas, sem nota de desenvolvimento. Bebês e crianças bem pequenas participam em vivências fora da tela.
 - Oficina de seis palavras que relaciona som, figura, escrita, função e contexto; distingue ensino, sondas e leitura oral analisada pelo tutor.
-- Minha jornada: meta ajustável ou pausada, XP de participação, dias com registros, conquistas e sugestões de retomada. XP não mede aprendizagem e pedir ajuda não reduz pontos.
+- Minha jornada: meta ajustável ou pausada, XP de participação, dias com registros, conquistas e sugestões de retomada. XP não mede aprendizagem. Dicas e retirada de alternativas não contam como erro; reduzem somente o bônus da atividade, preservando a participação e pontos anteriores.
 - Nilo com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
 - Biblioteca editável, materiais, pistas, respostas aceitas, versões, importação/exportação, recuperação e proteção contra sobrescrita entre abas.
 
 ## Acervo e auditorias
 
-A aplicação contém **213 fichas/objetivos e 876 atividades**: catálogo escolar de 120/496 e catálogo EI de 93/380. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
+A aplicação contém **226 fichas/áreas e 1.336 atividades**: catálogo escolar de 120/800, catálogo EI de 93/380 e repertórios de 13/156. O Fundamental contém 376 escolhas em 604 atividades (62,25%). Os novos itens de reconhecimento parcial não certificam domínio integral. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
 
 O banco reconstruído nos outros chats possui 3.583 registros ainda pendentes de validação e bloqueados ao aluno. Foi consultado para curadoria; não foi somado nem disponibilizado automaticamente no aplicativo. Veja [integração dos bancos](docs/INTEGRACAO_BANCOS.md).
 

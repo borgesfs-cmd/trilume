@@ -1,6 +1,6 @@
-# Auditoria metodológica, pedagógica e psicológica — Trilume 0.3
+# Auditoria metodológica, pedagógica e psicológica — Trilume 0.4
 
-Data: 17/11/2026. Escopo: aplicação estática, regras de aprendizagem, 120 fichas escolares/fundamentais, 93 objetivos da Educação Infantil e oficina de palavras. Análise documental e de implementação; não houve aplicação com crianças, avaliação de efetividade nem validação clínica. Esta auditoria distingue fundamento, funcionamento implementado e hipótese a testar.
+Data: 17/11/2026. Escopo: aplicação estática, regras de aprendizagem, 120 fichas escolares/fundamentais, 93 objetivos da Educação Infantil, 13 áreas de repertório e oficina de palavras. Análise documental e de implementação; não houve aplicação com crianças, avaliação de efetividade nem validação clínica. Esta auditoria distingue fundamento, funcionamento implementado e hipótese a testar.
 
 ## Parecer e prioridade educativa
 
@@ -88,9 +88,9 @@ O feedback deve descrever processo e condições: você organizou os grupos e co
 
 ## Gamificação a serviço da participação
 
-A jornada registra meta diária ajustável, atividades previamente combinadas, XP por participação, nível de percurso, dias com registros e conquistas cumulativas. Acerto, erro e uso de ajuda recebem a mesma quantidade de XP na mesma modalidade. A meta pode ser pausada; não há perda de pontos por intervalos, ranking ou tarefas extras geradas para prolongar uso. Na Educação Infantil, a meta numérica começa pausada e os registros são do adulto.
+A jornada registra meta diária ajustável, atividades previamente combinadas, XP por participação, nível de percurso, dias com registros e conquistas cumulativas. Acerto e tentativa recebem participação; na política 0.4, cada dica solicitada ou alternativa retirada reduz 2 XP apenas do bônus, até o piso de 5 XP no estudo e 3 XP na oficina. Apoios não criam erros. Registros antigos mantêm sua política anterior. A meta pode ser pausada; não há perda de pontos por intervalos, ranking ou tarefas extras geradas para prolongar uso. Na Educação Infantil, a meta numérica começa pausada e os registros são do adulto.
 
-Essas regras evitam que pedir ajuda tenha custo de pontos, mas não garantem motivação autônoma. O estudo experimental de Sailer e colaboradores (2017) examina efeitos distintos de elementos de jogo sobre necessidades psicológicas; não valida esta implementação para crianças. O piloto deve perguntar se o estudante percebe sentido, escolha e apoio, ou se passa a buscar apenas pontos e terminar depressa.
+O custo no bônus pode incentivar a criança a evitar ajuda. Sua adoção atende à regra de gamificação solicitada, mas precisa ser examinada no piloto e não garante motivação autônoma. O suporte de acesso e a ajuda antecedente já planejada não têm custo; o adulto pode pausar metas numéricas. O estudo experimental de Sailer e colaboradores (2017) examina efeitos distintos de elementos de jogo sobre necessidades psicológicas; não valida esta implementação para crianças. O piloto deve perguntar se o estudante percebe sentido, escolha e apoio, ou se passa a buscar apenas pontos e terminar depressa.
 
 Revisões na jornada são lembretes para planejar, não certificação de esquecimento nem evidência de retenção. A lista da sessão permanece fechada. É possível reconhecer constância por participação acumulada e retomadas sem fazer da sequência de dias uma obrigação. XP, dias de acesso e cliques não entram no critério de aprendizagem.
 
@@ -98,7 +98,7 @@ Revisões na jornada são lembretes para planejar, não certificação de esquec
 
 Foi examinado o pacote TRILUME_BANCO_RECONSTRUIDO_NUWK_v05.zip: 3.583 registros, 2.140 enunciados distintos, 151 itens EI, 2.520 EF e 912 EM. Todos os 3.583 estavam com validação pedagógica pendente e bloqueados para disponibilização aos alunos. Há 616 itens com associação curricular candidata, sem vínculo homologado declarado no pacote. A matriz de 1.721 referências não fornece, nesse pacote, todos os textos oficiais completos.
 
-Esse banco e os 876 registros de atividades da aplicação são acervos diferentes. Não foram somados como itens únicos nem apresentados como cobertura comprovada. O pacote foi usado para identificar prioridades de curadoria, não para liberar automaticamente seu conteúdo. Um exemplo importante: um item rotulado como contagem pode exigir adição; classificar pelo título do tema não basta. Cada item selecionado deve entrar numa experiência de ensino, com objetivo, condições, apoio e decisão pedagógica, preservando origem e estado de revisão.
+Esse banco e os 1.336 registros de atividades da aplicação são acervos diferentes. Não foram somados como itens únicos nem apresentados como cobertura comprovada. O pacote foi usado para identificar prioridades de curadoria, não para liberar automaticamente seu conteúdo. Um exemplo importante: um item rotulado como contagem pode exigir adição; classificar pelo título do tema não basta. Cada item selecionado deve entrar numa experiência de ensino, com objetivo, condições, apoio e decisão pedagógica, preservando origem e estado de revisão.
 
 ## Plano de avaliação da metodologia
 
@@ -125,3 +125,15 @@ Prioridades: ampliar diversidade e qualidade dos itens escolares; especificar ru
 - CAST. UDL Guidelines 3.0, escolha e autonomia: https://udlguidelines.cast.org/engagement/interests-identities/choice-autonomy/
 - CFP. Normativas de avaliação psicológica, incluindo Resolução 31/2022: https://satepsi.cfp.org.br/legislacao.cfm
 - USP/LEMAD. Registro de Cartilha Sodré (referência histórica): https://lemad.fflch.usp.br/node/2095
+
+## Revisão 0.4: acessibilidade de resposta e linha de base
+
+O Fundamental agora tem 376 atividades de escolha em 604 propostas (62,25%). Foram acrescentados 304 itens autorais e convertidas 20 respostas curtas escolares. Os novos itens registram reconhecimento parcial: seu acerto não certifica a habilidade ampla. As ações e produções continuam presentes, com registro do adulto por toque. Na Educação Infantil, escolhas não substituem experiências corporais, artísticas, sociais e comunicativas.
+
+Os enunciados novos têm uma pergunta central e alternativas diretas; as instruções de mediação ficam em uma área do tutor. A simplificação é editorial e ainda exige teste de compreensão por grupo. A alternativa de registro do adulto reduz custo de digitação, mas acrescenta julgamento observacional; é necessário definir respostas e examinar concordância entre observadores.
+
+A rotina de repertórios reúne 13 áreas, três formas de observação e oportunidades de ensino. Usa a organização de domínios do IAR como referência, com tarefas autorais, sem aplicação padronizada, itens reproduzidos, normas ou cortes. O estudo de Lima e Hora (2020) alerta para limites de formato e aplicação em sua pequena amostra; não valida este protocolo. Fonte primária: https://doi.org/10.24065/2237-9460.2020v10n1ID1501
+
+Cada forma tem três oportunidades por área; uma aplicação permite até quatro áreas. A tela compara primeiro e último registro e preserva os demais. As formas não foram equiparadas, e estímulos reapresentados ficam identificados. Não há nota de prontidão ou inferência neuropsicológica. O acesso à alfabetização e ao currículo não depende de dominar lateralidade ou uma lista de repertórios prévios. Veja o roteiro e as limitações em REPERTORIOS_E_ACESSO_0_4.md.
+
+A retirada de um distrator modifica a condição de resposta e o acerto passa a assistido. Isso pode facilitar a participação, mas não equivale a procedimento validado de transferência de controle de estímulos. A avaliação inicial preserva ausência de feedback e analisa observações depois da aplicação.

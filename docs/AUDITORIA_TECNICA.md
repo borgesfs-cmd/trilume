@@ -1,6 +1,6 @@
-# Auditoria técnica e funcional — Trilume 0.3
+# Auditoria técnica e funcional — Trilume 0.4
 
-Data: 17/11/2026. Referência anterior: main 6a02a002, versão 0.2. Escopo: código estático, catálogo, persistência local, avaliação, planos, sessões, curadoria, oficina e jornada. Não é teste de invasão, auditoria de servidor ou certificação de segurança. Os testes usam perfis fictícios.
+Data: 17/11/2026. Referência anterior: main 923bddb7, versão 0.3; correções anteriores preservadas. Escopo: código estático, catálogo, persistência local, avaliação, planos, sessões, curadoria, oficina e jornada. Não é teste de invasão, auditoria de servidor ou certificação de segurança. Os testes usam perfis fictícios.
 
 ## Resultado
 
@@ -37,7 +37,7 @@ Os 120 exemplos escolares antes eram idênticos ao conteúdo introdutório. Fora
 
 Os 112 objetivos curriculares também foram reescritos em linguagem operacional. Isso não homologa sua correspondência normativa nem torna intercambiáveis as demandas de todas as atividades.
 
-A biblioteca mantém 213 fichas/objetivos e 876 registros de atividades: 120/496 no catálogo escolar e 93/380 no catálogo EI. A oficina de seis palavras gera listas próprias e não é somada como centenas de questões novas. As 120 fichas escolares continuam abaixo do mínimo de cinco enunciados distintos de aquisição e de dois de retenção. A revisão não reduziu critérios para produzir aparente conclusão de aprendizagem.
+A biblioteca mantém 226 fichas/áreas e 1.336 registros de atividades: 120/800 no catálogo escolar, 93/380 no catálogo EI e 13/156 em repertórios. A oficina de seis palavras gera listas próprias e não é somada como centenas de questões novas. As 120 fichas escolares continuam abaixo do mínimo de cinco enunciados distintos de aquisição e de dois de retenção. A revisão não reduziu critérios para produzir aparente conclusão de aprendizagem.
 
 O editor permite material do estudante, pistas específicas, respostas curtas alternativas e revisão do exercício. A edição preserva o ID e aumenta a versão; isso não torna automaticamente um item já visto uma evidência nova. O histórico não é recalculado por uma mudança editorial de gabarito.
 
@@ -49,13 +49,13 @@ Cadastro, filtro e edição preservam o grupo EI. As telas de consulta apresenta
 
 ## Oficina de palavras
 
-Há separação de ensino, avaliação inicial, sondas e tarefas de contexto. As listas ficam fechadas. A posição do alvo varia e os distratores são embaralhados. No ensino, a pista antecedente é registrada; nas sondas, não há correção imediata. Áudio precisa ser apresentado antes da resposta. Leitura oral exige transcrição e análise humana; não há reconhecimento de fala ou avaliação automática de pronúncia.
+Há separação de ensino, avaliação inicial, sondas e tarefas de contexto. As listas ficam fechadas. A posição do alvo varia e os distratores são embaralhados. No ensino, a pista antecedente é registrada; nas sondas, não há correção imediata. Áudio precisa ser apresentado antes da resposta. Leitura oral aceita registro observacional por toque ou transcrição opcional e análise humana; não há reconhecimento de fala ou avaliação automática de pronúncia.
 
 Limites: seis palavras, figuras em emoji dependentes do dispositivo, poucas variações de exemplares e ausência de controle do treino fora da aplicação. O modelo não demonstra todas as propriedades de uma classe de equivalência. A indicação de candidato a relação não ensinada no programa é provisória. A retomada do áudio após uma troca de tarefa precisa continuar sendo acompanhada no uso real; a aplicação não grava voz ou identifica emoções.
 
 ## Jornada e gamificação
 
-XP é derivado dos registros por sessão/tarefa, sem duplicar no recálculo. Ajuda e erro não mudam a quantidade de participação da mesma modalidade. A análise posterior da aprendizagem não retira os pontos de uma tentativa efetivamente registrada. Itens pulados e sem resposta não pontuam. A avaliação inicial recebe apenas reconhecimento por participação ao encerrar, sem mostrar correção antecipada.
+XP é derivado dos registros por sessão/tarefa, sem duplicar no recálculo. Na política 0.4, dicas solicitadas e alternativas retiradas reduzem somente o bônus da resposta, com pisos de participação. Pedir apoio não cria erro. A política e o valor ficam no registro; históricos anteriores preservam o XP anterior. A análise posterior da aprendizagem não retira os pontos de uma tentativa efetivamente registrada. Itens pulados e sem resposta não pontuam. A avaliação inicial recebe apenas reconhecimento por participação ao encerrar, sem mostrar correção antecipada.
 
 Metas têm histórico por data local, podem ser ajustadas ou pausadas e não reescrevem metas anteriores. Datas futuras não entram no total do momento consultado. Os dias com registros permanecem acumulados e não são apagados por intervalos. Retomada exige evento efetivo de retorno, e não apenas pausa. Não há anti-fraude, contas ou competição; XP local pode ser alterado por quem controla o navegador e não deve ter valor financeiro ou certificador.
 
@@ -81,3 +81,15 @@ A renderização de todas as páginas é exercitada em um ambiente simulado de i
 8. A eficácia metodológica combinada, a equivalência das tarefas e a confiabilidade entre observadores precisam de avaliação empírica.
 
 As correções tornam o comportamento mais rastreável. A aprovação de aprendizagem ou decisão escolar permanece do educador; o software não emite diagnóstico ou certificação psicológica.
+
+## Mudanças e verificações 0.4
+
+- Cadastro com múltiplos objetivos, recursos e interesses; plano com dia, período, local, duração e vários materiais. Texto adicional opcional; o papel do adulto pode identificar o acompanhamento neste protótipo individual.
+- 304 escolhas autorais novas e 20 conversões, conservando versões e cópias de aplicações anteriores. Novos reconhecimentos parciais ficam excluídos da regra de domínio integral.
+- Eliminação conserva índices originais e só retira distratores; tentativas de enviar uma opção já retirada são recusadas. O pedido não cria uma resposta.
+- O valor de XP fica congelado com a resposta e seu formato é validado na importação. Pontos locais continuam sem proteção contra adulteração deliberada por quem controla o navegador.
+- 13 áreas autorais, três formas de sondagem e histórico por área. Identidade de estímulo é preservada para sinalizar reapresentação, inclusive quando o enunciado é genérico.
+- Atividades auditivas bloqueiam resposta sem apresentação do som ou confirmação do tutor. Não há gravação ou reconhecimento de voz.
+- Ações observadas têm quatro seleções e detalhe opcional. Na avaliação inicial, aguardam confirmação/revisão do adulto após encerrar; ajuda registrada permanece assistida.
+
+109 testes automatizados passaram na revisão inicial 0.4; resultados finais e inspeção da publicação ficam em VALIDACAO.md. A indisponibilidade da prévia local é limitação de infraestrutura, não evidência de validação visual.

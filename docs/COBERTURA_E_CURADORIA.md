@@ -1,6 +1,6 @@
-# Cobertura e curadoria — versão 0.3
+# Cobertura e curadoria — versão 0.4
 
-A aplicação reúne 213 fichas/objetivos e 876 registros: 120/496 do catálogo escolar/fundamental e 93/380 da Educação Infantil. Estão representados 12 grupos escolares e três grupos EI. Representação não equivale a cobertura completa de conteúdos, competências ou habilidades.
+A aplicação reúne 226 fichas/áreas e 1.336 registros: 120/800 do catálogo escolar/fundamental, 93/380 da Educação Infantil e 13/156 dos repertórios autorais. Estão representados 12 grupos escolares e três grupos EI. Representação não equivale a cobertura completa de conteúdos, competências ou habilidades.
 
 Consulte auditoria-curricular.html para os conteúdos reais, todas as atividades vinculadas, análise por ficha e filtros de grupo e componente. A matriz tabular está em docs/MATRIZ_AUDITORIA_CURRICULAR.csv. Os intervalos válidos dos 93 códigos EI foram conferidos; a adequação completa das experiências autorais precisa de curadoria. As correspondências específicas EF/EM permanecem pendentes de homologação.
 
