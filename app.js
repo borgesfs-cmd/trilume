@@ -9,7 +9,7 @@ let currentView='home',selectedId=state.settings?.selectedId||'',filterYear='',f
 const $=id=>document.getElementById(id);
 const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const ageLabels={EI01:'Bebês · até 1 ano e 6 meses',EI02:'Crianças bem pequenas · 1a7m a 3a11m',EI03:'Crianças pequenas · 4a a 5a11m'};
-const schoolLabel=s=>s.stage==='ei'?(ageLabels[s.ageBand]||'Educação Infantil'):schoolLabel(s);
+const schoolLabel=s=>s.stage==='ei'?(ageLabels[s.ageBand]||'Educação Infantil'):yearLabel(s.year);
 const yearLabel=y=>Number(y)<=9?y+'º ano do Fundamental':(Number(y)-9)+'ª série do Médio';
 const phaseLabel=p=>({baseline:'Avaliação inicial',explain:'Objetivo',model:'Exemplo',guided:'Com apoio',independent:'Verificação',transfer:'Outro contexto',maintenance:'Retenção',practice:'Verificação'}[p]||p);
 const outcomeLabel=x=>student()?.stage==='ei'?({independent:'Observado sem pista instrucional',assisted:'Observado com mediação',incorrect:'Ainda não observado nesta situação',not_assessed:'Não observado nesta aplicação',pending:'Aguardando registro do educador'}[x]||x):({independent:'Correta independente',assisted:'Correta com ajuda',incorrect:'Ainda não demonstrada',not_assessed:'Não aferida',pending:'Aguardando educador'}[x]||x);

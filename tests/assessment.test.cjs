@@ -11,7 +11,7 @@ const base=A.create(state,student,catalog,activities.map(a=>A.key(sk.id,a.id)),{
 state.baselines.push(base);return {state,base};
 }
 test('o tutor precisa selecionar questões e identificar o responsável',()=>{
-assert.throws(()=>A.create(E.blank(),student,catalog,[],{educator:'Tutor'}),/questões/);
+assert.throws(()=>A.create(E.blank(),student,catalog,[],{educator:'Tutor',materialReady:true}),/questões/);
 assert.throws(()=>A.create(E.blank(),student,catalog,[A.key(sk.id,choice.id)],{}),/responsável/);
 });
 test('o planejamento preserva enunciado, alternativas e versão',()=>{
@@ -22,7 +22,7 @@ assert.equal(choice.prompt,before);
 assert.equal(base.slots[0].activity.version,choice.version);
 });
 test('não se abre uma segunda aplicação para o mesmo estudante',()=>{
-const {state}=fixture();assert.throws(()=>A.create(state,student,catalog,[A.key(sk.id,choice.id)],{educator:'Tutor'}),/em andamento/);
+const {state}=fixture();assert.throws(()=>A.create(state,student,catalog,[A.key(sk.id,choice.id)],{educator:'Tutor',materialReady:true}),/em andamento/);
 });
 test('uma resposta correta de múltipla escolha é registrada sem erro de índice',()=>{
 const {base}=fixture();const r=A.record(base,base.slots[0].id,{answer:choice.answer});
@@ -71,13 +71,13 @@ assert.throws(()=>A.review(base,base.responses[0].id,{outcome:'independent',educ
 test('uma aplicação complementar não apaga a evidência de outra habilidade',()=>{
 const {state,base}=fixture();A.record(base,base.slots[0].id,{answer:choice.answer});A.complete(base);
 const other=catalog.find(s=>s.id==='CUR-01-02'),a=other.activities.find(a=>a.phase==='baseline');
-const second=A.create(state,student,catalog,[A.key(other.id,a.id)],{educator:'Tutor'});state.baselines.push(second);A.complete(second);
+const second=A.create(state,student,catalog,[A.key(other.id,a.id)],{educator:'Tutor',materialReady:true});state.baselines.push(second);A.complete(second);
 assert.equal(E.baselineEvidence(state,student.id,sk.id).independent,1);
 assert.equal(E.baselineEvidence(state,student.id,sk.id).baselineId,base.id);
 });
 test('reapresentação é identificada sem alterar o registro anterior',()=>{
 const {state,base}=fixture();A.record(base,base.slots[0].id,{answer:choice.answer});A.complete(base);
-const second=A.create(state,student,catalog,[A.key(sk.id,choice.id)],{educator:'Tutor'});assert.equal(second.slots[0].repeated,true);
+const second=A.create(state,student,catalog,[A.key(sk.id,choice.id)],{educator:'Tutor',materialReady:true});assert.equal(second.slots[0].repeated,true);
 assert.equal(base.responses[0].repeated,false);
 });
 test('o campo de resposta do aluno não inclui gabarito nem rubrica',()=>{
