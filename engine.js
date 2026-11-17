@@ -34,7 +34,7 @@ for(const flag of ['readingTarget','requiresMaterial'])if(a[flag]!==undefined&&t
 return copy(a);
 }
 
-const blank=()=>({schemaVersion:VERSION,students:[],baselines:[],plans:[],sessions:[],responses:[],helpEvents:[],events:[],catalogEdits:[],catalogHistory:[],settings:{largeText:false,focus:false,hideNilo:false}});
+const blank=()=>({schemaVersion:VERSION,students:[],baselines:[],plans:[],sessions:[],responses:[],helpEvents:[],events:[],catalogEdits:[],catalogHistory:[],literacySessions:[],settings:{largeText:false,focus:false,hideNilo:false}});
 function score(answer,expected,helped=false){const a=normalizeAnswer(answer),values=Array.isArray(expected)?expected:[expected],ok=Boolean(a)&&values.some(x=>x!==undefined&&x!==null&&normalizeAnswer(x)===a);return ok?(helped?'assisted':'independent'):'incorrect';}
 function validateStudent(input){const errors=[];if(!String(input.name||'').trim())errors.push('Informe um apelido ou código para o estudante.');const early=input.stage==='ei';if(early?input.year!==0||!['EI01','EI02','EI03'].includes(input.ageBand):!Number.isInteger(Number(input.year))||Number(input.year)<1||Number(input.year)>12)errors.push('Escolha uma etapa e um grupo escolar válidos.');return errors;}
 function validEarlyCode(code){const m=/^EI0([123])(EO|CG|TS|EF|ET)([0-9]{2})$/.exec(code||'');if(!m)return false;const max={EO:[6,7,7],CG:[5,5,5],TS:[3,3,3],EF:[9,9,9],ET:[6,8,8]}[m[2]][Number(m[1])-1];return Number(m[3])>=1&&Number(m[3])<=max;}
@@ -135,7 +135,19 @@ unique(v.responses,'Resposta inválida no arquivo.');const answeredTasks=new Set
 for(const r of v.responses){const s=v.sessions.find(s=>s.id===r.sessionId),t=s?.items.find(t=>t.id===r.taskId);if(!students.has(r.studentId)||!outcomes.includes(r.outcome)||!id(r.skillId)||typeof r.answer!=='string'||!time(r.at)||r.outcome==='independent'&&r.helped||!s||!t||s.studentId!==r.studentId||t.skillId!==r.skillId||r.activityId!==t.activity?.id||r.itemVersion!==t.activity?.version||r.phase!==t.phase)throw Error('Resposta inválida no arquivo.');const k=r.sessionId+'::'+r.taskId;if(answeredTasks.has(k))throw Error('Resposta repetida no arquivo.');answeredTasks.add(k);if(r.outcome==='assisted')r.helped=true;if(r.type===undefined)r.type=t.activity.type;if(r.options===undefined&&t.activity.options)r.options=copy(t.activity.options);if(r.type==='choice'&&r.outcome!=='not_assessed'&&(!/^(0|[1-9][0-9]*)$/.test(r.answer)||Number(r.answer)>=t.activity.options.length))throw Error('Alternativa inválida no arquivo.');}
 for(const h of v.helpEvents){const s=v.sessions.find(s=>s.id===h?.sessionId);if(!obj(h)||!s||s.studentId!==h.studentId||!s.items.some(t=>t.id===h.taskId)||!time(h.at)||typeof h.message!=='string')throw Error('Registro de ajuda inválido.');}
 for(const x of v.events)if(!obj(x)||typeof x.type!=='string'||!time(x.at))throw Error('Evento inválido no arquivo.');
-v.catalogEdits=v.catalogEdits.map(validateSkill);if(baseCatalog)validateCatalog(v.catalogEdits,baseCatalog);v.catalogHistory=v.catalogHistory||[];if(!Array.isArray(v.catalogHistory))throw Error('Histórico do acervo inválido.');v.catalogHistory=v.catalogHistory.map(validateSkill);v.settings=obj(v.settings)?v.settings:{};
+v.catalogEdits=v.catalogEdits.map(validateSkill);if(baseCatalog)validateCatalog(v.catalogEdits,baseCatalog);v.catalogHistory=v.catalogHistory||[];if(!Array.isArray(v.catalogHistory))throw Error('Histórico do acervo inválido.');v.catalogHistory=v.catalogHistory.map(validateSkill);
+v.literacySessions=v.literacySessions||[];
+if(!Array.isArray(v.literacySessions))throw Error('Oficinas inválidas no arquivo.');
+unique(v.literacySessions,'Oficina inválida no arquivo.');const activeLabs=new Set(),knownWords=['bola','pato','mala','sapo','gato','bolo'],relations=['AB','AC','BC','CB','CC','FC','TC','ORAL'];
+for(const s of v.literacySessions){
+if(!students.has(s.studentId)||!['baseline','teaching','probe','context'].includes(s.mode)||!['active','ended'].includes(s.status)||!Array.isArray(s.tasks)||!s.tasks.length||!Number.isInteger(s.index)||s.index<0||s.index>=s.tasks.length||!Array.isArray(s.responses)||!Array.isArray(s.wordIds)||s.wordIds.length<3||s.wordIds.length>6||new Set(s.wordIds).size!==s.wordIds.length||s.wordIds.some(id=>!knownWords.includes(id))||!time(s.createdAt))throw Error('Oficina inválida no arquivo.');
+unique(s.tasks,'Tarefa de oficina inválida.');unique(s.responses,'Resposta de oficina inválida.');
+if(s.status==='active'){if(activeLabs.has(s.studentId))throw Error('Oficina ativa repetida.');activeLabs.add(s.studentId);}
+for(const t of s.tasks)if(!s.wordIds.includes(t.target)||!relations.includes(t.relation)||!Array.isArray(t.options)||t.options.length!==s.wordIds.length||new Set(t.options).size!==t.options.length||t.options.some(id=>!s.wordIds.includes(id))||![0,1,2].includes(t.promptLevel))throw Error('Tarefa de oficina inválida.');
+const answered=new Set();for(const r of s.responses){const t=s.tasks.find(t=>t.id===r.taskId);if(!t||answered.has(r.taskId)||r.target!==t.target||r.relation!==t.relation||typeof r.answer!=='string'||!outcomes.includes(r.outcome)||r.outcome==='independent'&&r.helped||!time(r.at))throw Error('Resposta de oficina inválida.');answered.add(r.taskId);}
+}
+
+v.settings=obj(v.settings)?v.settings:{};
 if(v.settings.timeZone!==undefined){try{new Intl.DateTimeFormat('pt-BR',{timeZone:v.settings.timeZone});}catch{throw Error('Fuso horário inválido.');}}
 if(v.settings.selectedId&&!students.has(v.settings.selectedId))v.settings.selectedId=v.students[0]?.id||'';
 if(v.drafts!==undefined&&!obj(v.drafts))throw Error('Rascunhos inválidos no arquivo.');return v;

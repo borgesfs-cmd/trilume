@@ -1,7 +1,7 @@
 (function(){
 
 'use strict';
-const E=window.TrilumeEngine,A=window.TrilumeAssessment,N=window.TrilumeNilo,S=window.TrilumeStorage,L=window.TrilumeLibraryTools,KEY=new URLSearchParams(location.search).has('qa')?'trilume.qa.v1':'trilume.v1';
+const E=window.TrilumeEngine,A=window.TrilumeAssessment,N=window.TrilumeNilo,S=window.TrilumeStorage,L=window.TrilumeLibraryTools,W=window.TrilumeWordLab,KEY=new URLSearchParams(location.search).has('qa')?'trilume.qa.v1':'trilume.v1';
 const localStore=S.open({getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},KEY,v=>E.validateBackup(v,window.TRILUME_CATALOG));
 window.TRILUME_CATALOG=[...window.TRILUME_CATALOG,...(window.TRILUME_EI_CATALOG||[])];
 const initial=localStore.read();let storageWarning=initial.warning,state=initial.state;
@@ -33,6 +33,7 @@ function empty(title,text,action='students',label='Cadastrar estudante'){return 
 function needsStudent(){return empty('Vamos começar pelo estudante','Cadastre um apelido ou código e o ano escolar. Depois, conheça o repertório inicial para preparar o ensino.');}
 function niloContext(){return {view:currentView,state,activeBaseline,activeSession,cursor:activeBaseline()?.cursor||baselineCursor};}
 function nilo(message,small=false,forced){return N.render(message,small,niloContext(),forced);}
+function labContext(){return {state,student:student(),persist,render,announce,button,escape,nilo,openDialog,navigate};}
 function displayAnswer(r){return A.text(r);}
 function activityMaterial(a){return a?.studentMaterial?'<section class="student-material"><h3>Material para a atividade</h3>'+escape(a.studentMaterial)+'</section>':'';}
 
@@ -58,7 +59,7 @@ $('student-switch').innerHTML='<option value="">Escolher estudante</option>'+sta
 $('page-student').textContent=s?s.name+' · '+schoolLabel(s):'Cada estudante, um ponto de partida.';
 $('storage-notice').textContent=storageWarning;$('storage-notice').hidden=!storageWarning;
 document.querySelectorAll('nav [data-id]').forEach(b=>{const on=b.dataset.id===currentView;b.classList.toggle('selected',on);b.setAttribute('aria-current',on?'page':'false');});
-const pages={home:renderHome,students:renderStudents,baseline:renderBaseline,trail:renderTrail,study:renderStudy,library:renderLibrary,progress:renderProgress,guide:renderGuide};
+const pages={home:renderHome,students:renderStudents,baseline:renderBaseline,trail:renderTrail,study:renderStudy,library:renderLibrary,progress:renderProgress,guide:renderGuide,lab:()=>W.render(labContext())};
 const content=(pages[currentView]||renderHome)();$('page').innerHTML=content.includes('nilo-card')?content:nilo(N.intros[currentView]||N.intros.home,true)+content;
 restoreDrafts();
 $('page').setAttribute('data-view',currentView);
@@ -212,7 +213,7 @@ function renderGuide(){
 return `<div class="page-heading"><div><span class="eyebrow">CLAREZA PARA QUEM USA</span><h1>Como usar a Trilume</h1><p>Ensinar, observar e ajustar com responsabilidade humana.</p></div></div><div class="columns"><section class="card"><h2>Para o educador</h2><ol class="process"><li><strong>Cadastre o estudante</strong><span>Informe o ano e os recursos de acesso.</span></li><li><strong>Observe a linha de base</strong><span>Selecione habilidades prioritárias e registre respostas sem pistas de ensino.</span></li><li><strong>Revise e aprove a trilha</strong><span>Escolha objetivos possíveis, horário e duração estimada.</span></li><li><strong>Acompanhe o estudo</strong><span>Demonstre, registre ajuda e verifique em exemplos novos.</span></li><li><strong>Analise a aprendizagem</strong><span>Revise respostas abertas e programe novos itens de retenção e transferência.</span></li></ol></section><section class="card mint-surface"><h2>Para o estudante</h2><p>Veja o combinado antes de começar. Você conhecerá as atividades e o tempo estimado.</p><p>Peça ajuda quando precisar. O registro ajuda o educador a planejar o ensino.</p><p>Você pode pausar ou encerrar. As atividades não aumentam automaticamente e não há perda de conquistas.</p><h2>Para a família ou tutor</h2><p>Ajude a organizar horário, local e materiais. Aguarde a resposta do estudante e registre quando alguma pista foi necessária.</p><p>Valorize a estratégia e a aprendizagem observada. A duração não é uma corrida.</p></section></div>
 <section class="card"><h2>O papel do Nilo</h2><p>O Nilo apresenta orientações e mensagens previamente escritas, ligadas à tarefa. Suas expressões apresentam orientações, ajuda, revisão, conquistas e pausas; elas não descrevem a emoção do estudante. Tem 12 expressões ligadas ao contexto da atividade. Nas opções de leitura, ele pode ficar menor.</p><h2>Referências e uso de tecnologia</h2><p>A organização curricular consulta a BNCC. O acervo é autoral e formativo; os vínculos específicos por código ainda precisam de validação pedagógica. No Ensino Médio, a distribuição por série é uma proposta local, pois a BNCC organiza habilidades por áreas e não impõe esta sequência anual.</p><p>Decisões sobre ensino e produções abertas permanecem com o educador. Nesta versão, não há IA generativa conversando com estudantes nem decisões escolares automáticas. As orientações consideram a supervisão humana e a proteção de estudantes indicadas pelo MEC.</p><div class="actions"><a class="secondary" href="https://basenacionalcomum.mec.gov.br/" target="_blank" rel="noopener noreferrer">Consultar BNCC</a><a class="secondary" href="https://www.gov.br/mec/pt-br/assuntos/noticias/2026/novembro/mec-estabelece-diretrizes-para-uso-responsavel-da-ia-na-educacao" target="_blank" rel="noopener noreferrer">Diretrizes de IA do MEC</a></div></section>
 ${N.gallery()}<section class="card"><h2>Guardar e retomar o trabalho</h2><p>Os dados ficam neste navegador. Exporte um backup para levar os registros a outro dispositivo. A importação substitui os dados locais somente depois da sua conferência.</p><div class="actions">${button('Exportar backup completo','export-backup')}${button('Importar backup','import-backup','secondary')}${localStore.rawRecovery()!==null?button('Exportar dados para recuperação','export-recovery','secondary'):''}</div><p class="caption">Não há login, acesso institucional por perfis ou sincronização nesta versão. Para testes, use identificação fictícia. Acesso pelo mesmo navegador permite consultar os registros locais.</p></section>
-<section class="card"><h2>Sobre a Trilume</h2><p><strong>Trilume — Plataforma Inteligente de Aprendizagem.</strong> Do 1º ao 9º ano do Ensino Fundamental e da 1ª à 3ª série do Ensino Médio.</p><p>Concepção pedagógica informada: Flávio da Silva Borges. Nome anterior do projeto: Trilha, preservado apenas no histórico.</p><p class="caption">© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. O nome não foi apresentado como marca registrada. A arte do Nilo foi gerada com IA. A biblioteca não constitui instrumento psicológico, diagnóstico ou teste padronizado; a eficácia da combinação metodológica no produto precisa ser avaliada.</p><a class="text-button" href="https://github.com/borgesfs-cmd/trilume" target="_blank" rel="noopener noreferrer">Ver projeto e documentação ↗</a></section>`;
+<section class="card"><h2>Auditorias e fundamentos</h2><p><a href="auditoria-metodologica.html" target="_blank" rel="noopener">Ler auditoria metodológica</a> · <a href="auditoria-curricular.html" target="_blank" rel="noopener">Consultar análise por habilidade e etapa</a> · <a href="auditoria-tecnica.html" target="_blank" rel="noopener">Ver correções e limitações técnicas</a></p></section><section class="card"><h2>Sobre a Trilume</h2><p><strong>Trilume — Plataforma Inteligente de Aprendizagem.</strong> Do 1º ao 9º ano do Ensino Fundamental e da 1ª à 3ª série do Ensino Médio.</p><p>Concepção pedagógica informada: Flávio da Silva Borges. Nome anterior do projeto: Trilha, preservado apenas no histórico.</p><p class="caption">© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. O nome não foi apresentado como marca registrada. A arte do Nilo foi gerada com IA. A biblioteca não constitui instrumento psicológico, diagnóstico ou teste padronizado; a eficácia da combinação metodológica no produto precisa ser avaliada.</p><a class="text-button" href="https://github.com/borgesfs-cmd/trilume" target="_blank" rel="noopener noreferrer">Ver projeto e documentação ↗</a></section>`;
 }
 
 
@@ -222,6 +223,7 @@ function saveSkill(updated,notify=true){const clean=E.validateCatalog([updated],
 document.addEventListener('click',async e=>{
 const b=e.target.closest('[data-action]');if(!b)return;const a=b.dataset.action,id=b.dataset.id;
 try{
+if(a.startsWith('lab-')){W.action(labContext(),a,id);return;}
 if(a==='nav'){navigate(id);return;}
 if(a==='new-student'){studentForm();return;}
 if(a==='edit-student'){studentForm(id);return;}
@@ -287,6 +289,13 @@ download('Trilume_Registros.csv','\ufeff'+fields.join(';')+'\r\n'+[...baselineRe
 document.addEventListener('submit',e=>{
 const form=e.target;if(!form.dataset.form)return;e.preventDefault();const fd=new FormData(form),value=Object.fromEntries(fd);
 try{
+if(form.dataset.form==='lab-plan'){
+if(W.current(state,selectedId))throw Error('Retome ou encerre a oficina atual.');
+if(value.mode!=='baseline'&&!E.hasBaseline(state,selectedId))throw Error('Conclua e analise a avaliação inicial antes de individualizar o ensino na oficina.');
+const session=W.makeSession(student(),fd.getAll('wordIds'),value);state.literacySessions=state.literacySessions||[];state.literacySessions.push(session);persist();render();return;
+}
+if(form.dataset.form==='lab-oral'){W.record(W.current(state,selectedId),value.answer);persist();render();return;}
+if(form.dataset.form==='lab-review'){W.review(labContext(),value.sessionId,value.responseId,value);return;}
 if(form.dataset.form==='student'){
 const early=Object.hasOwn(ageLabels,value.year),school={year:early?0:Number(value.year),stage:early?'ei':Number(value.year)<=9?'ef':'em',ageBand:early?value.year:undefined};const errors=E.validateStudent({name:value.name,...school});if(errors.length)throw Error(errors.join(' '));
 const old=state.students.find(s=>s.id===value.id);const s={...(old||{}),id:old?.id||E.uid(),name:value.name.trim(),...school,goal:value.goal.trim(),access:value.access.trim(),createdAt:old?.createdAt||new Date().toISOString(),updatedAt:new Date().toISOString()};
@@ -337,9 +346,9 @@ const valid=E.validateCatalog(data.skills,catalog());for(const item of valid){co
 pendingImport={kind:'catalog',value:valid};openDialog('Conferir importação do acervo',`<p>${valid.length} habilidade(s) serão adicionadas ou atualizadas pela identificação. Os registros de estudantes e os enunciados já aplicados serão preservados.</p><div class="actions">${button('Cancelar','close-dialog','secondary')}${button('Confirmar importação do acervo','confirm-import')}</div>`);}}
 catch(error){announce(error.message||'Não foi possível ler o arquivo.',true);}
 });
-window.addEventListener('hashchange',()=>{const view=location.hash.slice(1);if(['home','students','baseline','trail','study','library','progress','guide'].includes(view))navigate(view);});
-if(['home','students','baseline','trail','study','library','progress','guide'].includes(location.hash.slice(1)))currentView=location.hash.slice(1);
-window.addEventListener('popstate',()=>{const v=location.hash.slice(1);navigate(['home','students','baseline','trail','study','library','progress','guide'].includes(v)?v:'home');});
+window.addEventListener('hashchange',()=>{const view=location.hash.slice(1);if(['home','students','baseline','trail','study','library','progress','guide','lab'].includes(view))navigate(view);});
+if(['home','students','baseline','trail','study','library','progress','guide','lab'].includes(location.hash.slice(1)))currentView=location.hash.slice(1);
+window.addEventListener('popstate',()=>{const v=location.hash.slice(1);navigate(['home','students','baseline','trail','study','library','progress','guide','lab'].includes(v)?v:'home');});
 render();
 
 })();
