@@ -9266,7 +9266,7 @@ window.TRILUME_EI_CATALOG = [
   },
   {
     "id": "EI03ET01",
-    "version": 1,
+    "version": 4,
     "year": 0,
     "stage": "ei",
     "ageBand": "EI03",
@@ -9369,6 +9369,69 @@ window.TRILUME_EI_CATALOG = [
           "Ofereça duas possibilidades reais de participação e aguarde a iniciativa.",
           "Demonstre uma etapa da brincadeira e acompanhe a tentativa sem forçar a participação.",
           "Retome uma etapa mais simples ou uma pausa e combine a próxima oportunidade com a criança."
+        ]
+      },
+      {
+        "id": "EI03ET01-Q-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Qual grupo tem mais círculos?",
+        "studentMaterial": "Compare contando ou formando pares.",
+        "options": [
+          "● ●",
+          "● ● ● ●",
+          "● ● ●"
+        ],
+        "answer": "1",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: ● ● ● ●. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
+        ]
+      },
+      {
+        "id": "EI03ET01-Q-5",
+        "version": 1,
+        "phase": "practice",
+        "type": "choice",
+        "prompt": "Os grupos têm a mesma quantidade?",
+        "studentMaterial": "Grupo A: ● ● ●\nGrupo B: ●\n                 ●\n                 ●",
+        "options": [
+          "Sim, três em cada grupo",
+          "Não, o grupo A tem mais",
+          "Não, o grupo B tem mais"
+        ],
+        "answer": "0",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: Sim, três em cada grupo. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
+        ]
+      },
+      {
+        "id": "EI03ET01-Q-6",
+        "version": 1,
+        "phase": "transfer",
+        "type": "choice",
+        "prompt": "Para cada boneco, escolhemos dois blocos. Quantos blocos precisamos para dois bonecos?",
+        "studentMaterial": "🧸 🧸\nUm boneco usa: ■ ■",
+        "options": [
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "2",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: 4. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
         ]
       }
     ]
@@ -9702,7 +9765,7 @@ window.TRILUME_EI_CATALOG = [
   },
   {
     "id": "EI03ET05",
-    "version": 1,
+    "version": 2,
     "year": 0,
     "stage": "ei",
     "ageBand": "EI03",
@@ -9805,6 +9868,27 @@ window.TRILUME_EI_CATALOG = [
           "Ofereça duas possibilidades reais de participação e aguarde a iniciativa.",
           "Demonstre uma etapa da brincadeira e acompanhe a tentativa sem forçar a participação.",
           "Retome uma etapa mais simples ou uma pausa e combine a próxima oportunidade com a criança."
+        ]
+      },
+      {
+        "id": "EI03ET05-Q-4",
+        "version": 1,
+        "phase": "practice",
+        "type": "choice",
+        "prompt": "Qual grupo foi organizado apenas com formas redondas?",
+        "studentMaterial": "Observe as formas e escolha uma regra de agrupamento.",
+        "options": [
+          "● ● ●",
+          "■ ● ■",
+          "▲ ■ ●"
+        ],
+        "answer": "0",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: ● ● ●. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
         ]
       }
     ]
@@ -9920,7 +10004,7 @@ window.TRILUME_EI_CATALOG = [
   },
   {
     "id": "EI03ET07",
-    "version": 1,
+    "version": 5,
     "year": 0,
     "stage": "ei",
     "ageBand": "EI03",
@@ -10023,6 +10107,90 @@ window.TRILUME_EI_CATALOG = [
           "Ofereça duas possibilidades reais de participação e aguarde a iniciativa.",
           "Demonstre uma etapa da brincadeira e acompanhe a tentativa sem forçar a participação.",
           "Retome uma etapa mais simples ou uma pausa e combine a próxima oportunidade com a criança."
+        ]
+      },
+      {
+        "id": "EI03ET07-Q-4",
+        "version": 1,
+        "phase": "baseline",
+        "type": "choice",
+        "prompt": "Quantas estrelas há neste grupo?",
+        "studentMaterial": "★ ★ ★",
+        "options": [
+          "2",
+          "3",
+          "4"
+        ],
+        "answer": "1",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: 3. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
+        ]
+      },
+      {
+        "id": "EI03ET07-Q-5",
+        "version": 1,
+        "phase": "practice",
+        "type": "choice",
+        "prompt": "Escolha o grupo que corresponde ao número 4.",
+        "studentMaterial": "Número: 4",
+        "options": [
+          "● ●",
+          "● ● ● ●",
+          "● ● ●"
+        ],
+        "answer": "1",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: ● ● ● ●. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
+        ]
+      },
+      {
+        "id": "EI03ET07-Q-6",
+        "version": 1,
+        "phase": "practice",
+        "type": "choice",
+        "prompt": "Qual número vem entre 2 e 4?",
+        "studentMaterial": "2 — ? — 4",
+        "options": [
+          "1",
+          "3",
+          "5"
+        ],
+        "answer": "1",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: 3. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
+        ]
+      },
+      {
+        "id": "EI03ET07-Q-7",
+        "version": 1,
+        "phase": "transfer",
+        "type": "choice",
+        "prompt": "Cada boneco precisa de um prato. Quantos pratos serão necessários?",
+        "studentMaterial": "🧸 🧸 🧸",
+        "options": [
+          "2",
+          "4",
+          "3"
+        ],
+        "answer": "2",
+        "presentation": "visual",
+        "requiresMaterial": false,
+        "rubric": "Registrar a escolha, a estratégia de contagem ou comparação e os apoios. A resposta não classifica desenvolvimento nem funciona como condição para acesso à alfabetização.",
+        "reference": "Referência desta situação: 3. Verificar o procedimento com a criança e observar em outros contextos.",
+        "hints": [
+          "Convide a formar pares ou apontar um elemento de cada vez, sem exigir velocidade."
         ]
       }
     ]
