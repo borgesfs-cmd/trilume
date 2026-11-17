@@ -37,6 +37,7 @@ return copy(a);
 const blank=()=>({schemaVersion:VERSION,students:[],baselines:[],plans:[],sessions:[],responses:[],helpEvents:[],events:[],catalogEdits:[],catalogHistory:[],settings:{largeText:false,focus:false,hideNilo:false}});
 function score(answer,expected,helped=false){const a=normalizeAnswer(answer),values=Array.isArray(expected)?expected:[expected],ok=Boolean(a)&&values.some(x=>x!==undefined&&x!==null&&normalizeAnswer(x)===a);return ok?(helped?'assisted':'independent'):'incorrect';}
 function validateStudent(input){const errors=[];if(!String(input.name||'').trim())errors.push('Informe um apelido ou código para o estudante.');const early=input.stage==='ei';if(early?input.year!==0||!['EI01','EI02','EI03'].includes(input.ageBand):!Number.isInteger(Number(input.year))||Number(input.year)<1||Number(input.year)>12)errors.push('Escolha uma etapa e um grupo escolar válidos.');return errors;}
+function validEarlyCode(code){const m=/^EI0([123])(EO|CG|TS|EF|ET)([0-9]{2})$/.exec(code||'');if(!m)return false;const max={EO:[6,7,7],CG:[5,5,5],TS:[3,3,3],EF:[9,9,9],ET:[6,8,8]}[m[2]][Number(m[1])-1];return Number(m[3])>=1&&Number(m[3])<=max;}
 function inScope(s,student){return student.stage==='ei'?s.stage==='ei'&&s.ageBand===student.ageBand:s.stage!=='ei'&&(s.lane==='foundation'||s.year===student.year);}
 function evidence(baseline,skillId){const list=(baseline?.responses||[]).filter(r=>r.skillId===skillId),valid=list.filter(r=>['independent','assisted','incorrect'].includes(r.outcome));return {valid:valid.length,independent:valid.filter(r=>r.outcome==='independent').length,assisted:valid.filter(r=>r.outcome==='assisted').length,incorrect:valid.filter(r=>r.outcome==='incorrect').length,pending:list.filter(r=>r.outcome==='pending').length,notAssessed:list.filter(r=>r.outcome==='not_assessed').length,percent:valid.length?Math.round(valid.filter(r=>r.outcome==='independent').length/valid.length*100):null};}
 function completedBaselines(state,studentId){return state.baselines.map((b,index)=>({b,index})).filter(x=>x.b.studentId===studentId&&x.b.status==='completed').sort((a,b)=>(Date.parse(b.b.endedAt||b.b.createdAt)||0)-(Date.parse(a.b.endedAt||a.b.createdAt)||0)||b.index-a.index).map(x=>x.b);}
@@ -91,6 +92,7 @@ function validateSkill(s){
 if(!obj(s)||typeof s.id!=='string'||!s.id.trim()||s.id.length>160)throw Error('Identificação da habilidade inválida.');
 for(const f of ['title','subject','content','objective','model'])if(typeof s[f]!=='string'||!s[f].trim())throw Error('A habilidade precisa de título, componente, objetivo, conteúdo e exemplo.');
 if(!(s.year===0||Number.isInteger(s.year)&&s.year>=1&&s.year<=12))throw Error('Ano escolar inválido na habilidade.');
+if(s.stage==='ei'&&s.bnccCode&&(!validEarlyCode(s.bnccCode)||s.bnccCode.slice(0,4)!==s.ageBand))throw Error('Código BNCC da Educação Infantil incompatível com o grupo.');
 if(s.stage==='ei'&&(!['EI01','EI02','EI03'].includes(s.ageBand)||s.year!==0))throw Error('Grupo da Educação Infantil inválido.');
 if(!Number.isInteger(s.version)||s.version<1)throw Error('Versão de habilidade inválida.');
 if(!Array.isArray(s.activities)||s.activities.length>1000||!s.activities.some(a=>a?.phase==='baseline')||!s.activities.some(a=>a?.phase==='practice'))throw Error('Inclua ao menos uma sonda inicial e uma verificação.');
@@ -139,5 +141,5 @@ if(v.settings.selectedId&&!students.has(v.settings.selectedId))v.settings.select
 if(v.drafts!==undefined&&!obj(v.drafts))throw Error('Rascunhos inválidos no arquivo.');return v;
 }
 function exportCatalog(catalog){return {schemaVersion:VERSION,title:'Trilume — biblioteca de habilidades',skills:copy(catalog)};}
-return {VERSION,uid,copy,normalize,normalizeAnswer,defaultCriterion,inScope,contentKey,dayKey,needsMaterial,observedItems,skillHealth,catalogHealth,validateActivity,validateCatalog,reviewResponse,blank,score,validateStudent,evidence,baselineEvidence,latestBaseline,hasBaseline,propose,unused,makePlan,startSession,finishSession,mastery,validateBackup,validateSkill,exportCatalog};
+return {VERSION,uid,copy,normalize,normalizeAnswer,defaultCriterion,inScope,validEarlyCode,contentKey,dayKey,needsMaterial,observedItems,skillHealth,catalogHealth,validateActivity,validateCatalog,reviewResponse,blank,score,validateStudent,evidence,baselineEvidence,latestBaseline,hasBaseline,propose,unused,makePlan,startSession,finishSession,mastery,validateBackup,validateSkill,exportCatalog};
 });
