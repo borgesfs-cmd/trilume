@@ -1,4 +1,4 @@
-# Validação — versão 0.5
+# Validação — versão 0.6
 
 Data: 17/11/2026. Perfis e respostas fictícios; nenhuma aplicação com crianças.
 
@@ -44,3 +44,9 @@ A infraestrutura de prévia local retornou conexão recusada. A conferência foi
 Na primeira conferência móvel em 390 × 844, o corpo não excedeu 390 px. A inspeção motivou substituir a faixa longa de atalhos: grade de duas colunas no Estudante e lista suspensa no Tutor/Geral. Na conferência final, os quatro atalhos do Estudante ficaram em duas linhas, todos visíveis, e a lista do Tutor abriu a programação da gamificação. A lista do Geral abriu as auditorias. O corpo continuou com 390 px para viewport de 390 px. A dimensão temporária foi restaurada após o teste. Os exemplos das imagens usam apenas o perfil fictício de QA.
 
 As imagens menu-estudante-0-5 e painel-tutor-0-5, na pasta docs, registram as duas apresentações. A publicação e as verificações de regras pedagógicas foram concluídas com sucesso.
+
+## Revisão 0.6: jogo e gestão individual
+
+161 testes automatizados passaram. Novos casos cobrem listas diárias de 1–3 questões por ano/disciplina, regra pausada, estabilidade no mesmo dia, reserva do plano, ausência de preenchimento artificial, erros destinados à retomada, exclusão de acertos do sorteio, limites etários, XP inicial e reduzido, até duas retomadas, ausência de XP por erro repetido, apoio sem erro, estímulo auditivo sem penalidade, imutabilidade da primeira resposta e ausência de domínio por reconhecimento repetido. Também verificam vínculos e pontuação do backup, alternativas retiradas, tempos visíveis e ocultação, suspensão/offline, tempo ausente nos registros antigos, limpeza de todos os contextos do perfil, manutenção dos outros estudantes, sanitização de cópias locais, bloqueio de arquivo ilegível, reversão por falha de quota, conflito entre abas e confirmação na interface.
+
+A integração preservou os lotes EI e EFI em curadoria recebidos de outros chats. Eles não passaram a compor o sorteio de questões do estudante. Os testes da nova política não recalculam pontos históricos.

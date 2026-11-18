@@ -1,4 +1,4 @@
-# Auditoria metodológica, pedagógica e psicológica — Trilume 0.4
+# Auditoria metodológica, pedagógica e psicológica — Trilume 0.6
 
 Data: 17/11/2026. Escopo: aplicação estática, regras de aprendizagem, 120 fichas escolares/fundamentais, 93 objetivos da Educação Infantil, 13 áreas de repertório e oficina de palavras. Análise documental e de implementação; não houve aplicação com crianças, avaliação de efetividade nem validação clínica. Esta auditoria distingue fundamento, funcionamento implementado e hipótese a testar.
 
@@ -88,7 +88,7 @@ O feedback deve descrever processo e condições: você organizou os grupos e co
 
 ## Gamificação a serviço da participação
 
-A jornada registra meta diária ajustável, atividades previamente combinadas, XP por participação, nível de percurso, dias com registros e conquistas cumulativas. Acerto e tentativa recebem participação; na política 0.4, cada dica solicitada ou alternativa retirada reduz 2 XP apenas do bônus, até o piso de 5 XP no estudo e 3 XP na oficina. Apoios não criam erros. Registros antigos mantêm sua política anterior. A meta pode ser pausada; não há perda de pontos por intervalos, ranking ou tarefas extras geradas para prolongar uso. Na Educação Infantil, a meta numérica começa pausada e os registros são do adulto.
+A jornada registra meta diária ajustável, atividades previamente combinadas, XP, nível de percurso, dias com registros e conquistas cumulativas. A política 0.6 diferencia acertos e erros no ensino: primeiro erro recebe 1 XP; acerto inicial tem o máximo previsto; retomada correta recebe até 60% e depois 30%, com duas retomadas no máximo. Dicas, esclarecimentos e eliminação reduzem somente o bônus atual. Retomadas incorretas não somam XP. Registros antigos preservam a política original. Nenhum desses valores integra o critério de aprendizagem.
 
 O custo no bônus pode incentivar a criança a evitar ajuda. Sua adoção atende à regra de gamificação solicitada, mas precisa ser examinada no piloto e não garante motivação autônoma. O suporte de acesso e a ajuda antecedente já planejada não têm custo; o adulto pode pausar metas numéricas. O estudo experimental de Sailer e colaboradores (2017) examina efeitos distintos de elementos de jogo sobre necessidades psicológicas; não valida esta implementação para crianças. O piloto deve perguntar se o estudante percebe sentido, escolha e apoio, ou se passa a buscar apenas pontos e terminar depressa.
 
@@ -137,3 +137,11 @@ A rotina de repertórios reúne 13 áreas, três formas de observação e oportu
 Cada forma tem três oportunidades por área; uma aplicação permite até quatro áreas. A tela compara primeiro e último registro e preserva os demais. As formas não foram equiparadas, e estímulos reapresentados ficam identificados. Não há nota de prontidão ou inferência neuropsicológica. O acesso à alfabetização e ao currículo não depende de dominar lateralidade ou uma lista de repertórios prévios. Veja o roteiro e as limitações em REPERTORIOS_E_ACESSO_0_4.md.
 
 A retirada de um distrator modifica a condição de resposta e o acerto passa a assistido. Isso pode facilitar a participação, mas não equivale a procedimento validado de transferência de controle de estímulos. A avaliação inicial preserva ausência de feedback e analisa observações depois da aplicação.
+
+## Revisão 0.6: devolutiva, retomadas e tempo
+
+O feedback de ensino usa texto claro, ícone, cor e expressão contextual do Nilo. Acerto confirma a resposta; erro informa que ela não está correta e oferece explicação/apoio. A expressão do mascote não representa julgamento sobre a criança. A avaliação inicial e as sondas continuam sem correção antecipada durante a aplicação.
+
+A primeira resposta permanece intacta. Retomadas ficam registradas com apoio e não entram como novas evidências de domínio. Novas seleções automáticas excluem questões resolvidas; as incorretas são direcionadas ao fluxo de retomada com XP reduzido. Sondas e relações deliberadamente reapresentadas para retirada de pistas na oficina conservam identificação de exposição anterior.
+
+O tutor pode configurar um desafio extra de uma a três questões por dia, separado do ensino planejado. O tempo por tarefa é de uso visível aproximado, sem relógio ao aluno ou incentivo por rapidez. Não autoriza inferência sobre atenção, velocidade de processamento, memória, capacidade ou diagnóstico. Essas regras de produto exigem avaliação no piloto com aprendizes e educadores.

@@ -103,3 +103,13 @@ As contagens são derivadas dos registros existentes, sem gerar resultados fict�
 Etapas de explicação usam eventos de conclusão; respostas usam seu horário registrado. Quando falta horário próprio de uma etapa antiga, a sessão oferece uma aproximação sinalizada. Não se estima duração real a partir do tempo planejado. Respostas revisadas são exibidas segundo a análise mais recente, e não como uma reconstrução de decisões antigas.
 
 Os novos módulos insights.js e areas.js separam agregação e apresentação da interface principal. Foram acrescentados testes de calendário, isolamento, contagem e navegação. As abas são organização de interface: não implementam autenticação ou autorização de acesso entre pessoas.
+
+## Revisão 0.6: desafios, tempos e limpeza individual
+
+Desafios diários e retomadas guardam cópias das questões, respostas e regras de XP. O sorteio respeita o grupo escolar, a disciplina, materiais disponíveis, questões já respondidas e reservas dos planos de ensino. A lista do dia é imutável; acertos não retornam às novas seleções automáticas. As tentativas de retomada permanecem separadas, com teto de duas e XP reduzido. O backup valida pontuação, alternativas eliminadas, vínculo com a primeira resposta e sequência de tentativas.
+
+O tempo é acumulado em intervalos com a página visível e a tarefa aberta, com interrupção na pausa, troca de tela, resposta ou ocultação da página. Intervalos longos são limitados a 15 segundos para não somar suspensão/offline como trabalho. Dados antigos ficam sem medição; médias e durações são aproximações de uso, sem interpretação de capacidade.
+
+A limpeza individual oferece manter cadastro ou excluir o perfil e exige confirmação. Remove registros dos contextos de ensino, avaliação, oficina, jogo e tempo, além de metas, XP derivado e rascunhos. Sanitiza as cópias locais previous/recovery legíveis. Uma cópia ilegível impede iniciar a limpeza; erro na gravação provoca tentativa de reversão. Não há transação real entre chaves do navegador: interrupção abrupta ou falha da própria reversão ainda exige recuperação humana. Cópias exportadas, cache de outra aba e outros dispositivos estão fora desta limpeza. Conflitos entre abas são recusados na próxima gravação.
+
+A integração preservou os novos bancos de Educação Infantil e EFI enviados por outros chats, mantendo-os em curadoria, separados do catálogo ativo. Não houve publicação automática desses itens ao estudante.

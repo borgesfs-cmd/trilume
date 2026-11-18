@@ -1,6 +1,6 @@
 # Trilume — Plataforma Inteligente de Aprendizagem
 
-**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.5 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.6 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
 
 Educação Infantil, 1º ao 9º ano do Ensino Fundamental e 1ª à 3ª série do Ensino Médio. A experiência de ensino articula finalidade, exploração, demonstração, prática conjunta, reflexão, verificação e uso em outros contextos. O banco de exercícios apoia decisões do educador.
 
@@ -17,7 +17,7 @@ Os painéis distinguem participação, pontos e evidência de aprendizagem. Troc
 - Cadastro por toque: grupo escolar, vários objetivos, recursos de acesso e interesses; identificação gerada e detalhes opcionais.
 - Avaliação inicial planejada pelo tutor, participação em uma tarefa por vez, correção após a aplicação e revisão humana.
 - Repertórios em 13 áreas, com três formas autorais, comparação entre sondagens e observação por toque. [Fundamentos e limites](docs/REPERTORIOS_E_ACESSO_0_4.md).
-- Plano com seletores e múltiplos materiais, lista fechada, possibilidade de escolher a ordem das habilidades aprovadas, pausa e encerramento sem penalidade.
+- Plano com seletores e múltiplos materiais, quantidade de questões escolhida pelo tutor, lista fechada, possibilidade de escolher a ordem das habilidades aprovadas, pausa e encerramento sem penalidade.
 - 120 fichas escolares/fundamentais com exemplos demonstrados, exploração, prática conjunta e reflexão opcional.
 - Educação Infantil com 93 códigos de objetivos e 380 propostas mediadas, sem nota de desenvolvimento. Bebês e crianças bem pequenas participam em vivências fora da tela.
 - Oficina de seis palavras que relaciona som, figura, escrita, função e contexto; distingue ensino, sondas e leitura oral analisada pelo tutor.
@@ -25,9 +25,29 @@ Os painéis distinguem participação, pontos e evidência de aprendizagem. Troc
 - Nilo com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
 - Biblioteca editável, materiais, pistas, respostas aceitas, versões, importação/exportação, recuperação e proteção contra sobrescrita entre abas.
 
+## Novo banco EFI — 1.000 questões em curadoria (18/11/2026)
+
+Foi incorporado ao repositório um lote autoral com **1.000 itens do 1º ao 5º ano**, organizado em cinco arquivos anuais com 200 itens por ano e 40 por componente curricular por ano. Inclui 50 ilustrações SVG contextuais e classificação por ano, área, BNCC proposto, conteúdo e dificuldade esperada.
+
+**[Abrir o visualizador de curadoria do banco EFI](banco-efi-curadoria.html)** · [Consultar os arquivos de dados](data/banco-efi-2026/) · [Manifesto da auditoria](data/banco-efi-2026/manifesto.json).
+
+**Importante:** os itens são rascunhos de revisão pedagógica. O banco está no repositório, mas não foi ativado automaticamente nas atividades dos estudantes ou em um backend remoto. O grau de dificuldade informado é editorial; os códigos BNCC e a qualidade de cada item exigem homologação antes do uso.
+
+## Desafios, retomadas e reinício do acompanhamento — 0.6
+
+- Tutor → Gamificação: desafio extra de **1, 2 ou 3 questões por dia**, aleatório entre os conteúdos do ano ou restrito a uma disciplina. Começa pausado, abre na entrada do estudante após configuração e mantém uma lista fixa no dia, independente do plano de ensino.
+- Acerto e erro têm feedback com texto, ícone, cor e expressão do Nilo. Questões resolvidas saem das novas seleções automáticas. Erros podem ser retomados duas vezes; a resposta original permanece registrada.
+- Acerto inicial de estudo/desafio: até 10 XP; primeira retomada correta: até 6; segunda: até 3. Primeiro erro: 1 XP de participação; erro em retomada: 0. Dicas, esclarecimentos e eliminação descontam somente o bônus atual. Valores antigos não são recalculados.
+- Tutor → Painel: tempo visível por questão e tarefa, média e exportação CSV; pausas e tela oculta são excluídas. Não há relógio para o estudante, prêmio por rapidez ou inferência clínica.
+- **Tutor → Estudantes → Zerar dados:** apagar o histórico mantendo cadastro/preferências ou excluir também o perfil. A confirmação identifica o estudante. A limpeza inclui planos, avaliações, respostas, retomadas, metas, XP, tempos, rascunhos e cópias locais legíveis; mantém outros estudantes e o acervo. Backups exportados e outros dispositivos não são apagados.
+
+Veja as regras, limites e roteiro em [jogo e gestão dos dados](docs/JOGO_E_DADOS_0_6.md).
+
 ## Acervo e auditorias
 
 A aplicação contém **226 fichas/áreas e 1.336 atividades**: catálogo escolar de 120/800, catálogo EI de 93/380 e repertórios de 13/156. O Fundamental contém 376 escolhas em 604 atividades (62,25%). Os novos itens de reconhecimento parcial não certificam domínio integral. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
+
+O lote adicional **Educação Infantil — banco lúdico 30** (15 linguagem e 15 matemática) foi incorporado ao repositório para curadoria, acessível em Geral → Dados do acervo, mas não ao catálogo ativo. Os arquivos de mídia e a homologação pedagógica ainda estão pendentes. Veja [detalhes da integração EI](docs/INTEGRACAO_EI_LUDICO.md).
 
 O banco reconstruído nos outros chats possui 3.583 registros ainda pendentes de validação e bloqueados ao aluno. Foi consultado para curadoria; não foi somado nem disponibilizado automaticamente no aplicativo. Veja [integração dos bancos](docs/INTEGRACAO_BANCOS.md).
 
@@ -59,6 +79,6 @@ Não há chat generativo, diagnóstico, teste psicológico padronizado, avaliaç
 
 Node.js 20+ para executar `npm test`. Não há dependências de execução da interface. O workflow verifica sintaxe e testes a cada push. Os relatórios são gerados por `python scripts/build-audits.py`; o CSV acompanha o catálogo atual.
 
-Arquivos principais: app.js (interface), engine.js (regras), assessment.js (avaliação), storage.js (persistência), library-tools.js (curadoria), word-lab.js (oficina), gamification.js (jornada), nilo.js e assets/ (mascote), data/ (catálogos), tests/ (regressão), docs/ (auditorias). history/ preserva versões anteriores e não integra a aplicação atual.
+Arquivos principais: app.js (interface), engine.js (regras), assessment.js (avaliação), storage.js (persistência), library-tools.js (curadoria), word-lab.js (oficina), gamification.js (jornada), game.js (desafios/retomadas), timing.js (tempo visível), student-data.js (limpeza individual), nilo.js e assets/ (mascote), data/ (catálogos), tests/ (regressão), docs/ (auditorias). history/ preserva versões anteriores e não integra a aplicação atual.
 
 © 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. A arte do Nilo foi gerada com IA. A marca não foi apresentada como registrada. O nome anterior Trilha permanece apenas no histórico.
