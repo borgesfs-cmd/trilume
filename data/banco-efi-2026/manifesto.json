@@ -1,0 +1,108 @@
+{
+  "versao": "EFI-1000-2026-11-18",
+  "questoes": 1000,
+  "anos": {
+    "1º ano": 200,
+    "2º ano": 200,
+    "3º ano": 200,
+    "4º ano": 200,
+    "5º ano": 200
+  },
+  "disciplinas": {
+    "Língua Portuguesa": 200,
+    "Matemática": 200,
+    "Ciências": 200,
+    "História": 200,
+    "Geografia": 200
+  },
+  "matriz": {
+    "1º ano": {
+      "Língua Portuguesa": 40,
+      "Matemática": 40,
+      "Ciências": 40,
+      "História": 40,
+      "Geografia": 40
+    },
+    "2º ano": {
+      "Língua Portuguesa": 40,
+      "Matemática": 40,
+      "Ciências": 40,
+      "História": 40,
+      "Geografia": 40
+    },
+    "3º ano": {
+      "Língua Portuguesa": 40,
+      "Matemática": 40,
+      "Ciências": 40,
+      "História": 40,
+      "Geografia": 40
+    },
+    "4º ano": {
+      "Língua Portuguesa": 40,
+      "Matemática": 40,
+      "Ciências": 40,
+      "História": 40,
+      "Geografia": 40
+    },
+    "5º ano": {
+      "Língua Portuguesa": 40,
+      "Matemática": 40,
+      "Ciências": 40,
+      "História": 40,
+      "Geografia": 40
+    }
+  },
+  "dificuldade": {
+    "Básico": 350,
+    "Inicial/pré-requisito": 200,
+    "Intermediário": 300,
+    "Desafiador": 150
+  },
+  "dificuldade_por_ano": {
+    "1º ano": {
+      "Básico": 90,
+      "Inicial/pré-requisito": 60,
+      "Intermediário": 40,
+      "Desafiador": 10
+    },
+    "2º ano": {
+      "Inicial/pré-requisito": 50,
+      "Básico": 80,
+      "Intermediário": 50,
+      "Desafiador": 20
+    },
+    "3º ano": {
+      "Inicial/pré-requisito": 40,
+      "Desafiador": 30,
+      "Intermediário": 60,
+      "Básico": 70
+    },
+    "4º ano": {
+      "Inicial/pré-requisito": 30,
+      "Desafiador": 40,
+      "Intermediário": 70,
+      "Básico": 60
+    },
+    "5º ano": {
+      "Desafiador": 50,
+      "Inicial/pré-requisito": 20,
+      "Intermediário": 80,
+      "Básico": 50
+    }
+  },
+  "bncc_codigos_unicos": 209,
+  "temas_unicos_por_disciplina": {
+    "Língua Portuguesa": 42,
+    "Matemática": 59,
+    "Ciências": 60,
+    "História": 60,
+    "Geografia": 60
+  },
+  "questoes_com_imagem_contextual": 50,
+  "enunciados_duplicados_exatos": 0,
+  "possiveis_prefixos_semelhantes": 0,
+  "status_integracao": "Pacote de curadoria. Não disponibilizar automaticamente para estudantes antes de homologação.",
+  "dificuldade_status": "Estimativa editorial; não é índice psicométrico medido por aplicação.",
+  "bncc_status": "Códigos de referência propostos; conferir descrição oficial, progressão e associação ao item.",
+  "fonte_bncc": "https://downloadbncc.mec.gov.br/"
+}
