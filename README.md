@@ -29,6 +29,8 @@ Os painéis distinguem participação, pontos e evidência de aprendizagem. Troc
 
 A aplicação contém **226 fichas/áreas e 1.336 atividades**: catálogo escolar de 120/800, catálogo EI de 93/380 e repertórios de 13/156. O Fundamental contém 376 escolhas em 604 atividades (62,25%). Os novos itens de reconhecimento parcial não certificam domínio integral. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
 
+O lote adicional **Educação Infantil — banco lúdico 30** (15 linguagem e 15 matemática) foi incorporado ao repositório para curadoria, acessível em Geral → Dados do acervo, mas não ao catálogo ativo. Os arquivos de mídia e a homologação pedagógica ainda estão pendentes. Veja [detalhes da integração EI](docs/INTEGRACAO_EI_LUDICO.md).
+
 O banco reconstruído nos outros chats possui 3.583 registros ainda pendentes de validação e bloqueados ao aluno. Foi consultado para curadoria; não foi somado nem disponibilizado automaticamente no aplicativo. Veja [integração dos bancos](docs/INTEGRACAO_BANCOS.md).
 
 - [Auditoria metodológica e fundamentos](https://borgesfs-cmd.github.io/trilume/auditoria-metodologica.html)
