@@ -1,4 +1,4 @@
-# Validação — versão 0.4
+# Validação — versão 0.5
 
 Data: 17/11/2026. Perfis e respostas fictícios; nenhuma aplicação com crianças.
 
@@ -34,3 +34,9 @@ A prévia local retornou conexão recusada apesar do status ativo. A versão pub
 A conexão inicial do navegador falhou durante a conferência do plano. O restante foi concluído em outro navegador, sem reutilizar dados normais da aplicação. A inspeção 0.4 foi realizada em tela de desktop; não houve nova emulação de celular nesta revisão. O teste de layout estreito descrito acima refere-se à 0.3. Mudanças de responsividade ainda precisam de conferência em dispositivos e tecnologias assistivas reais.
 
 A conferência motivou mais dois ajustes: apenas uma sugestão de escolha por componente prioritário do ano escolar, sem pré-seleção automática de atividades transversais; e preservação do texto de dicas anteriores ao retirar um distrator. Repertórios ainda não observados ficam na página própria, evitando alongar a trilha principal.
+
+## Revisão 0.5: menus e painéis
+
+127 testes automatizados passaram antes da conferência visual. Os 16 novos verificam: limites de calendário nos seis períodos e viradas de ano; segunda-feira como início da semana; meia-noite local e exclusão de datas futuras; isolamento do estudante selecionado; distinção de resultados e registros pendentes/não aferidos; não antecipação de resultados de avaliações ativas; deduplicação de tarefas; oficina separada de habilidade ampla; reconhecimento parcial excluído do domínio; data efetiva da retomada e das etapas de explicação; vazio sem tendência inventada; contagens reais do acervo; menus de cada área; meta configurada no Tutor; ausência de planejamento de oficina no Estudante; preservação dos cadastros ao trocar de área.
+
+A infraestrutura de prévia local retornou conexão recusada. A conferência de navegação e layout da 0.5 será realizada no endereço publicado após as verificações do repositório. Até lá, não se afirma validação visual completa desta revisão.

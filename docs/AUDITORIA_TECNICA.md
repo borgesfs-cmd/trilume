@@ -1,4 +1,4 @@
-# Auditoria técnica e funcional — Trilume 0.4
+# Auditoria técnica e funcional — Trilume 0.5
 
 Data: 17/11/2026. Referência anterior: main 923bddb7, versão 0.3; correções anteriores preservadas. Escopo: código estático, catálogo, persistência local, avaliação, planos, sessões, curadoria, oficina e jornada. Não é teste de invasão, auditoria de servidor ou certificação de segurança. Os testes usam perfis fictícios.
 
@@ -93,3 +93,13 @@ As correções tornam o comportamento mais rastreável. A aprovação de aprendi
 - Ações observadas têm quatro seleções e detalhe opcional. Na avaliação inicial, aguardam confirmação/revisão do adulto após encerrar; ajuda registrada permanece assistida.
 
 111 testes automatizados passaram na revisão inicial 0.4; resultados finais e inspeção da publicação ficam em VALIDACAO.md. A indisponibilidade da prévia local é limitação de infraestrutura, não evidência de validação visual.
+
+## Navegação e painéis 0.5
+
+O menu foi dividido em Estudante, Tutor e Geral. O estudante tem resumo simples, combinado de estudo e consulta por seis períodos. O tutor dispõe de painel com respostas, ajudas, pendências, recortes anteriores, detalhes por habilidade, sondagens e links para revisão humana e planejamento. A meta da jornada é programada no Tutor. O Geral reúne banco, biblioteca, orientações e auditorias.
+
+As contagens são derivadas dos registros existentes, sem gerar resultados fictícios. O período bimestral segue pares de meses do calendário; o semestre é janeiro–junho ou julho–dezembro. A semana começa na segunda-feira. Períodos atuais são incompletos e não geram automaticamente conclusão de melhora ou piora. Datas futuras e perfis não selecionados são excluídos das métricas.
+
+Etapas de explicação usam eventos de conclusão; respostas usam seu horário registrado. Quando falta horário próprio de uma etapa antiga, a sessão oferece uma aproximação sinalizada. Não se estima duração real a partir do tempo planejado. Respostas revisadas são exibidas segundo a análise mais recente, e não como uma reconstrução de decisões antigas.
+
+Os novos módulos insights.js e areas.js separam agregação e apresentação da interface principal. Foram acrescentados testes de calendário, isolamento, contagem e navegação. As abas são organização de interface: não implementam autenticação ou autorização de acesso entre pessoas.

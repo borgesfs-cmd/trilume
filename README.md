@@ -1,8 +1,16 @@
 # Trilume — Plataforma Inteligente de Aprendizagem
 
-**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.4 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.5 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
 
 Educação Infantil, 1º ao 9º ano do Ensino Fundamental e 1ª à 3ª série do Ensino Médio. A experiência de ensino articula finalidade, exploração, demonstração, prática conjunta, reflexão, verificação e uso em outros contextos. O banco de exercícios apoia decisões do educador.
+
+## Três áreas no menu
+
+- **Estudante:** Meu dia, Meu estudo, Minhas descobertas e Minha jornada; atalhos para avaliação e oficina já preparadas. Barras de etapas e conteúdos explorados, com histórico diário, semanal, mensal, bimestral, semestral e anual.
+- **Tutor:** painel detalhado do estudante selecionado, cadastros, avaliação inicial, sessões, sondagens, oficina, gamificação e revisão humana dos registros.
+- **Geral:** dados do acervo, biblioteca e exercícios, instruções, backups e auditorias.
+
+Os painéis distinguem participação, pontos e evidência de aprendizagem. Trocar de área não cria contas nem permissões: continua sendo um aplicativo individual, com dados neste navegador. Veja [menu e indicadores](docs/MENUS_E_PAINEIS_0_5.md).
 
 ## Experiência e recursos
 
