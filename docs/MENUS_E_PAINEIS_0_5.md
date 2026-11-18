@@ -28,6 +28,10 @@ Os atalhos levam a avaliação inicial, programação de sessões, sondagens, of
 
 **Biblioteca e exercícios**, **Como usar e backups**, **Auditorias** e **Sobre a Trilume** preservam as funções de consulta, curadoria, importação/exportação e documentação.
 
+## Menu no celular
+
+As três áreas ficam sempre visíveis. No Estudante, os atalhos aparecem em duas colunas. No Tutor e no Geral, uma lista suspensa permite escolher a função sem percorrer uma faixa horizontal longa. A navegação de desktop mantém os links na lateral.
+
 ## Interpretação dos períodos
 
 | Recorte | Limite |
