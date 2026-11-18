@@ -25,6 +25,14 @@ Os painéis distinguem participação, pontos e evidência de aprendizagem. Troc
 - Nilo com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
 - Biblioteca editável, materiais, pistas, respostas aceitas, versões, importação/exportação, recuperação e proteção contra sobrescrita entre abas.
 
+## Novo banco EFI — 1.000 questões em curadoria (18/11/2026)
+
+Foi incorporado ao repositório um lote autoral com **1.000 itens do 1º ao 5º ano**, organizado em cinco arquivos anuais com 200 itens por ano e 40 por componente curricular por ano. Inclui 50 ilustrações SVG contextuais e classificação por ano, área, BNCC proposto, conteúdo e dificuldade esperada.
+
+**[Abrir o visualizador de curadoria do banco EFI](banco-efi-curadoria.html)** · [Consultar os arquivos de dados](data/banco-efi-2026/) · [Manifesto da auditoria](data/banco-efi-2026/manifesto.json).
+
+**Importante:** os itens são rascunhos de revisão pedagógica. O banco está no repositório, mas não foi ativado automaticamente nas atividades dos estudantes ou em um backend remoto. O grau de dificuldade informado é editorial; os códigos BNCC e a qualidade de cada item exigem homologação antes do uso.
+
 ## Acervo e auditorias
 
 A aplicação contém **226 fichas/áreas e 1.336 atividades**: catálogo escolar de 120/800, catálogo EI de 93/380 e repertórios de 13/156. O Fundamental contém 376 escolhas em 604 atividades (62,25%). Os novos itens de reconhecimento parcial não certificam domínio integral. Contagens não representam cobertura integral ou qualidade validada. As fichas EF/EM ainda precisam de códigos específicos homologados; a distribuição por série no Médio é uma proposta local.
