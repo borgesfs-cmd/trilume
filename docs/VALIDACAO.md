@@ -1,4 +1,4 @@
-# Validação — versão 0.6
+# Validação — versão 0.7
 
 Data: 17/11/2026. Perfis e respostas fictícios; nenhuma aplicação com crianças.
 
@@ -10,7 +10,7 @@ Os 88 testes da versão 0.3 foram mantidos e complementados; uma alteração de 
 
 ## Inspeção em navegador — histórico da versão 0.3
 
-- Página inicial com prioridade para exploração e autonomia; Nilo e balão ampliados.
+- Página inicial com prioridade para exploração e autonomia; NILMO e balão ampliados.
 - Perfil fictício, seleção de uma avaliação breve, resposta e conclusão sem exibir correção ao estudante.
 - Retorno ao tutor, preparação do plano com materiais e abertura da sequência de ensino.
 - Exploração, registro opcional de reflexão, pausa e retomada com texto preservado.
@@ -51,8 +51,16 @@ As imagens menu-estudante-0-5 e painel-tutor-0-5, na pasta docs, registram as du
 
 A integração preservou os lotes EI e EFI em curadoria recebidos de outros chats. Eles não passaram a compor o sorteio de questões do estudante. Os testes da nova política não recalculam pontos históricos.
 
-A publicação 0.6 foi conferida em navegador com o perfil fictício Aprendiz 1 e chave isolada ?qa=1. Foram observados o diálogo de limpeza com duas opções e confirmação desmarcada, cancelamento mantendo cadastro, configuração de duas questões de Matemática, abertura automática do desafio, erro com +1 XP, retomada com teto de 6 XP, dica e retirada de distrator reduzindo o teto a 2 XP e acerto assistido com Nilo celebrando. A limpeza efetiva foi exercitada nos testes automatizados; no navegador, o diálogo foi cancelado.
+A publicação 0.6 foi conferida em navegador com o perfil fictício Aprendiz 1 e chave isolada ?qa=1. Foram observados o diálogo de limpeza com duas opções e confirmação desmarcada, cancelamento mantendo cadastro, configuração de duas questões de Matemática, abertura automática do desafio, erro com +1 XP, retomada com teto de 6 XP, dica e retirada de distrator reduzindo o teto a 2 XP e acerto assistido com NILMO celebrando. A limpeza efetiva foi exercitada nos testes automatizados; no navegador, o diálogo foi cancelado.
 
-A conferência motivou a revisão 0.6.1: ao voltar ao desafio depois de acertar na retomada, avançar à próxima questão e manter o erro apenas no histórico; adaptar o convite do Nilo ao contexto; distinguir encerramento de retomada e corrigir singular/plural. Um novo teste preserva a resposta inicial e verifica essa transição.
+A conferência motivou a revisão 0.6.1: ao voltar ao desafio depois de acertar na retomada, avançar à próxima questão e manter o erro apenas no histórico; adaptar o convite do NILMO ao contexto; distinguir encerramento de retomada e corrigir singular/plural. Um novo teste preserva a resposta inicial e verifica essa transição.
 
 Na conferência final da 0.6.1, retornar à área Estudante avançou diretamente à questão 2 de 2 após o acerto na retomada. O acerto inicial seguinte registrou 10 XP e o desafio encerrou com duas questões, sem acrescentar itens. O painel do tutor manteve as tentativas original e assistida separadas e mostrou três medições de tempo. O diálogo de limpeza foi novamente conferido e cancelado, preservando o perfil. A imagem zerar-dados-0-6.jpg registra as opções, o estudante identificado, a exportação prévia e a confirmação desmarcada. Não houve nova conferência de layout móvel nesta revisão.
+
+## Revisão 0.7: ensino por ação, prioridade visual EI e NILMO
+
+209 testes passaram na primeira conferência da integração. Cobrem as 16 experiências (11 digitais e cinco roteiros EI), progressão por construção, ajuda antecedente, limitação de escolhas incompatíveis, exemplos diferentes, apoio pelo repertório observado e decisão do tutor, priorização de fundamentos para anos mais avançados, ensino separado de avaliação ativa, XP sem repetição/duplicação, pausa, dados, recuperação e limpeza individual. Também verificam materiais visuais sem dependência do gabarito, preservação de quantidade/posição/contorno, ausência de figuras que mudem leitura/audição, importação segura, 15 cenas por três grupos EI, mediação fora da tela, links de vídeos, revisão por etapa e ausência de player externo automático.
+
+A contagem do catálogo permanece 226 fichas e 1.336 atividades. Os novos roteiros e cenas não foram somados como questões do banco. A matriz data/visual-teaching-coverage.json identifica o alcance. Materiais sem dados suficientes continuam pendentes de autoria visual específica; não receberam figuras genéricas para aparentar cobertura.
+
+O nome público do mascote foi atualizado para NILMO. Identificadores técnicos e evidências históricas preservam compatibilidade e redação original quando necessário. A verificação não comprova eficácia pedagógica; ainda é necessário piloto com aprendizes e revisão de acessibilidade.

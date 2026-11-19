@@ -8,7 +8,7 @@ for(const r of state.responses.filter(r=>r.studentId===studentId&&String(r.answe
 for(const s of state.sessions.filter(s=>s.studentId===studentId))for(const t of s.items.filter(t=>t.status==='done'&&['explain','model'].includes(t.phase)))put('instruction:'+s.id+':'+t.id,state.events.find(e=>e.type==='instruction_observed'&&e.detail?.taskId===t.id&&e.detail?.sessionId===s.id)?.at||s.startedAt,5,'preparação',t.skillId);
 for(const s of state.literacySessions||[])if(s.studentId===studentId)for(const r of s.responses)if(String(r.answer??'').trim())put('word:'+s.id+':'+r.taskId,r.at,r.xpAward?.earned??5,'oficina',null);
 for(const r of state.gameResponses||[])if(r.studentId===studentId)put('game:'+r.runId+':'+r.itemId,r.at,r.xpAward?.earned||0,r.kind==='retry'?'retomada':'desafio diário',r.skillId);
-for(const r of (state.learningRuns||[]).filter(r=>r.studentId===studentId&&r.status==='completed').slice().sort((a,b)=>Date.parse(a.endedAt)-Date.parse(b.endedAt)))put('learning:'+r.lessonId+'@'+r.lessonVersion,r.endedAt,5,'aprender fazendo',null);
+for(const r of (state.learningRuns||[]).filter(r=>r.studentId===studentId&&r.source==='free'&&r.status==='completed').slice().sort((a,b)=>Date.parse(a.endedAt)-Date.parse(b.endedAt)))put('learning:'+r.lessonId+'@'+r.lessonVersion,r.endedAt,5,'aprender fazendo',null);
 // A avaliação recebe apenas reconhecimento de participação ao encerrar; o acerto não muda o XP.
 for(const b of state.baselines.filter(b=>b.studentId===studentId&&b.status==='completed'&&b.responses.some(r=>String(r.answer??'').trim())))put('baseline:'+b.id,b.endedAt||b.createdAt,10,'ponto de partida',null);
 return [...map.values()].sort((a,b)=>Date.parse(a.at)-Date.parse(b.at));

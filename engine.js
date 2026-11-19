@@ -1,4 +1,4 @@
-(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./support.js'),require('./game.js'),require('./timing.js'),require('./visuals.js'),require('./learn-do.js'));else root.TrilumeEngine=factory(root.TrilumeSupport,root.TrilumeGame,root.TrilumeTiming,root.TrilumeVisuals,root.TrilumeLearnDo);})(typeof window!=='undefined'?window:this,function(H,G,TM,V,P){
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./support.js'),require('./game.js'),require('./timing.js'),require('./visuals.js'),require('./learn-do.js'),require('./media.js'));else root.TrilumeEngine=factory(root.TrilumeSupport,root.TrilumeGame,root.TrilumeTiming,root.TrilumeVisuals,root.TrilumeLearnDo,root.TrilumeMedia);})(typeof window!=='undefined'?window:this,function(H,G,TM,V,P,M){
 'use strict';
 const VERSION=1;
 const copy=x=>JSON.parse(JSON.stringify(x));
@@ -36,7 +36,7 @@ if(a.visualSpec!==undefined)V.validate(a.visualSpec);
 return copy(a);
 }
 
-const blank=()=>({schemaVersion:VERSION,students:[],baselines:[],plans:[],sessions:[],responses:[],helpEvents:[],events:[],catalogEdits:[],catalogHistory:[],literacySessions:[],learningRuns:[],gameSessions:[],gameResponses:[],dailyRules:[],timings:[],gamification:{goals:[]},settings:{largeText:false,focus:false,hideNilo:false}});
+const blank=()=>({schemaVersion:VERSION,students:[],baselines:[],plans:[],sessions:[],responses:[],helpEvents:[],events:[],catalogEdits:[],catalogHistory:[],literacySessions:[],learningRuns:[],mediaResources:[],gameSessions:[],gameResponses:[],dailyRules:[],timings:[],gamification:{goals:[]},settings:{largeText:false,focus:false,hideNilo:false}});
 function score(answer,expected,helped=false){const a=normalizeAnswer(answer),values=Array.isArray(expected)?expected:[expected],ok=Boolean(a)&&values.some(x=>x!==undefined&&x!==null&&normalizeAnswer(x)===a);return ok?(helped?'assisted':'independent'):'incorrect';}
 function validateStudent(input){const errors=[];if(!String(input.name||'').trim())errors.push('Informe um apelido ou código para o estudante.');const early=input.stage==='ei';if(early?input.year!==0||!['EI01','EI02','EI03'].includes(input.ageBand):!Number.isInteger(Number(input.year))||Number(input.year)<1||Number(input.year)>12)errors.push('Escolha uma etapa e um grupo escolar válidos.');return errors;}
 function validEarlyCode(code){const m=/^EI0([123])(EO|CG|TS|EF|ET)([0-9]{2})$/.exec(code||'');if(!m)return false;const max={EO:[6,7,7],CG:[5,5,5],TS:[3,3,3],EF:[9,9,9],ET:[6,8,8]}[m[2]][Number(m[1])-1];return Number(m[3])>=1&&Number(m[3])<=max;}
@@ -65,6 +65,7 @@ items.push({id:uid(),phase:input.mode==='maintenance'?'maintenance':'independent
 }
 if(student.stage==='ei'){
 if(s.stage!=='ei')throw Error('Use experiências adequadas à Educação Infantil neste plano.');
+if((input.mode||'teaching')==='teaching'&&P.forSkill(s)){const a=s.activities.find(a=>a.phase==='baseline');for(const [phase,title,activity]of [['explain','Explorar com mediação visual',null],['model','Ver uma forma de participar',a]])items.push({id:uid(),phase,title,skillId:s.id,skillTitle:s.title,skillVersion:s.version,content:s.content,model:s.model,objective:s.objective,readingTarget:false,activity:activity?copy(activity):null,status:'open',observational:true});}
 const earlyStages=input.mode==='maintenance'?[['maintenance','Revisitar uma vivência','maintenance']]:input.mode==='verification'?[['independent','Observar uma nova vivência','practice']]:[['independent','Brincadeira combinada','practice'],['transfer','Explorar em outro contexto','transfer']];
 for(const [phase,title,kind] of earlyStages){
 const activity=s.activities.slice().sort((a,b)=>Number(b.type==='choice')-Number(a.type==='choice')).find(a=>a.phase===kind&&!resolved.has(contentKey(a))&&(a.type!=='choice'||!usedKeys.has(contentKey(a))));
@@ -170,7 +171,7 @@ if(!obj(v.gamification)||!Array.isArray(v.gamification.goals)||v.gamification.go
 v.settings=obj(v.settings)?v.settings:{};
 if(v.settings.timeZone!==undefined){try{new Intl.DateTimeFormat('pt-BR',{timeZone:v.settings.timeZone});}catch{throw Error('Fuso horário inválido.');}}
 if(v.settings.selectedId&&!students.has(v.settings.selectedId))v.settings.selectedId=v.students[0]?.id||'';
-G.validate(v,validateActivity,score);P.validate(v);TM.validate(v);for(const r of [...v.responses,...v.gameResponses,...v.baselines.flatMap(b=>b.responses),...v.literacySessions.flatMap(s=>s.responses)])if(r.durationMs!==undefined&&r.durationMs!==null&&(!Number.isFinite(r.durationMs)||r.durationMs<0))throw Error('Tempo de resposta inválido.');
+G.validate(v,validateActivity,score);P.validate(v);M.validate(v);TM.validate(v);for(const r of [...v.responses,...v.gameResponses,...v.baselines.flatMap(b=>b.responses),...v.literacySessions.flatMap(s=>s.responses)])if(r.durationMs!==undefined&&r.durationMs!==null&&(!Number.isFinite(r.durationMs)||r.durationMs<0))throw Error('Tempo de resposta inválido.');
 if(v.drafts!==undefined&&!obj(v.drafts))throw Error('Rascunhos inválidos no arquivo.');return v;
 }
 function exportCatalog(catalog){return {schemaVersion:VERSION,title:'Trilume — biblioteca de habilidades',skills:copy(catalog)};}

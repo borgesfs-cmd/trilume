@@ -29,7 +29,7 @@ Foram reproduzidos e corrigidos problemas que podiam distorcer evidências de ap
 | Média | Busca ignorava enunciados e alternativas. | Índice inclui textos dos exercícios; filtros distinguem grupos EI, fundamentos e anos. |
 | Baixa | CSV não neutralizava fórmulas com espaços iniciais. | Proteção após identificação de caracteres iniciais de fórmula. |
 | Baixa | Leitura em voz alta podia continuar após pausa ou navegação. | Cancelamento de fala nos controles correspondentes. |
-| Baixa | Nilo e fala tinham pouco destaque. | Imagens maiores, balão de alto contraste e layout ajustado a telas menores. |
+| Baixa | NILMO e fala tinham pouco destaque. | Imagens maiores, balão de alto contraste e layout ajustado a telas menores. |
 
 ## Ensino e curadoria
 
@@ -113,3 +113,11 @@ O tempo é acumulado em intervalos com a página visível e a tarefa aberta, com
 A limpeza individual oferece manter cadastro ou excluir o perfil e exige confirmação. Remove registros dos contextos de ensino, avaliação, oficina, jogo e tempo, além de metas, XP derivado e rascunhos. Sanitiza as cópias locais previous/recovery legíveis. Uma cópia ilegível impede iniciar a limpeza; erro na gravação provoca tentativa de reversão. Não há transação real entre chaves do navegador: interrupção abrupta ou falha da própria reversão ainda exige recuperação humana. Cópias exportadas, cache de outra aba e outros dispositivos estão fora desta limpeza. Conflitos entre abas são recusados na próxima gravação.
 
 A integração preservou os novos bancos de Educação Infantil e EFI enviados por outros chats, mantendo-os em curadoria, separados do catálogo ativo. Não houve publicação automática desses itens ao estudante.
+
+## Revisão 0.7: ensino visual e recursos
+
+learn-do.js mantém o estado das experiências, fases, ações, apoios, conferências e contexto de ensino. O backup valida vínculos e estruturas. student-data.js limpa também esse percurso individual. Tempos das fases aparecem somente ao tutor. O acervo de vídeos é compartilhado e permanece na limpeza individual.
+
+visuals.js aceita apenas especificações estruturadas e limites conhecidos; não interpreta HTML ou SVG importados. O estímulo é construído dos dados do item, sem consultar o gabarito. O enriquecimento incrementa a versão da nova apresentação, preservando as cópias antigas. ei-scenes.js produz cenas autorais de mediação com entradas enumeradas.
+
+media.js normaliza links HTTPS específicos do YouTube/Instagram, recusa origens inesperadas e escapa textos. O conteúdo externo não é carregado automaticamente na página. Aprovação por etapa e vínculo pedagógico são decisões do tutor. A disponibilidade e os conteúdos adicionais na origem não são controlados pela Trilume.

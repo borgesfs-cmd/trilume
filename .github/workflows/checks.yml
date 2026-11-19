@@ -13,6 +13,8 @@ jobs:
           persist-credentials: false
       - name: Verificar sintaxe
         run: |
+          node --check ei-scenes.js
+          node --check media.js
           node --check visuals.js
           node --check learn-do.js
           node --check game.js

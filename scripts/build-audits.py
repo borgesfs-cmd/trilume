@@ -35,7 +35,7 @@ def md_html(s):
   else:para.append(line)
  return '\n'.join(out)
 
-def page(title,body,script='',audit_date='18/11/2026'):
+def page(title,body,script='',audit_date='19/11/2026'):
  return '<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+esc(title)+' — Trilume</title><link rel="stylesheet" href="report.css"></head><body><header class="report-header"><a href="index.html">← Abrir a Trilume</a><strong>TRILUME · ENSINO E APRENDIZAGEM</strong><button type="button" onclick="window.print()">Imprimir / salvar PDF</button></header><nav class="report-nav"><a href="auditoria-metodologica.html">Metodologia</a><a href="auditoria-curricular.html">Currículo e atividades</a><a href="auditoria-tecnica.html">Sistema e correções</a></nav><main>'+body+'</main><footer>Trilume · Auditoria de desenvolvimento · '+audit_date+' · Concepção pedagógica: Flávio da Silva Borges</footer>'+script+'</body></html>'
 
 for slug,doc in [('metodologica','METODOLOGICA'),('tecnica','TECNICA')]:

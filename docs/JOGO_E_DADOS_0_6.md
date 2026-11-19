@@ -7,7 +7,7 @@ Data: 18/11/2026. Implementação com perfis fictícios; não validada com crian
 1. Em Tutor → Gamificação, escolha 1–3 questões extras diárias, de conteúdos do ano ou de uma disciplina. Escolha zero para pausar a criação de desafios. A lista já criada no dia fica preservada; alterações valem para o próximo desafio ainda não criado.
 2. Ao entrar na área Estudante, o desafio aberto aparece. O aluno pode ir ao Meu dia ou ao estudo programado. O desafio não modifica a sessão do tutor.
 3. Na questão, o aluno pode pedir dica, esclarecer a dúvida com a explicação planejada ou retirar um distrator. Isso registra apoio, sem contar como erro. Ouvir o estímulo obrigatório é acesso à tarefa e não tem custo.
-4. Acerto mostra confirmação, XP e Nilo celebrando. Erro mostra mensagem clara, orientação e possibilidade de retomada. O registro inicial permanece intacto. No encerramento do desafio, Nilo celebra a participação e nenhuma questão é acrescentada.
+4. Acerto mostra confirmação, XP e NILMO celebrando. Erro mostra mensagem clara, orientação e possibilidade de retomada. O registro inicial permanece intacto. No encerramento do desafio, NILMO celebra a participação e nenhuma questão é acrescentada.
 5. Em Retomar questões, o aluno escolhe um erro objetivo ainda não resolvido. Há no máximo duas retomadas. Depois disso, o tutor pode propor outro exemplo e rever as condições de ensino.
 
 ## Pontos

@@ -1,6 +1,6 @@
 # Trilume — Plataforma Inteligente de Aprendizagem
 
-**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.6 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
+**[Abrir a Trilume](https://borgesfs-cmd.github.io/trilume/)** · Versão 0.7 de desenvolvimento · Concepção pedagógica: Flávio da Silva Borges.
 
 Educação Infantil, 1º ao 9º ano do Ensino Fundamental e 1ª à 3ª série do Ensino Médio. A experiência de ensino articula finalidade, exploração, demonstração, prática conjunta, reflexão, verificação e uso em outros contextos. O banco de exercícios apoia decisões do educador.
 
@@ -22,7 +22,7 @@ Os painéis distinguem participação, pontos e evidência de aprendizagem. Troc
 - Educação Infantil com 93 códigos de objetivos e 380 propostas mediadas, sem nota de desenvolvimento. Bebês e crianças bem pequenas participam em vivências fora da tela.
 - Oficina de seis palavras que relaciona som, figura, escrita, função e contexto; distingue ensino, sondas e leitura oral analisada pelo tutor.
 - Minha jornada: meta ajustável ou pausada, XP de participação, dias com registros, conquistas e sugestões de retomada. XP não mede aprendizagem. Dicas e retirada de alternativas não contam como erro; reduzem somente o bônus da atividade, preservando a participação e pontos anteriores.
-- Nilo com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
+- NILMO com imagem ampliada, fala destacada e 12 contextos; texto ampliado, foco, teclado e preferência de movimento reduzido.
 - Biblioteca editável, materiais, pistas, respostas aceitas, versões, importação/exportação, recuperação e proteção contra sobrescrita entre abas.
 
 ## Novo banco EFI — 1.000 questões em curadoria (18/11/2026)
@@ -36,12 +36,26 @@ Foi incorporado ao repositório um lote autoral com **1.000 itens do 1º ao 5º 
 ## Desafios, retomadas e reinício do acompanhamento — 0.6
 
 - Tutor → Gamificação: desafio extra de **1, 2 ou 3 questões por dia**, aleatório entre os conteúdos do ano ou restrito a uma disciplina. Começa pausado, abre na entrada do estudante após configuração e mantém uma lista fixa no dia, independente do plano de ensino.
-- Acerto e erro têm feedback com texto, ícone, cor e expressão do Nilo. Questões resolvidas saem das novas seleções automáticas. Erros podem ser retomados duas vezes; a resposta original permanece registrada.
+- Acerto e erro têm feedback com texto, ícone, cor e expressão do NILMO. Questões resolvidas saem das novas seleções automáticas. Erros podem ser retomados duas vezes; a resposta original permanece registrada.
 - Acerto inicial de estudo/desafio: até 10 XP; primeira retomada correta: até 6; segunda: até 3. Primeiro erro: 1 XP de participação; erro em retomada: 0. Dicas, esclarecimentos e eliminação descontam somente o bônus atual. Valores antigos não são recalculados.
 - Tutor → Painel: tempo visível por questão e tarefa, média e exportação CSV; pausas e tela oculta são excluídas. Não há relógio para o estudante, prêmio por rapidez ou inferência clínica.
 - **Tutor → Estudantes → Zerar dados:** apagar o histórico mantendo cadastro/preferências ou excluir também o perfil. A confirmação identifica o estudante. A limpeza inclui planos, avaliações, respostas, retomadas, metas, XP, tempos, rascunhos e cópias locais legíveis; mantém outros estudantes e o acervo. Backups exportados e outros dispositivos não são apagados.
 
 Veja as regras, limites e roteiro em [jogo e gestão dos dados](docs/JOGO_E_DADOS_0_6.md).
+
+## Ensino visual, NILMO e recursos — 0.7
+
+O mascote passa a se chamar **NILMO** nas telas, falas, descrições acessíveis e documentação atual. O nome antigo permanece apenas em registros históricos e identificadores técnicos de compatibilidade.
+
+**Estudante → Aprender fazendo** oferece 11 experiências digitais e cinco roteiros de vivências mediadas na Educação Infantil: explorar, observar um modelo em passos, construir com apoio e experimentar outro exemplo. Colocar/tirar peças, repartir, pintar partes, relacionar palavras e figuras, organizar sequências e percorrer mapas substituem parte da experiência baseada só em texto. As etapas de ensino correspondentes também entram nas sessões programadas.
+
+O apoio começa intensivo quando faltam dados ou há ajuda/dificuldade observada. O tutor escolhe apoio intensivo ou gradual e experiências prioritárias no cadastro. Pistas anteriores à ação destacam o próximo passo e reduzem escolhas incompatíveis; no novo exemplo, podem ser retiradas progressivamente. A avaliação inicial e as sondagens permanecem separadas do ensino.
+
+A Educação Infantil recebe 15 cenas didáticas, adaptadas aos três grupos (45 apresentações), nos cinco campos. Para bebês e crianças bem pequenas, o adulto usa os roteiros para mediar atividades fora da tela. A criança não precisa ler nem operar o aplicativo. A pausa, a recusa e outras formas de comunicação são respeitadas.
+
+122 atividades passam a ter representações dos dados: 46 escolares, quatro EI e 72 de repertórios; há também alternativas ilustradas em 32 itens, com sobreposição. O acervo completo ainda exige autoria visual e curadoria por conteúdo. [Escopo e fundamentos da revisão](docs/ENSINO_VISUAL_E_APRENDER_FAZENDO_0_7.md).
+
+**Tutor → Vídeos e recursos** aceita links de YouTube e Instagram, com disciplina/área, conteúdo, habilidade opcional, etapas, objetivo e ação após assistir. Só recursos marcados como revisados aparecem ao estudante. Os links abrem na origem, sem carregamento automático de players. É possível combinar um trecho curto e retomar uma atividade concreta depois de assistir.
 
 ## Acervo e auditorias
 
@@ -79,6 +93,6 @@ Não há chat generativo, diagnóstico, teste psicológico padronizado, avaliaç
 
 Node.js 20+ para executar `npm test`. Não há dependências de execução da interface. O workflow verifica sintaxe e testes a cada push. Os relatórios são gerados por `python scripts/build-audits.py`; o CSV acompanha o catálogo atual.
 
-Arquivos principais: app.js (interface), engine.js (regras), assessment.js (avaliação), storage.js (persistência), library-tools.js (curadoria), word-lab.js (oficina), gamification.js (jornada), game.js (desafios/retomadas), timing.js (tempo visível), student-data.js (limpeza individual), nilo.js e assets/ (mascote), data/ (catálogos), tests/ (regressão), docs/ (auditorias). history/ preserva versões anteriores e não integra a aplicação atual.
+Arquivos principais: app.js (interface), engine.js (regras), assessment.js (avaliação), storage.js (persistência), library-tools.js (curadoria), word-lab.js (oficina), gamification.js (jornada), game.js (desafios/retomadas), timing.js (tempo visível), learn-do.js (ensino por ação), visuals.js e ei-scenes.js (figuras didáticas), media.js (vídeos selecionados), student-data.js (limpeza individual), nilo.js e assets/ (mascote), data/ (catálogos), tests/ (regressão), docs/ (auditorias). history/ preserva versões anteriores e não integra a aplicação atual.
 
-© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. A arte do Nilo foi gerada com IA. A marca não foi apresentada como registrada. O nome anterior Trilha permanece apenas no histórico.
+© 2026 Flávio da Silva Borges — direitos reservados sobre componentes originais de sua autoria ou titularidade. A arte do NILMO foi gerada com IA. A marca não foi apresentada como registrada. O nome anterior Trilha permanece apenas no histórico.

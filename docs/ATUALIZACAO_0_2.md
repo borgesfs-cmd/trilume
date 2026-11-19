@@ -1,6 +1,6 @@
-# Trilume 0.2 — avaliação e Nilo
+# Trilume 0.2 — avaliação e NILMO
 
-O mesmo endereço passa a oferecer o planejamento da avaliação pelo tutor e a execução pelo estudante, com 12 expressões do Nilo e contraste maior.
+O mesmo endereço passa a oferecer o planejamento da avaliação pelo tutor e a execução pelo estudante, com 12 expressões do NILMO e contraste maior.
 
 1. Cadastre ou selecione o estudante.
 2. Em Avaliação inicial, abra as habilidades e marque as questões. As questões sugeridas podem ser retiradas ou substituídas. Confira enunciados e critérios no planejamento.
@@ -12,6 +12,6 @@ O mesmo endereço passa a oferecer o planejamento da avaliação pelo tutor e a 
 
 A biblioteca reúne 120 habilidades e 496 atividades. Foram acrescentadas 104 questões de múltipla escolha, distribuídas entre habilidades de linguagem e matemática; a curadoria e a ampliação dos demais componentes continuam necessárias.
 
-Nilo apresenta as telas e usa expressões de planejamento, curiosidade, atenção, explicação, reflexão, ajuda, nova tentativa, conquista, revisão, aplicação e encerramento. Os textos de feedback se relacionam à ação observada. As opções de leitura mantêm o Nilo em tamanho normal ou compacto.
+NILMO apresenta as telas e usa expressões de planejamento, curiosidade, atenção, explicação, reflexão, ajuda, nova tentativa, conquista, revisão, aplicação e encerramento. Os textos de feedback se relacionam à ação observada. As opções de leitura mantêm o NILMO em tamanho normal ou compacto.
 
 A separação tutor/estudante é de interface. Os registros continuam no navegador, com backup disponível em Como usar. O sistema mantém os cadastros e históricos da versão anterior.

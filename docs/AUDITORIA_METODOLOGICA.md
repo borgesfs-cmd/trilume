@@ -1,4 +1,4 @@
-# Auditoria metodológica, pedagógica e psicológica — Trilume 0.6
+# Auditoria metodológica, pedagógica e psicológica — Trilume 0.7
 
 Data: 17/11/2026. Escopo: aplicação estática, regras de aprendizagem, 120 fichas escolares/fundamentais, 93 objetivos da Educação Infantil, 13 áreas de repertório e oficina de palavras. Análise documental e de implementação; não houve aplicação com crianças, avaliação de efetividade nem validação clínica. Esta auditoria distingue fundamento, funcionamento implementado e hipótese a testar.
 
@@ -84,7 +84,7 @@ A literatura sobre funções executivas, como Diamond (2013), descreve processos
 
 Reduzir informações concorrentes, oferecer passos visíveis, exemplos, pausas e recursos externos são decisões de acessibilidade e organização. A hipótese de que ajudam um estudante precisa ser observada. Atribuir qualquer melhora à neuroplasticidade, a hemisférios ou a um suposto estilo de aprendizagem não acrescenta uma explicação verificável. O ensaio de Roberts e colaboradores (2016) sobre treino de memória de trabalho encontrou limites de benefício acadêmico duradouro naquela população; não é justificativa para prometer transferência ampla de jogos cognitivos.
 
-O feedback deve descrever processo e condições: você organizou os grupos e conferiu o total; esta pista ajudou; vamos experimentar outro exemplo. Evitar rótulos de inteligência, comparação pública e obrigação de persistir diante de desconforto. Nilo oferece mensagens e consequências planejadas; só a observação do efeito sobre o comportamento autoriza tratá-las como reforçadoras para aquele estudante.
+O feedback deve descrever processo e condições: você organizou os grupos e conferiu o total; esta pista ajudou; vamos experimentar outro exemplo. Evitar rótulos de inteligência, comparação pública e obrigação de persistir diante de desconforto. NILMO oferece mensagens e consequências planejadas; só a observação do efeito sobre o comportamento autoriza tratá-las como reforçadoras para aquele estudante.
 
 ## Gamificação a serviço da participação
 
@@ -140,8 +140,16 @@ A retirada de um distrator modifica a condição de resposta e o acerto passa a 
 
 ## Revisão 0.6: devolutiva, retomadas e tempo
 
-O feedback de ensino usa texto claro, ícone, cor e expressão contextual do Nilo. Acerto confirma a resposta; erro informa que ela não está correta e oferece explicação/apoio. A expressão do mascote não representa julgamento sobre a criança. A avaliação inicial e as sondas continuam sem correção antecipada durante a aplicação.
+O feedback de ensino usa texto claro, ícone, cor e expressão contextual do NILMO. Acerto confirma a resposta; erro informa que ela não está correta e oferece explicação/apoio. A expressão do mascote não representa julgamento sobre a criança. A avaliação inicial e as sondas continuam sem correção antecipada durante a aplicação.
 
 A primeira resposta permanece intacta. Retomadas ficam registradas com apoio e não entram como novas evidências de domínio. Novas seleções automáticas excluem questões resolvidas; as incorretas são direcionadas ao fluxo de retomada com XP reduzido. Sondas e relações deliberadamente reapresentadas para retirada de pistas na oficina conservam identificação de exposição anterior.
 
 O tutor pode configurar um desafio extra de uma a três questões por dia, separado do ensino planejado. O tempo por tarefa é de uso visível aproximado, sem relógio ao aluno ou incentivo por rapidez. Não autoriza inferência sobre atenção, velocidade de processamento, memória, capacidade ou diagnóstico. Essas regras de produto exigem avaliação no piloto com aprendizes e educadores.
+
+## Revisão 0.7: tornar o ensino uma ação observável
+
+A revisão partiu da crítica do autor: exemplos, exploração e prática estavam descritos, mas faltavam materiais e ações na interface. A área Aprender fazendo e sua integração às sessões passam a oferecer construções visuais, modelos em passos e consequências descritivas das ações. O apoio pode anteceder a resposta, limitar ambiguidades e ser reduzido no novo exemplo. O tutor pode adaptar sua intensidade e selecionar repertórios fundamentais, sem tomar a série como medida suficiente do repertório.
+
+Educação Infantil tem roteiros visuais nos cinco campos, com mediação fora da tela nos dois primeiros grupos etários. São apoios por campo, a adaptar a cada objetivo; não equivalem à homologação individual de todos os códigos BNCC. O registro do adulto acolhe iniciativa, ajuda ou outra oportunidade e não atribui nota de desenvolvimento.
+
+Vídeos selecionados são acompanhados de objetivo e de uma ação posterior: assistir, pausar e fazer. Não há seleção automática por popularidade, reprodução automática ou equivalência entre assistir e compreender. As novas regras são decisões de implementação; sua eficácia e a redução real de erros precisam de observação no piloto. O detalhamento e os limites estão em docs/ENSINO_VISUAL_E_APRENDER_FAZENDO_0_7.md.
