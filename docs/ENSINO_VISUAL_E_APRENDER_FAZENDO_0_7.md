@@ -1,5 +1,7 @@
 # Ensino visual e aprender fazendo — 0.7
 
+Revisão posterior: as cenas e instruções foram refeitas na 0.8; consulte REVISAO_VISUAL_E_INSTRUCOES_0_8.md para a apresentação atual. Este documento descreve a base 0.7.
+
 Data: 19/11/2026. Direção pedagógica: Flávio da Silva Borges.
 
 A interface anterior mantinha as etapas de explicar, demonstrar e explorar principalmente como texto. O catálogo escolar tinha 800 atividades sem material visual declarado. A correção introduz experiências de construção com consequências observáveis, pistas antecedentes e retomada, além de representações gráficas dos dados das atividades.

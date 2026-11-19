@@ -43,6 +43,10 @@ Foi incorporado ao repositório um lote autoral com **1.000 itens do 1º ao 5º 
 
 Veja as regras, limites e roteiro em [jogo e gestão dos dados](docs/JOGO_E_DADOS_0_6.md).
 
+## Revisão visual e didática — 0.8
+
+As telas de ensino passam a usar ilustrações 3D de contexto e objetos com textura, mantendo precisão das quantidades e figuras geométricas. Foram retirados os 600 enunciados genéricos que ocultavam a tarefa:372 EI e 228 escolares. A fala dirigida à criança fica separada dos materiais, da mediação e das observações do adulto. Veja [a revisão e seu alcance](docs/REVISAO_VISUAL_E_INSTRUCOES_0_8.md).
+
 ## Ensino visual, NILMO e recursos — 0.7
 
 O mascote passa a se chamar **NILMO** nas telas, falas, descrições acessíveis e documentação atual. O nome antigo permanece apenas em registros históricos e identificadores técnicos de compatibilidade.

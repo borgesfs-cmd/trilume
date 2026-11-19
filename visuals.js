@@ -1,4 +1,4 @@
-(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory();else root.TrilumeVisuals=factory();})(typeof window!=='undefined'?window:this,function(){
+(function(root,factory){if(typeof module==='object'&&module.exports)module.exports=factory(require('./teaching-art.js'));else root.TrilumeVisuals=factory(root.TrilumeTeachingArt);})(typeof window!=='undefined'?window:this,function(ART){
 'use strict';
 const clone=x=>JSON.parse(JSON.stringify(x)),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const itemNames={counter:['bolinha','bolinhas'],star:['estrela','estrelas'],bear:['boneco','bonecos'],pencil:['lápis','lápis'],book:['livro','livros'],cup:['copo','copos'],piece:['peça','peças'],card:['figurinha','figurinhas'],block:['bloco','blocos']};
@@ -51,6 +51,7 @@ return null;
 function enrich(a){const out=clone(a);if(a.visualSpec!==undefined){validate(a.visualSpec);return out;}const spec=specFor(a);if(spec){out.visualSpec=clone(spec);out.version=(Number.isInteger(a.version)?a.version:1)+1;}return out;}
 const palette={purple:'#5947c5',green:'#12745b',gold:'#d38c00',ink:'#35445e',pink:'#bd4d74',light:'#eee9ff'};
 function figure(name){
+const asset={counter:'ball',piece:'ball',block:'block',star:'star',pencil:'pencil',book:'book',cup:'cup',card:'card',bear:'bear'}[name];if(asset)return ART.svgObject(asset);
 const c=palette.purple;
 if(name==='counter'||name==='piece')return '<circle cx="30" cy="30" r="22" fill="'+c+'" stroke="#35445e" stroke-width="2"/><path d="M18 18a17 17 0 0 1 12-5" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>';
 if(name==='block')return '<rect x="8" y="8" width="44" height="44" rx="5" fill="'+palette.green+'" stroke="#35445e" stroke-width="2"/><path d="M10 10l16 12h25M26 22v29" fill="none" stroke="#fff" stroke-width="2"/>';
@@ -63,6 +64,7 @@ if(name==='bear')return '<circle cx="15" cy="13" r="9" fill="#ad7441"/><circle c
 return '';
 }
 function icon(name){
+const asset={ball:'ball',duck:'duck',cat:'cat',suitcase:'suitcase',house:'house'}[name];if(asset)return ART.svgObject(asset);
 if(Object.hasOwn(itemNames,name))return figure(name);
 if(name==='ball')return '<circle cx="30" cy="30" r="25" fill="#fffefa" stroke="#35445e" stroke-width="3"/><path d="M30 17l12 9-5 14H23l-5-14zM30 17V5M42 26l13-3M37 40l8 11M23 40l-8 11M18 26L5 23" fill="#5947c5" stroke="#35445e" stroke-width="2"/>';
 if(name==='duck')return '<path d="M10 31q13 7 24-1l16-8q9 28-20 30-24 0-20-21z" fill="#efba3d" stroke="#35445e" stroke-width="2"/><circle cx="39" cy="19" r="13" fill="#efba3d" stroke="#35445e" stroke-width="2"/><path d="M49 19l10 4-10 5" fill="#df8235" stroke="#35445e" stroke-width="2"/><circle cx="42" cy="17" r="2" fill="#35445e"/>';

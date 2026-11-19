@@ -1,9 +1,9 @@
 (function(){
 
 'use strict';
-const E=window.TrilumeEngine,A=window.TrilumeAssessment,N=window.TrilumeNilo,S=window.TrilumeStorage,L=window.TrilumeLibraryTools,W=window.TrilumeWordLab,J=window.TrilumeJourney,H=window.TrilumeSupport,Q=window.TrilumeQuickForms,R=window.TrilumeRepertoire,T=window.TrilumeAreas,I=window.TrilumeInsights,G=window.TrilumeGame,TM=window.TrilumeTiming,D=window.TrilumeStudentData,V=window.TrilumeVisuals,P=window.TrilumeLearnDo,M=window.TrilumeMedia,KEY=new URLSearchParams(location.search).has('qa')?'trilume.qa.v1':'trilume.v1';
+const E=window.TrilumeEngine,A=window.TrilumeAssessment,N=window.TrilumeNilo,S=window.TrilumeStorage,L=window.TrilumeLibraryTools,W=window.TrilumeWordLab,J=window.TrilumeJourney,H=window.TrilumeSupport,Q=window.TrilumeQuickForms,R=window.TrilumeRepertoire,T=window.TrilumeAreas,I=window.TrilumeInsights,G=window.TrilumeGame,TM=window.TrilumeTiming,D=window.TrilumeStudentData,V=window.TrilumeVisuals,P=window.TrilumeLearnDo,M=window.TrilumeMedia,C=window.TrilumeItemCopy,KEY=new URLSearchParams(location.search).has('qa')?'trilume.qa.v1':'trilume.v1';
 const localStore=S.open({getItem:k=>localStorage.getItem(k),setItem:(k,v)=>localStorage.setItem(k,v)},KEY,v=>E.validateBackup(v,window.TRILUME_CATALOG));
-window.TRILUME_CATALOG=[...window.TRILUME_CATALOG,...(window.TRILUME_EI_CATALOG||[]),...(window.TRILUME_REPERTOIRE_CATALOG||[])].map(s=>({...s,activities:s.activities.map(V.enrich)}));
+window.TRILUME_CATALOG=[...window.TRILUME_CATALOG,...(window.TRILUME_EI_CATALOG||[]),...(window.TRILUME_REPERTOIRE_CATALOG||[])].map(s=>({...s,activities:s.activities.map(a=>C.enrich(V.enrich(a),s))}));
 const initial=localStore.read();let storageWarning=initial.warning,state=initial.state;
 const clock=TM.tracker(()=>state,E.dayKey);clock.setVisible(!document.hidden);let autoChallenge=true;
 let currentArea=Object.hasOwn(T.labels,state.settings.menuArea)?state.settings.menuArea:'student',insightPeriod='week',insightOffset=0;
@@ -38,7 +38,7 @@ function nilo(message,small=false,forced){return N.render(message,small,niloCont
 function labContext(){return {state,student:student(),persist,render,announce,button,escape,nilo,openDialog,navigate,catalog,quick:Q,area:currentArea,period:insightPeriod,offset:insightOffset,engine:E,learn:P,fields:A.fields,material:activityMaterial,question:learnerQuestion,audio:audioConfirmation};}
 function displayAnswer(r){return A.text(r);}
 function activityMaterial(a){return A.material(a);}
-function learnerQuestion(a){return '<div class="question">'+escape(a?.learnerPrompt||a?.prompt||'Tarefa não disponível.')+'</div>'+(a?.tutorInstruction?'<details class="adult-record"><summary>Tutor: instrução da atividade</summary><p>'+escape(a.tutorInstruction)+'</p></details>':'');}
+function learnerQuestion(a){return '<div class="question">'+(a?.learnerAudience==='adult'?'<span class="question-audience">Para quem acompanha</span>':'')+escape(a?.learnerPrompt||a?.prompt||'Tarefa não disponível.')+'</div>'+(a?.tutorInstruction?'<details class="adult-record"><summary>Tutor: instrução da atividade</summary><p>'+escape(a.tutorInstruction)+'</p></details>':'');}
 function audioConfirmation(a,done){return a?.audioRequired?'<details class="adult-record"><summary>Apresentação oral pelo tutor</summary><p>'+escape(a.stimulusAudio)+'</p><label class="inline-check"><input type="checkbox" name="audioPresented" '+(done?'checked':'')+'>Apresentei essas palavras oralmente, sem indicar a resposta.</label></details>':'';}
 
 let draftTimer;
@@ -242,7 +242,7 @@ if(a==='media-approval'){const r=state.mediaResources.find(r=>r.id===id);if(!r)t
 if(a==='learn-list'){delete state.settings.learningFocus;persist();navigate('learn');return;}
 if(a==='start-learning'){const [lessonId,sessionId,taskId]=id.split('::');if(sessionId&&!state.sessions.some(s=>s.id===sessionId&&s.studentId===selectedId&&s.items.some(t=>t.id===taskId&&t.phase==='explain')))throw Error('Sessão de ensino não encontrada.');P.start(state,student(),lessonId,sessionId?{sessionId,taskId}:{});persist();navigate(sessionId?'study':'learn');return;}
 if(a==='learn-for-skill'){const lesson=P.forSkill(skill(id));if(lesson){P.start(state,student(),lesson.id,{sessionId:null});persist();}navigate('learn');return;}
-if(a==='learn-action'){const [runId,op,value]=id.split('::'),run=(state.learningRuns||[]).find(r=>r.id===runId&&r.studentId===selectedId);if(!run)throw Error('Experiência não encontrada.');if(op==='audio'||op==='word-audio'){speak(op==='word-audio'?value==='bola'?'BOLA':value:P.lesson(run.lessonId).title+'. '+(run.phase===1?P.lesson(run.lessonId).model[run.modelStep]:P.instruction(run)));return;}P.action(run,op,value);persist();render();return;}
+if(a==='learn-action'){const [runId,op,value]=id.split('::'),run=(state.learningRuns||[]).find(r=>r.id===runId&&r.studentId===selectedId);if(!run)throw Error('Experiência não encontrada.');if(op==='audio'||op==='word-audio'){speak(op==='word-audio'?value==='bola'?'BOLA':value:P.instruction(run));return;}P.action(run,op,value);persist();render();return;}
 if(a==='area'){if(!Object.hasOwn(T.labels,id))return;autoChallenge=id==='student';currentArea=id;state.settings.menuArea=id;if(id==='tutor')state.settings.assessmentMode='tutor';persist();navigate(T.landing[id]);return;}
 if(a==='period-prev'||a==='period-next'||a==='period-current'){insightOffset=a==='period-current'?0:Math.max(-100,Math.min(0,insightOffset+(a==='period-prev'?-1:1)));render();return;}
 if(a==='nav'){autoChallenge=false;if(id==='baseline')state.settings.assessmentMode=currentArea==='student'?'student':'tutor';navigate(id);return;}

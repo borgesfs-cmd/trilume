@@ -66,3 +66,8 @@ A contagem do catálogo permanece 226 fichas e 1.336 atividades. Os novos roteir
 O nome público do mascote foi atualizado para NILMO. Identificadores técnicos e evidências históricas preservam compatibilidade e redação original quando necessário. A verificação não comprova eficácia pedagógica; ainda é necessário piloto com aprendizes e revisão de acessibilidade.
 
 A publicação 0.7 foi conferida com perfil fictício em ?qa=1: exploração livre, modelo em três passos, prática guiada com destaque e controles incompatíveis desativados, construção de quatro peças, feedback descritivo, exemplo de sete peças e encerramento. O painel separou participação das respostas e mostrou as quatro etapas e tempos. O formulário de vídeos apresentou disciplina/área, conteúdo, habilidade, etapas, revisão e ação posterior. Em 390 × 844, o corpo permaneceu com 390 px de largura. A inspeção orientou um ajuste adicional de nomes legíveis no painel e de modelo visual do grupo a construir; a apresentação não exige leitura autônoma do enunciado para compreender o apoio.
+
+
+## Revisão 0.8 — qualidade visual e instruções
+
+219 testes passaram após integrar as novas ilustrações e a redação. A revisão remove 600 apresentações genéricas, preserva dados e fases dos 1.336 itens e mantém 122 materiais visuais derivados. Os novos casos conferem as ilustrações locais, recortes de objetos, entradas permitidas, mediação dos bebês e correspondência entre orientação e caixa destacada. A devolutiva de metade diferencia cada retângulo das duas regiões equivalentes. A compreensão real das novas instruções permanece sujeita à observação com aprendizes.
