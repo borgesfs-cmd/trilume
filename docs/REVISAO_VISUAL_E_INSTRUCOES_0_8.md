@@ -16,7 +16,7 @@ Foram criadas seis cenas ilustradas em estilo 3D e 21 objetos em duas folhas tra
 
 O sistema monta contagens e grupos com objetos isolados, mantendo controle exato de cada unidade. Diagramas de frações, gráficos e contornos usados em discriminação continuam geométricos para preservar precisão. Não se acrescenta imagem ao alvo de leitura ou discriminação auditiva quando isso mudaria o que está sendo observado.
 
-A interface destaca a instrução atual, apresenta as etapas como progresso, mantém a mediação em uma área expansível e reduz comandos concorrentes. NILMO permanece no apoio, nos exemplos e nas consequências.
+Na revisão 0.8.1, a fala do NILMO apresenta a instrução atual ao lado da cena, evitando uma fala genérica adicional. A interface destaca a instrução atual, apresenta as etapas como progresso, mantém a mediação em uma área expansível e reduz comandos concorrentes. NILMO permanece no apoio, nos exemplos e nas consequências.
 
 ## Ajustes conceituais
 
