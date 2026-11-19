@@ -35,7 +35,7 @@ function empty(title,text,action='students',label='Cadastrar estudante'){return 
 function needsStudent(){return empty('Vamos começar pelo estudante','Cadastre um apelido ou código e o ano escolar. Depois, conheça o repertório inicial para preparar o ensino.');}
 function niloContext(){return {view:currentView,state,activeBaseline,activeSession,cursor:activeBaseline()?.cursor||baselineCursor};}
 function nilo(message,small=false,forced){return N.render(message,small,niloContext(),forced);}
-function labContext(){return {state,student:student(),persist,render,announce,button,escape,nilo,openDialog,navigate,catalog,quick:Q,area:currentArea,period:insightPeriod,offset:insightOffset,engine:E,fields:A.fields,material:activityMaterial,question:learnerQuestion,audio:audioConfirmation};}
+function labContext(){return {state,student:student(),persist,render,announce,button,escape,nilo,openDialog,navigate,catalog,quick:Q,area:currentArea,period:insightPeriod,offset:insightOffset,engine:E,learn:P,fields:A.fields,material:activityMaterial,question:learnerQuestion,audio:audioConfirmation};}
 function displayAnswer(r){return A.text(r);}
 function activityMaterial(a){return A.material(a);}
 function learnerQuestion(a){return '<div class="question">'+escape(a?.learnerPrompt||a?.prompt||'Tarefa não disponível.')+'</div>'+(a?.tutorInstruction?'<details class="adult-record"><summary>Tutor: instrução da atividade</summary><p>'+escape(a.tutorInstruction)+'</p></details>':'');}
